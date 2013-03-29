@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99cThe top-level auxiliary file: main.aux
+The style file: apacite.bst
+A level-1 auxiliary file: title_page.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: chapter_1.aux
+A level-1 auxiliary file: chapter_2.aux
+A level-1 auxiliary file: chapter_3.aux
+A level-1 auxiliary file: appendix_A.aux
+Illegal, another \bibstyle command---line 14 of file main.aux
+ : \bibstyle
+ :          {apacite}
+I'm skipping whatever remains of this command
+Database file #1: myreferences.bib
+apacite.bst [2009/03/01 v4.05 APA bibliography style]
+Warning--No publisher in Agichtein:2000
+Warning--No address in Agichtein:2000
+Warning--No publisher in Alani:2003
+Warning--No address in Alani:2003
+Warning--No publisher in Banko:2008
+Warning--No address in Banko:2008
+Warning--No publisher in Gruber:2008
+Warning--No address in Gruber:2008
+Warning--No publisher in Hearst:1992
+Warning--No address in Hearst:1992
+Warning--No publisher in Hendrickx:2009
+Warning--No address in Hendrickx:2009
+Warning--No publisher in Hong:2009
+Warning--No address in Hong:2009
+Warning--No publisher in Kipper:2000
+Warning--No address in Kipper:2000
+Warning--No publisher in Lester:2007
+Warning--No address in Lester:2007
+Warning--No publisher in Liu:2004a
+Warning--No address in Liu:2004a
+Warning--No address in Mann:1987
+Warning--No publisher in Mateas:2003
+Warning--No address in Mateas:2003
+Warning--No publisher in Moldovan:2004
+Warning--No address in Moldovan:2004
+Warning--No publisher in Montfort:2009
+Warning--No address in Montfort:2009
+Warning--No publisher in Mueller:2003
+Warning--No address in Mueller:2003
+Warning--No publisher in Muslea:1999
+Warning--No address in Muslea:1999
+Warning--No publisher in Nakasone:2006
+Warning--No address in Nakasone:2006
+Warning--No publisher in Nastase:2003
+Warning--No address in Nastase:2003
+Warning--No publisher in Niles:2001
+Warning--No address in Niles:2001
+Warning--No publisher in Riedl:2004
+Warning--No address in Riedl:2004
+Warning--No publisher in Rosario:2001
+Warning--No address in Rosario:2001
+Warning--No publisher in Rosario:2002
+Warning--No address in Rosario:2002
+Warning--No publisher in Singh:2002
+Warning--No address in Singh:2002
+Warning--No publisher in Solis:2009
+Warning--No address in Solis:2009
+Warning--No publisher in Young:2008
+Warning--No address in Young:2008
+(There was 1 error message)

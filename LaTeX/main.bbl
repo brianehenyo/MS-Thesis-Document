@@ -1,0 +1,992 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{%
+Agichtein%
+\ \BBA{} Gravano%
+}{%
+Agichtein%
+\ \BBA{} Gravano%
+}{%
+{\protect\APACyear{2000}}%
+}]{%
+Agichtein:2000}%
+\APACinsertmetastar{%
+Agichtein:2000}%
+Agichtein, E.%
+\BCBT{}\ \BBA{} Gravano, L.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Snowball: {E}xtracting relations from large plain-text
+  collections}{Snowball: {E}xtracting relations from large plain-text
+  collections}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of the {F}ifth {ACM} {I}nternational
+  {C}onference on {D}igital {L}ibraries.}{Proceedings of the {F}ifth {ACM}
+  {I}nternational {C}onference on {D}igital {L}ibraries.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Alani%
+\ \protect\BOthers{.}}{%
+Alani%
+\ \protect\BOthers{.}}{%
+{\protect\APACyear{2003}}%
+}]{%
+Alani:2003}%
+\APACinsertmetastar{%
+Alani:2003}%
+Alani, H.%
+, Kim, S.%
+, Millard, D.%
+, Weal, M.%
+, Lewis, P.%
+, Hall, W.%
+\BCBL{}\ \BOthersPeriod{.}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Automatic {E}xtraction of {K}nowledge from {W}eb
+  {D}ocuments}{Automatic {E}xtraction of {K}nowledge from {W}eb
+  {D}ocuments}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of {ISWC} 2003 {W}orkshop on {H}uman
+  {L}anguage {T}echnology for the {S}emantic {W}eb and {W}eb
+  {S}ervices.}{Proceedings of {ISWC} 2003 {W}orkshop on {H}uman {L}anguage
+  {T}echnology for the {S}emantic {W}eb and {W}eb {S}ervices.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Badulescu%
+, Girju%
+\BCBL{}\ \BBA{} Moldovan%
+}{%
+Badulescu%
+\ \protect\BOthers{.}}{%
+{\protect\APACyear{2006}}%
+}]{%
+Badulescu:2006}%
+\APACinsertmetastar{%
+Badulescu:2006}%
+Badulescu, A.%
+, Girju, R.%
+\BCBL{}\ \BBA{} Moldovan, D.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Automatic {D}iscovery of {P}art-{W}hole
+  {R}elations}{Automatic {D}iscovery of {P}art-{W}hole {R}elations}.\BBCQ{}
+\newblock
+\APACjournalVolNumPages{Comput. Linguist.}{32}{1}{83--135}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Banko%
+\ \BBA{} Etzioni%
+}{%
+Banko%
+\ \BBA{} Etzioni%
+}{%
+{\protect\APACyear{2008}}%
+}]{%
+Banko:2008}%
+\APACinsertmetastar{%
+Banko:2008}%
+Banko, M.%
+\BCBT{}\ \BBA{} Etzioni, O.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{The {T}radeoffs {B}etween {O}pen and {T}raditional
+  {R}elation {E}xtraction}{The {T}radeoffs {B}etween {O}pen and {T}raditional
+  {R}elation {E}xtraction}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of {ACL} {H}uman {L}anguage {T}echnology
+  ({HLT} 2008)}{Proceedings of {ACL} {H}uman {L}anguage {T}echnology ({HLT}
+  2008)}\ (\BPGS\ 23--36).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Berland%
+\ \BBA{} Charniak%
+}{%
+Berland%
+\ \BBA{} Charniak%
+}{%
+{\protect\APACyear{1999}}%
+}]{%
+Berland:1999}%
+\APACinsertmetastar{%
+Berland:1999}%
+Berland, M.%
+\BCBT{}\ \BBA{} Charniak, E.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Finding parts in very large corpora}{Finding parts in
+  very large corpora}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of the 37th annual meeting of the
+  {A}ssociation for {C}omputational {L}inguistics on {C}omputational
+  {L}inguistics}{Proceedings of the 37th annual meeting of the {A}ssociation
+  for {C}omputational {L}inguistics on {C}omputational {L}inguistics}\ (\BPGS\
+  57--64).
+\newblock
+\APACaddressPublisher{Morristown, NJ, USA}{Association for Computational
+  Linguistics}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Cheng%
+, Cua%
+, Tan%
+\BCBL{}\ \BBA{} Yao%
+}{%
+Cheng%
+\ \protect\BOthers{.}}{%
+{\protect\APACyear{2008}}%
+}]{%
+Cheng:2008}%
+\APACinsertmetastar{%
+Cheng:2008}%
+Cheng, T.%
+, Cua, J.%
+, Tan, M.%
+\BCBL{}\ \BBA{} Yao, K.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+\APACrefbtitle{Information {E}xtraction for {L}egal {D}ocuments.}{Information
+  {E}xtraction for {L}egal {D}ocuments.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Damay%
+, Lojico%
+, Lu%
+, Tarantan%
+\BCBL{}\ \BBA{} Ong%
+}{%
+Damay%
+\ \protect\BOthers{.}}{%
+{\protect\APACyear{2007}}%
+}]{%
+Damay:2007}%
+\APACinsertmetastar{%
+Damay:2007}%
+Damay, J.%
+, Lojico, G.%
+, Lu, K.%
+, Tarantan, R.%
+\BCBL{}\ \BBA{} Ong, E.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Simplifying {T}ext in {M}edical {L}iterature}{Simplifying
+  {T}ext in {M}edical {L}iterature}.\BBCQ{}
+\newblock
+\APACjournalVolNumPages{Journal of {R}esearch in {S}cience, {C}omputing, and
+  {E}ngineering}{}{}{37--48}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Fillmore%
+, Baker%
+\BCBL{}\ \BBA{} Lowe%
+}{%
+Fillmore%
+\ \protect\BOthers{.}}{%
+{\protect\APACyear{1998}}%
+}]{%
+Fillmore:1998}%
+\APACinsertmetastar{%
+Fillmore:1998}%
+Fillmore, C.%
+, Baker, C.%
+\BCBL{}\ \BBA{} Lowe, J.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1998}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{The {B}erkeley {F}rameNet {P}roject}{The {B}erkeley
+  {F}ramenet {P}roject}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of the 17th international conference on
+  {C}omputational linguistics}{Proceedings of the 17th international conference
+  on {C}omputational linguistics}\ (\BPGS\ 86--90).
+\newblock
+\APACaddressPublisher{Morristown, NJ, USA}{Association for Computational
+  Linguistics}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Gruber%
+}{%
+Gruber%
+}{%
+{\protect\APACyear{2008}}%
+}]{%
+Gruber:2008}%
+\APACinsertmetastar{%
+Gruber:2008}%
+Gruber, T.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Ontology}{Ontology}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Encyclopedia of {D}atabase {S}ystems.}{Encyclopedia of
+  {D}atabase {S}ystems.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Hearst%
+}{%
+Hearst%
+}{%
+{\protect\APACyear{1992}}%
+}]{%
+Hearst:1992}%
+\APACinsertmetastar{%
+Hearst:1992}%
+Hearst, M.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1992}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Automatic {A}cquisition of {H}yponyms from {L}arge {T}ext
+  {C}orpora}{Automatic {A}cquisition of {H}yponyms from {L}arge {T}ext
+  {C}orpora}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of the 14th {I}nternational {C}onference on
+  {C}omputational {L}inguistics}{Proceedings of the 14th {I}nternational
+  {C}onference on {C}omputational {L}inguistics}\ (\BPGS\ 539--545).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Hendrickx%
+\ \protect\BOthers{.}}{%
+Hendrickx%
+\ \protect\BOthers{.}}{%
+{\protect\APACyear{2009}}%
+}]{%
+Hendrickx:2009}%
+\APACinsertmetastar{%
+Hendrickx:2009}%
+Hendrickx, I.%
+, Kim, S\BPBI N.%
+, Kozareva, Z.%
+, Nakov, P.%
+, Seaghdha, D.%
+, Pado, S.%
+\BCBL{}\ \BOthersPeriod{.}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Sem{E}val-2010 {T}ask 8: {M}ulti-{W}ay {C}lassification
+  of {S}emantic {R}elations {B}etween {P}airs of {N}ominals}{Sem{E}val-2010
+  {T}ask 8: {M}ulti-{W}ay {C}lassification of {S}emantic {R}elations {B}etween
+  {P}airs of {N}ominals}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of the {W}orkshop on {S}emantic
+  {E}valuations: {R}ecent {A}chievements and {F}uture {D}irections
+  ({SEW}-2009), in conjunction with {NAACL-HLT} 2009}{Proceedings of the
+  {W}orkshop on {S}emantic {E}valuations: {R}ecent {A}chievements and {F}uture
+  {D}irections ({SEW}-2009), in conjunction with {NAACL-HLT} 2009}\ (\BPGS\
+  94--99).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Hong%
+\ \BBA{} Ong%
+}{%
+Hong%
+\ \BBA{} Ong%
+}{%
+{\protect\APACyear{2009}}%
+}]{%
+Hong:2009}%
+\APACinsertmetastar{%
+Hong:2009}%
+Hong, B.%
+\BCBT{}\ \BBA{} Ong, E.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Automatically {E}xtracting {W}ord {R}elationships as
+  {T}emplates for {P}un {G}eneration}{Automatically {E}xtracting {W}ord
+  {R}elationships as {T}emplates for {P}un {G}eneration}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of the {NAACL} {H}uman {L}anguage
+  {T}echnology 2009 {W}orkshop on {C}omputational {A}pproaches to {L}inguistic
+  {C}reativity}{Proceedings of the {NAACL} {H}uman {L}anguage {T}echnology 2009
+  {W}orkshop on {C}omputational {A}pproaches to {L}inguistic {C}reativity}\
+  (\BPGS\ 24--31).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Kipper%
+, Dang%
+\BCBL{}\ \BBA{} Palmer%
+}{%
+Kipper%
+\ \protect\BOthers{.}}{%
+{\protect\APACyear{2000}}%
+}]{%
+Kipper:2000}%
+\APACinsertmetastar{%
+Kipper:2000}%
+Kipper, K.%
+, Dang, H\BPBI T.%
+\BCBL{}\ \BBA{} Palmer, M.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Class-based construction of a verb lexicon}{Class-based
+  construction of a verb lexicon}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of {S}eventeenth {N}ational {C}onference on
+  {A}rtificial {I}ntelligence {AAAI} 2000.}{Proceedings of {S}eventeenth
+  {N}ational {C}onference on {A}rtificial {I}ntelligence {AAAI} 2000.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Knott%
+\ \BBA{} Dale%
+}{%
+Knott%
+\ \BBA{} Dale%
+}{%
+{\protect\APACyear{1994}}%
+}]{%
+Knott:1994}%
+\APACinsertmetastar{%
+Knott:1994}%
+Knott, A.%
+\BCBT{}\ \BBA{} Dale, R.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1994}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Using {L}inguistic {P}henomena to {M}otivate a {S}et of
+  {R}hetorical {R}elations}{Using {L}inguistic {P}henomena to {M}otivate a
+  {S}et of {R}hetorical {R}elations}.\BBCQ{}
+\newblock
+\APACjournalVolNumPages{Discourse Processes}{}{}{35--62}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Lester%
+, Rowe%
+\BCBL{}\ \BBA{} McQuiggan%
+}{%
+Lester%
+\ \protect\BOthers{.}}{%
+{\protect\APACyear{2007}}%
+}]{%
+Lester:2007}%
+\APACinsertmetastar{%
+Lester:2007}%
+Lester, J.%
+, Rowe, J.%
+\BCBL{}\ \BBA{} McQuiggan, S.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Narrative {P}resence in {I}ntelligent {L}earning
+  {E}nvironments}{Narrative {P}resence in {I}ntelligent {L}earning
+  {E}nvironments}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Association for the {A}dvancement of {A}rtificial
+  {I}ntelligence {S}ymposium on {I}ntelligent {N}arrative {T}echnologies
+  2007}{Association for the {A}dvancement of {A}rtificial {I}ntelligence
+  {S}ymposium on {I}ntelligent {N}arrative {T}echnologies 2007}\ (\BPGS\
+  126--133).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Liu%
+\ \BBA{} Singh%
+}{%
+Liu%
+\ \BBA{} Singh%
+}{%
+{\protect\APACyear{2004}}%
+{\protect\APACexlab{{\protect\BCnt{1}}}}}]{%
+Liu:2004a}%
+\APACinsertmetastar{%
+Liu:2004a}%
+Liu, H.%
+\BCBT{}\ \BBA{} Singh, P.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004{\protect\BCnt{1}}}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Commonsense {R}easoning in and over {N}atural
+  {L}anguage}{Commonsense {R}easoning in and over {N}atural {L}anguage}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of the 8th {I}nternational {C}onference on
+  {K}nowledge-{B}ased {I}ntelligent {I}nformation and {E}ngineering
+  {S}ystems}{Proceedings of the 8th {I}nternational {C}onference on
+  {K}nowledge-{B}ased {I}ntelligent {I}nformation and {E}ngineering {S}ystems}\
+  (\BPGS\ 293--306).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Liu%
+\ \BBA{} Singh%
+}{%
+Liu%
+\ \BBA{} Singh%
+}{%
+{\protect\APACyear{2004}}%
+{\protect\APACexlab{{\protect\BCnt{2}}}}}]{%
+Liu:2004b}%
+\APACinsertmetastar{%
+Liu:2004b}%
+Liu, H.%
+\BCBT{}\ \BBA{} Singh, P.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004{\protect\BCnt{2}}}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{ConceptNet -- {A} {P}ractical {C}ommonsense {R}easoning
+  {T}ool-{K}it}{Conceptnet -- {A} {P}ractical {C}ommonsense {R}easoning
+  {T}ool-{K}it}.\BBCQ{}
+\newblock
+\APACjournalVolNumPages{{BT} Technology Journal}{}{}{211--226}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Mann%
+\ \BBA{} Thompson%
+}{%
+Mann%
+\ \BBA{} Thompson%
+}{%
+{\protect\APACyear{1987}}%
+}]{%
+Mann:1987}%
+\APACinsertmetastar{%
+Mann:1987}%
+Mann, W.%
+\BCBT{}\ \BBA{} Thompson, S.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1987}{}{}.
+\newblock
+\APACrefbtitle{Rhetorical {S}tructure {T}heory: {A} {T}heory of {T}ext
+  {O}rganization}{Rhetorical {S}tructure {T}heory: {A} {T}heory of {T}ext
+  {O}rganization}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{University of Southern California, Marina Del Rey,
+  Information Sciences Institute}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Mateas%
+\ \BBA{} Stern%
+}{%
+Mateas%
+\ \BBA{} Stern%
+}{%
+{\protect\APACyear{2003}}%
+}]{%
+Mateas:2003}%
+\APACinsertmetastar{%
+Mateas:2003}%
+Mateas, M.%
+\BCBT{}\ \BBA{} Stern, A.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Façade: {A}n {E}xperiment in {B}uilding a
+  {F}ully-{R}ealized {I}nteractive {D}rama}{Façade: {A}n {E}xperiment in
+  {B}uilding a {F}ully-{R}ealized {I}nteractive {D}rama}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Game {D}evelopers {C}onference, {G}ame {D}esign
+  {t}rack.}{Game {D}evelopers {C}onference, {G}ame {D}esign {t}rack.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Moldovan%
+, Badulescu%
+, Tatu%
+, Antohe%
+\BCBL{}\ \BBA{} Girju%
+}{%
+Moldovan%
+\ \protect\BOthers{.}}{%
+{\protect\APACyear{2004}}%
+}]{%
+Moldovan:2004}%
+\APACinsertmetastar{%
+Moldovan:2004}%
+Moldovan, D.%
+, Badulescu, A.%
+, Tatu, M.%
+, Antohe, D.%
+\BCBL{}\ \BBA{} Girju, R.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Models for the semantic classification of noun
+  phrases}{Models for the semantic classification of noun phrases}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of the {C}omputational {L}exical {S}emantics
+  {W}orkshop at {HLT-NAACL} 2004}{Proceedings of the {C}omputational {L}exical
+  {S}emantics {W}orkshop at {HLT-NAACL} 2004}\ (\BPGS\ 60--67).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Montfort%
+}{%
+Montfort%
+}{%
+{\protect\APACyear{2009}}%
+}]{%
+Montfort:2009}%
+\APACinsertmetastar{%
+Montfort:2009}%
+Montfort, N.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Curveship: {A}n {I}nteractive {F}iction {S}ystem for
+  {I}nteractive {N}arrating}{Curveship: {A}n {I}nteractive {F}iction {S}ystem
+  for {I}nteractive {N}arrating}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of the {NAACL} {H}uman {L}anguage
+  {T}echnology 2009 {W}orkshop on {C}omputational {A}pproaches to {L}inguistic
+  {C}reativity}{Proceedings of the {NAACL} {H}uman {L}anguage {T}echnology 2009
+  {W}orkshop on {C}omputational {A}pproaches to {L}inguistic {C}reativity}\
+  (\BPGS\ 55--62).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Mueller%
+}{%
+Mueller%
+}{%
+{\protect\APACyear{1999}}%
+}]{%
+Mueller:1999}%
+\APACinsertmetastar{%
+Mueller:1999}%
+Mueller, E.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Prospects for {I}n-{D}epth {S}tory {U}nderstanding by
+  {C}omputer}{Prospects for {I}n-{D}epth {S}tory {U}nderstanding by
+  {C}omputer}.\BBCQ{}
+\newblock
+\APACjournalVolNumPages{Journal of Cognitive Systems Research}{}{}{307--340}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Mueller%
+}{%
+Mueller%
+}{%
+{\protect\APACyear{2003}}%
+}]{%
+Mueller:2003}%
+\APACinsertmetastar{%
+Mueller:2003}%
+Mueller, E.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Story {U}nderstanding through {M}ulti-{R}epresentation
+  {M}odel}{Story {U}nderstanding through {M}ulti-{R}epresentation
+  {M}odel}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of the {HLT-NAACL} 2003 {W}orkshop on {T}ext
+  {M}eaning}{Proceedings of the {HLT-NAACL} 2003 {W}orkshop on {T}ext
+  {M}eaning}\ (\BPGS\ 46--53).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Mueller%
+}{%
+Mueller%
+}{%
+{\protect\APACyear{2007}}%
+}]{%
+Mueller:2007}%
+\APACinsertmetastar{%
+Mueller:2007}%
+Mueller, E.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Modelling {S}pace and {T}ime in {N}arratives about
+  {R}estaurants}{Modelling {S}pace and {T}ime in {N}arratives about
+  {R}estaurants}.\BBCQ{}
+\newblock
+\APACjournalVolNumPages{Literary and Linguistic Computing}{}{}{67--84}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Muslea%
+}{%
+Muslea%
+}{%
+{\protect\APACyear{1999}}%
+}]{%
+Muslea:1999}%
+\APACinsertmetastar{%
+Muslea:1999}%
+Muslea, I.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Extraction {P}atterns for {I}nformation {E}xtraction
+  {T}asks: {A} {S}urvey}{Extraction {P}atterns for {I}nformation {E}xtraction
+  {T}asks: {A} {S}urvey}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings {AAAI}-99 {W}orkshop on {M}achine {L}earning
+  for {I}nformation {E}xtraction}{Proceedings {AAAI}-99 {W}orkshop on {M}achine
+  {L}earning for {I}nformation {E}xtraction}\ (\BPGS\ 46--53).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Nakasone%
+\ \BBA{} Ishizuka%
+}{%
+Nakasone%
+\ \BBA{} Ishizuka%
+}{%
+{\protect\APACyear{2006}}%
+}]{%
+Nakasone:2006}%
+\APACinsertmetastar{%
+Nakasone:2006}%
+Nakasone, A.%
+\BCBT{}\ \BBA{} Ishizuka, M.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Storytelling {O}ntology {M}odel {U}sing
+  {RST}}{Storytelling {O}ntology {M}odel {U}sing {RST}}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of {IEEE/WIC/ACM} {I}nternational
+  {C}onference on {I}ntelligent {A}gent {T}echnology ({IAT} 2006)}{Proceedings
+  of {IEEE/WIC/ACM} {I}nternational {C}onference on {I}ntelligent {A}gent
+  {T}echnology ({IAT} 2006)}\ (\BPGS\ 163--169).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Nastase%
+\ \BBA{} Szpakowicz%
+}{%
+Nastase%
+\ \BBA{} Szpakowicz%
+}{%
+{\protect\APACyear{2003}}%
+}]{%
+Nastase:2003}%
+\APACinsertmetastar{%
+Nastase:2003}%
+Nastase, V.%
+\BCBT{}\ \BBA{} Szpakowicz, S.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Exploring noun-modifier semantic relations}{Exploring
+  noun-modifier semantic relations}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Fifth {I}nternational {W}orkshop on {C}omputational
+  {S}emantics ({IWCS}-5)}{Fifth {I}nternational {W}orkshop on {C}omputational
+  {S}emantics ({IWCS}-5)}\ (\BPGS\ 285--301).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Niles%
+\ \BBA{} Pease%
+}{%
+Niles%
+\ \BBA{} Pease%
+}{%
+{\protect\APACyear{2001}}%
+}]{%
+Niles:2001}%
+\APACinsertmetastar{%
+Niles:2001}%
+Niles, I.%
+\BCBT{}\ \BBA{} Pease, A.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Towards a {S}tandard {U}pper {O}ntology}{Towards a
+  {S}tandard {U}pper {O}ntology}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of the {I}nternational {C}onference on
+  {F}ormal {O}ntology in {I}nformation {S}ystems}{Proceedings of the
+  {I}nternational {C}onference on {F}ormal {O}ntology in {I}nformation
+  {S}ystems}\ (\BPGS\ 2--9).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Riedl%
+\ \BBA{} Young%
+}{%
+Riedl%
+\ \BBA{} Young%
+}{%
+{\protect\APACyear{2004}}%
+}]{%
+Riedl:2004}%
+\APACinsertmetastar{%
+Riedl:2004}%
+Riedl, M.%
+\BCBT{}\ \BBA{} Young, R\BPBI M.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{A {P}lanning {A}pproach to {S}tory {G}eneration for
+  {H}istory {E}ducation}{A {P}lanning {A}pproach to {S}tory {G}eneration for
+  {H}istory {E}ducation}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of the 3rd {I}nternational {C}onference on
+  {N}arrative and {I}nteractive {L}earning {E}nvironments.}{Proceedings of the
+  3rd {I}nternational {C}onference on {N}arrative and {I}nteractive {L}earning
+  {E}nvironments.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Rosario%
+\ \BBA{} Hearst%
+}{%
+Rosario%
+\ \BBA{} Hearst%
+}{%
+{\protect\APACyear{2001}}%
+}]{%
+Rosario:2001}%
+\APACinsertmetastar{%
+Rosario:2001}%
+Rosario, B.%
+\BCBT{}\ \BBA{} Hearst, M.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Classifying the semantic relations in noun-compounds via
+  a domain-specific lexical hierarchy}{Classifying the semantic relations in
+  noun-compounds via a domain-specific lexical hierarchy}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of the 2001 {C}onference on {E}mpirical
+  {M}ethods in {N}atural {L}anguage {P}rocessing ({EMNLP}-01)}{Proceedings of
+  the 2001 {C}onference on {E}mpirical {M}ethods in {N}atural {L}anguage
+  {P}rocessing ({EMNLP}-01)}\ (\BPGS\ 82--90).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Rosario%
+, Hearst%
+\BCBL{}\ \BBA{} Fillmore%
+}{%
+Rosario%
+\ \protect\BOthers{.}}{%
+{\protect\APACyear{2002}}%
+}]{%
+Rosario:2002}%
+\APACinsertmetastar{%
+Rosario:2002}%
+Rosario, B.%
+, Hearst, M.%
+\BCBL{}\ \BBA{} Fillmore, C.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2002}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{The descent of hierarchy, and selection in relational
+  semantics}{The descent of hierarchy, and selection in relational
+  semantics}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of the 40th {A}nnual {M}eeting of the
+  {A}ssociation for {C}omputational {L}inguistics ({ACL}-02)}{Proceedings of
+  the 40th {A}nnual {M}eeting of the {A}ssociation for {C}omputational
+  {L}inguistics ({ACL}-02)}\ (\BPGS\ 417--424).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Singh%
+\ \protect\BOthers{.}}{%
+Singh%
+\ \protect\BOthers{.}}{%
+{\protect\APACyear{2002}}%
+}]{%
+Singh:2002}%
+\APACinsertmetastar{%
+Singh:2002}%
+Singh, P.%
+, Lin, T.%
+, Mueller, E.%
+, Lim, G.%
+, Perkins, T.%
+\BCBL{}\ \BBA{} Zhu, W\BPBI L.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2002}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Open {M}ind {C}ommon {S}ense: {K}nowledge {A}cquisition
+  from the {G}eneral {P}ublic}{Open {M}ind {C}ommon {S}ense: {K}nowledge
+  {A}cquisition from the {G}eneral {P}ublic}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{ODBASE’02.}{Odbase’02.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Solis%
+, Siy%
+, Tabirao%
+\BCBL{}\ \BBA{} Ong%
+}{%
+Solis%
+\ \protect\BOthers{.}}{%
+{\protect\APACyear{2009}}%
+}]{%
+Solis:2009}%
+\APACinsertmetastar{%
+Solis:2009}%
+Solis, C.%
+, Siy, J\BPBI T.%
+, Tabirao, E.%
+\BCBL{}\ \BBA{} Ong, E.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Planning {A}uthor and {C}haracter {G}oals for {S}tory
+  {G}eneration}{Planning {A}uthor and {C}haracter {G}oals for {S}tory
+  {G}eneration}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of the {NAACL} {H}uman {L}anguage
+  {T}echnology 2009 {W}orkshop on {C}omputational {A}pproaches to {L}inguistic
+  {C}reativity.}{Proceedings of the {NAACL} {H}uman {L}anguage {T}echnology
+  2009 {W}orkshop on {C}omputational {A}pproaches to {L}inguistic
+  {C}reativity.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Yates%
+\ \protect\BOthers{.}}{%
+Yates%
+\ \protect\BOthers{.}}{%
+{\protect\APACyear{2007}}%
+}]{%
+Banko:2007}%
+\APACinsertmetastar{%
+Banko:2007}%
+Yates, A.%
+, Cafarella, M.%
+, Banko, M.%
+, Etzioni, O.%
+, Broadhead, M.%
+\BCBL{}\ \BBA{} Soderland, S.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{TextRunner: {O}pen information extraction on the
+  web}{Textrunner: {O}pen information extraction on the web}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{{NAACL} '07: {P}roceedings of {H}uman {L}anguage
+  {T}echnologies: {T}he {A}nnual {C}onference of the {N}orth {A}merican
+  {C}hapter of the {A}ssociation for {C}omputational {L}inguistics:
+  {D}emonstrations on {XX}}{{NAACL} '07: {P}roceedings of {H}uman {L}anguage
+  {T}echnologies: {T}he {A}nnual {C}onference of the {N}orth {A}merican
+  {C}hapter of the {A}ssociation for {C}omputational {L}inguistics:
+  {D}emonstrations on {XX}}\ (\BPGS\ 25--26).
+\newblock
+\APACaddressPublisher{Morristown, NJ, USA}{Association for Computational
+  Linguistics}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Young%
+}{%
+Young%
+}{%
+{\protect\APACyear{2008}}%
+}]{%
+Young:2008}%
+\APACinsertmetastar{%
+Young:2008}%
+Young, R\BPBI M.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Computational {C}reativity in {N}arrative {G}eneration:
+  {U}tility and {N}ovelty {B}ased on {M}odels on {S}tory
+  {C}omprehension}{Computational {C}reativity in {N}arrative {G}eneration:
+  {U}tility and {N}ovelty {B}ased on {M}odels on {S}tory
+  {C}omprehension}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of the {A}ssociation for the {A}dvancement of
+  {A}rtificial {I}ntelligence 2008 {S}print {S}ymposium.}{Proceedings of the
+  {A}ssociation for the {A}dvancement of {A}rtificial {I}ntelligence 2008
+  {S}print {S}ymposium.}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

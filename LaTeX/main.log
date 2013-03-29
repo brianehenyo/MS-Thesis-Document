@@ -1,0 +1,446 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.1.19)  4 AUG 2010 15:52
+entering extended mode
+**main
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\main.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
+\@input{preamble.aux}
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\preamble.tex
+("C:\Program Files\MiKTeX 2.8\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.8\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\apacite.sty
+Package: apacite 2007/09/03 v4.00 APA citation
+\c@BibCnt=\count87
+\bibleftmargin=\skip43
+\bibindent=\skip44
+\bibparsep=\skip45
+\bibitemsep=\skip46
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip47
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+\Gread@gobject=\count100
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\tools\verbatim.sty"
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks20
+\verbatim@line=\toks21
+\verbatim@in@stream=\read1
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+("C:\Program Files\MiKTeX 2.8\tex\generic\babel\babel.sty"
+Package: babel 2008/07/06 v3.8l The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files\MiKTeX 2.8\tex\generic\babel\english.ldf"
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+("C:\Program Files\MiKTeX 2.8\tex\generic\babel\babel.def"
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count101
+\U@D=\dimen114
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+("C:\Program Files\MiKTeX 2.8\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen115
+))
+
+LaTeX Warning: Unused global option(s):
+    [onepage].
+
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\main.aux
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\title_page.aux)
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\abstract.aux)
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\chapter_1.aux)
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\chapter_2.aux)
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\chapter_3.aux)
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\appendix_A.aux)
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\appendix_B.aux)
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\appendix_D.aux)
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\appendix_C.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\apacite\english.apc"
+File: english.apc 2009/03/01 v4.05 apacite language file
+LaTeX Info: Redefining \BPBI on input line 119.
+LaTeX Info: Redefining \BHBI on input line 120.
+
+
+! LaTeX Error: \PrintOrdinal undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 \renewcommand{\PrintOrdinal}
+                                  [1]{%
+? 
+NOT AUSTRALIAN!!!
+) ("C:\Program Files\MiKTeX 2.8\tex\context\base\supp-pdf.tex"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count102
+\scratchdimen=\dimen116
+\scratchbox=\box28
+\nofMPsegments=\count103
+\nofMParguments=\count104
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count105
+\MPscratchDim=\dimen117
+\MPnumerator=\count106
+\everyMPtoPDFconversion=\toks23
+) (C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\title_page.tex [1
+
+
+
+
+{C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map}])
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\abstract.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 15.
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 15.
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [1
+
+
+])
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\main.toc [2
+
+])
+\tf@toc=\write3
+ [3]
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\main.lof)
+\tf@lof=\write4
+ [4]
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\main.lot)
+\tf@lot=\write5
+ [5]
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\chapter_1.tex [1
+
+] [2]
+Missing character: There is no … in font cmti12!
+ [3]
+[4]
+Overfull \hbox (7.69173pt too wide) in paragraph at lines 94--95
+\OT1/cmr/m/n/12 in-stances of it namely, MadeOf(cake, flour), MadeOf(cake, suga
+r) and MadeOf(cake,
+ []
+
+[5]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 109.
+
+ ("C:\Program Files\MiKTeX 2.8\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 109.
+ [6]
+Missing character: There is no ç in font cmr12!
+ [7]) [8]
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\chapter_2.tex [9
+
+
+] [10] [11]
+[12]
+Missing character: There is no ï in font cmr12!
+ [13] [14] [15] [16] [17]) [18]
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\chapter_3.tex [19
+
+
+] [20])
+[21] (C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\appendix_A.tex
+Overfull \hbox (4.12442pt too wide) in paragraph at lines 43--43
+[]\OT1/cmr/m/n/12 ConceptNet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
+[]\OT1/cmr/m/n/12 Question an-
+ []
+
+
+Underfull \hbox (badness 7451) in paragraph at lines 44--44
+[]\OT1/cmr/m/n/12 What kind of
+ []
+
+
+Overfull \hbox (1.35223pt too wide) in paragraph at lines 48--48
+[]\OT1/cmr/m/n/12 PropertyOf| 
+ []
+
+
+Overfull \hbox (0.69946pt too wide) in paragraph at lines 60--60
+[]\OT1/cmr/m/n/12 LocationOf| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]\OT1/cmr/m/n/12 Where would
+ []
+
+
+Overfull \hbox (18.78607pt too wide) in paragraph at lines 42--69
+ [][] 
+ []
+
+[22
+
+
+] [23]
+Overfull \hbox (3.78087pt too wide) in paragraph at lines 84--85
+[]\OT1/cmr/bx/it/12 ConceptuallyRelatedTo\OT1/cmr/m/n/12 (break,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+[]\OT1/cmr/bx/it/12 EffectOf\OT1/cmr/m/n/12 (break ob-ject, be
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+[]\OT1/cmr/bx/it/12 LastSubeventOf\OT1/cmr/m/n/12 (grounded,
+ []
+
+[24]
+Overfull \hbox (5.90286pt too wide) in paragraph at lines 132--133
+\OT1/cmr/m/n/12 ConceptNet []Liu & Singh, 2004b) is a large-scale com-mon sense
+ know-ledge database
+ []
+
+[25] [26]
+Underfull \hbox (badness 2020) in paragraph at lines 172--172
+[]\OT1/cmr/m/n/12 The ef-fect of $[]$ is
+ []
+
+
+Overfull \hbox (0.40948pt too wide) in paragraph at lines 191--192
+[]\OT1/cmr/m/n/12 Part-of-speech tags may also be uti-lized to iden-tify phrase
+s and its con-stituents.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+[]\OT1/cmr/m/n/12 Explicit ex-trac-tion pat-tern:
+ []
+
+[27] [28]
+Overfull \hbox (10.21335pt too wide) in paragraph at lines 251--258
+ [][] 
+ []
+
+) [29] [30] (C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\appendix_B.tex
+<archidesign.jpg, id=122, 219.06844pt x 318.43968pt>
+File: archidesign.jpg Graphic file (type jpg)
+ <use archidesign.jpg>
+[31
+
+
+ <C:/Users/Briane/Documents/COURSES/THESIS/LaTeX/archidesign.jpg>]) [32]
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\appendix_D.tex
+Underfull \hbox (badness 10000) in paragraph at lines 14--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--41
+
+ []
+
+[33
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 44--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--71
+
+ []
+
+[34]) [35] (C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\appendix_C.tex
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+) [36
+
+
+] (C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\main.bbl [37
+
+]
+Missing character: There is no ç in font cmr12!
+ [38]
+Missing character: There is no ’ in font cmti12!
+)
+[39] (C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\main.aux
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\title_page.aux)
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\abstract.aux)
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\chapter_1.aux)
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\chapter_2.aux)
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\chapter_3.aux)
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\appendix_A.aux)
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\appendix_B.aux)
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\appendix_D.aux)
+(C:\Users\Briane\Documents\COURSES\THESIS\LaTeX\appendix_C.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2826 strings out of 495285
+ 38188 string characters out of 3180391
+ 106434 words of memory out of 3000000
+ 5923 multiletter control sequences out of 15000+200000
+ 10979 words of font info for 41 fonts, out of 3000000 for 9000
+ 16 hyphenation exceptions out of 8191
+ 31i,13n,29p,1760b,259s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program 
+Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/M
+iKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.
+8/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.8/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/pub
+lic/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsf
+onts/cm/cmtt12.pfb>
+Output written on main.pdf (45 pages, 234781 bytes).
+PDF statistics:
+ 181 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,135 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Filename    : chapter_1.tex 
+%
+%   Description : This file will contain your Research Description.
+%                 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\Section{Research Description}
+\label{sec:researchdesc}    %--note: labels help you with hyperlink editing (using your IDE)
+
+This chapter discusses an overview of the current state of technology, the research objectives, scope and limitations, and its significance.
+
+\subsection{Overview of the Current State of Technology}
+\label{sec:overview}
+
+Natural language processing systems use a set of knowledge base in order to do tasks such as text generation. But simple lexicons and large unstructured corpora may be insufficient as knowledge base of these systems. Storytelling, for instance, is a natural task for humans. Armed with a library of words, their meanings and their relationships, we combine words and events to tell stories about ourselves, our community, and our experiences. Thus computers must be provided with the same shared collection of common sense knowledge about the basic relationships between things and events that nearly every person knows in order for them to achieve a level of expressiveness same as humans and be able to understand the world that we talk about. Such knowledge are represented as conceptual relations defining the relationship between two or more concepts in real life.
+
+Recent creative text generation systems such as \cite{Hong:2009} have utilized a semantic network representation of concepts on common sense knowledge to identify relationships of words in human puns in order to generate computer puns. Another system, Picture Books \cite{Solis:2009}, generates stories with morals for children ages 4 to 6, by using a semantic ontology, patterned after ConceptNet \cite{Liu:2004a}, containing conceptual knowledge about objects, activities, and their relationships in a child's daily life. The process of building and populating the Picture Books ontology required a lot of manual effort on the part of the proponents. Currently, the ontology contains 240 concepts and 369 relations, which were populated based on the themes that have been identified as relevant for the target age group.
+
+Early Information Extraction (IE) systems have addressed the extraction of information from relatively small collections of well-structured documents such as newswire or scientific publications \cite{Muslea:1999}. More recently, IE systems are focused on extracting facts from structured and unstructured documents for a particular domain, such as legal documents \cite{Cheng:2008}.
+
+Although IE systems are capable of recognizing entities within documents (e.g. `Renoir' is a `Person', `25 Feb 1841' is a `Date'), the relation between the entities (e.g., `Renoir' was born on `25 Feb 1841') is not extracted, thus generating incomplete information that may be needed by certain applications \cite{Banko:2008}. A variant of IE, Relation Extraction (RE), is the task of recognizing the assertion of a particular relationship between two or more entities in text.
+
+The task of relation extraction is difficult, but relations such as hypernymy (IsA) and meronymy (PartOf) are often expressed using a small number of lexico-syntactic patterns \cite{Hearst:1992}. Using a sample set of 500 sentences selected at random from an IE training corpus, \citeA{Banko:2008} showed that many binary relationships are also consistently expressed using a compact set of relation-independent lexico-syntactic patterns.
+
+The Artequakt project \cite{Alani:2003} also showed that it is possible to automatically acquire such relations from documents to populate an ontology. Working in the domain of artists, the Artequakt project identifies relations between entities of interest within sentences, following ontology relation declarations and lexical information. These relations are then used to populate an ontology with knowledge triples for use in the generation of biographies of artists.
+
+To convey the ideas of a story, \citeA{Nakasone:2006} developed a storytelling ontology model by identifying relations between sentences in the story using the Rhetorical Structure Theory (RST) of \citeA{Mann:1987}. As \citeA{Knott:1994} pointed out, explicit and implicit relations hold between the sentences of a text, so that the content of one sentence might provide justification, elaboration or explanation for the content of another. These relations bind a text together to contribute to the overall comprehension of a story by the readers; for instance, whether understanding one text span (scene of a story) increases the reader's readiness to understand another scene, or whether understanding both spans allows the reader to recognize a particular semantic relation as holding between them. Certain discourse relations or cue phrases, such as ``but", ``so", ``although", ``more precisely" or ``for example", are used to signal explicit relations between text spans.
+
+Although both IE and RE have achieved significant progress in extracting facts and concepts in the domains of newspapers \cite{Muslea:1999}, biographies \cite{Alani:2003}, and legal documents \cite{Cheng:2008}, limited work has been done on children's stories. Furthermore, since stories contain sequences of actions that characters perform or experience at various points in the story world, knowledge about how these events are ordered and the constraints under which they can occur must also be extracted.
+
+\subsection{Research Objectives}
+\label{sec:researchobjectives}
+
+\subsubsection{General Objective}
+\label{sec:generalobjective}
+
+To develop a methodology that automatically identifies and extracts the relations between everyday concepts and objects from children's stories and store them in a semantic network to provide ontological knowledge for Picture Books.
+
+\subsubsection{Specific Objectives}
+\label{sec:specificobjectives}
+
+\begin{enumerate}
+   \item To collect a corpus of children's stories;
+   \item To analyze the English sentence structures in the corpus;
+   \item To derive a set of extraction patterns;
+   \item To develop a representation for modelling relations of every object common in children's stories;
+   \item To design and implement an algorithm for extracting conceptual relations automatically from the corpus, and;
+   \item To validate the resulting conceptual relations extraction tool through integration with Picture Books
+\end{enumerate}
+
+\subsection{Scope and Limitations of the Research}
+\label{sec:scopelimitations}
+
+At least 30 children's stories will be collected to form the input corpus for the extraction tool to be developed. These will then be modified to remove the dialogues. Analysis of the English sentence structures in these stories will be performed to identify the types of relations that are present. This information will be used to derive a set of patterns or templates for extracting conceptual relations. A software extraction tool will be developed to use the extraction patterns to automatically locate instances of a known relation in the corpus.
+
+One relation may be expressed in various ways in text. Consider the hypernymy (IsA) relation, wherein the following sentences are possible ways of expressing it:
+
+	\noindent
+	\hspace{1 in}\emph{The dog is a canine.} \\
+	\hspace*{1 in}\emph{The dog is a kind of canine.} \\
+	\hspace*{1 in}\emph{The dog, a canine, is …} \\
+	\hspace*{1 in}\emph{The dog is a type of canine.}
+
+Although lexico-syntactic extraction patterns mapped directly to relations, certain English sentence constructs require further analysis and decomposition in order to derive their corresponding relations. These include sentence structures containing conjunctions and embedded clauses, as shown in the examples below:
+
+	\noindent
+	\hspace{1 in}\emph{Cake is made of flour, sugar, \underline{and} butter.} \\
+	\hspace*{1 in}\emph{The boy is singing \underline{and} the girl is dancing.} \\
+	\hspace*{1 in}\emph{Anna, \underline{who is the queen}, went to the market, \underline{while} the king went to the mall.}
+
+Text structures in stories may contain rhetorical relations to reflect the semantic relations that may exist between concepts and events in a story. Using the Rhetorical Structure Theory (RST) of \citeA{Mann:1987}, these relations may be identified and extracted to provide additional conceptual knowledge.
+
+Extracted knowledge must be stored in a representation model that can be used by NLP systems, in this case, the Picture Books story generator. Part of the research will involve reviewing the design of the Picture Books ontology, which is patterned after the design of ConceptNet, to validate the presence of the appropriate relations against those identified from the collected corpus.
+
+Since stories are sequences of events, their analysis may necessitate the creation of new relations to represent sequences of events, temporal relations between events, as well as the constraints under which certain events may take place. For example, during testing, evaluators noticed that one of the generated stories of Picture Books occurred at an inappropriate time; specifically, the first segment of the story that introduces the day, the place, and the main character, contained the following text:
+
+	\noindent
+	\hspace{1 in}\emph{The evening was warm. Ellen the elephant was at the school. She went with Mommy Edna to the school.}
+
+Since Picture Books' knowledge base currently does not provide relations about when certain events can occur, the main character went to school in the evening. 
+
+Nineteen (19) new semantic relations, resulting from those identified using RST, from analyzing the sample corpus, and from reviewing other works such as \cite{Mueller:2003} for modeling time and event occurrences, may be created in this research. The main relations, mostly from ConcepNet and Picture Books, include IsA, PropertyOf, PartOf, MadeOf, FirstSubeventOf, EventForGoalEvent, EventForGoalState, EventRequiresObject, EffectOf, EffectOfIsState, CapableOf, OftenNear, LocationOf and, UsedFor. Additional relations include Happens(e, t) which represents that a fluent \emph{f} holds at time \emph{t}, HasRole which represent character roles, RoleResponsibleFor which represent actions/events done by a specific role, TargetOf which represent the direct object of a verb and lastly, Owns which represent ownership. 
+
+\citeA{Alani:2003} noted that it is inevitable for duplicate and contradictory information to be extracted from the input corpus. But he further noted that handling such information is challenging for automatic extraction and ontology population approaches. Thus, this will not be considered in the current proposal.
+
+Co-occurring events and objects are also imminent in extracting relations. Here is a sample sentence exhibiting co-occurring objects:  
+	
+	\noindent
+	\hspace{1 in}\emph{Cake is made of flour, sugar, and butter.}
+	
+If MadeOf relations are to be extracted from this sentence, there will be three instances of it namely,  MadeOf(cake, flour), MadeOf(cake, sugar) and MadeOf(cake, butter). In such cases, Picture Books cannot and will not be able to recreate the sentence above if the three relations will be used. Picture Bokks will make three separate sentences instead. In this research, Picture Books will not be modified anymore to recombine multiple relations to generate a single sentence.
+
+Such is also the case for co-occurring events in Picture Books. Here is an example of a co-occurring event:
+
+	\noindent
+	\hspace*{1 in}\emph{Anna went to the market, while waiting for her ride.}
+	
+In the sentence above, the event \emph{went to the market} happened simultaneously with the event \emph{waiting for her ride}. This research can also recognize co-occurring events but Picture Books cannot replicate the same sentence if two relations containing the two events above will be used. Picture Books will still produce separate sentences for each event relation. Again, Picture Books will not be modified anymore to recombine multiple relations to generate a single sentence.
+
+\citeA{Mueller:1999} also noted that ``story understanding goes beyond generating parse trees, disambiguating words, or filling templates, and includes the ability to answer arbitrary questions, generate paraphrases and summaries, fill arbitrary templates, make inferences, reason about the story, follow reasoning in the story, relate the story to general knowledge, and hypothesize alternative versions of the story." Thus, aside from having a huge collection of common sense knowledge, a computer system must also be able to ``make inferences about states and events not explicitly described in the text" \cite{Mueller:2003}, by performing common sense reasoning using knowledge about the world. This requires a multi-representational model of this knowledge for the various realms of space, time, needs and feelings to be built, and will be beyond the scope of the current proposal.
+
+Manual validation with the help of a linguist may be utilized to check that correct conceptual relations were extracted and stored in the ontology. Automated validation will also be performed by having Picture Books utilize the new knowledge in generating stories.
+
+The following are indicators of a successful validation of the contents of the resulting ontology:
+\begin{itemize}
+	\item Since there will be new relations introduced into Picture Books, its story planner may be modified to use the new relations such as HasRole and RoleResponsibleFor.
+	\item There is a significant increase in the number of story variants that are generated by Picture Books. A story variant can be a story having a theme and ending similar to other stories but with a different plot. This can also be a story with differing number of lines.
+	\item The length of the generated stories for older kids (i.e., 5 to 6-year old users), measured in terms 			of the number of sentences, also increases as additional information, such as new relation types and new relations for the existing types of relation, becomes available. Note that Picture Books currently placed a limit to the maximum number of sentences that will be generated for younger readers.
+	\item The coherency of the generated stories will also increase, as new knowledge improves the narrative 				information presented to the reader. This will be determined with the help of linguists.
+\end{itemize}
+
+\subsection{Significance of the Research}
+\label{sec:significance}
+
+Researches in the field of natural language processing (NLP) seek to find ways to make human-computer interaction more fluent. But human-computer communication is hampered by the lack of a shared collection of common sense knowledge that people rely on when they communicate in order to understand each other. In order to make computers achieve the same level of expressiveness as humans, we must give them ``a common language with richness that more closely approaches that of the human language" \cite{Niles:2001}.
+
+Although dedicated IE systems have been developed to extract information from various domains, this research is a first step towards extracting relations from children's stories. Storytelling is a natural and familiar means of conveying information and experience to listeners \cite{Nakasone:2006}, thus justifying the selection of this domain for the proposed research.
+
+The knowledge base derived from extracting entities, concepts, and events can then be used for various applications. One such application is in story generation. Picture Books can use the knowledge base to generate more variants as well as longer stories. Currently, Picture Books generates stories containing 24 to 30 sentences, which not only vary according to the age of the reader, but is also dependent on the available relations between two concepts. Story generating applications can in turn be used for both educational and entertainment purposes.
+
+In education, \citeA{Riedl:2004} applied narrative generation techniques to generate historical fictions for teaching history, which they defined as ``the chronological record of significant events". \shortciteA{Lester:2007} explored integrating narratives into learning environments that teach microbiology to provide an ``adaptive, effective pedagogy that is both motivating and meaningful".
+
+In entertainment, story generation is applied to develop interactive fiction systems. \citeA{Montfort:2009} defines interactive fiction as ``a venerable thread of creative computing and a literary art". His Curveship project uses NLP techniques to create narratives in the virtual world, where the user directs the possible flow of the story. For his knowledge base, Montfort utilized a tree representation that describes the possible sequences of events and the relationship of events to one another, as well as models of objects in the virtual world. A similar system in the game area, Façade \cite{Mateas:2003} is a 3D interactive drama that makes use of artificial intelligence techniques to allow players to interact with the characters in the story by playing as one of the characters and typing textual commands that affect the flow and the outcome of the game (story). \citeA{Young:2008} is also exploring the development of computational models to generate narratives for 3D virtual game environments, which are being considered as alternative approach to promote learning.
+
+Story understanding system can also benefit from using the knowledge base. Story understanding requires an enormous amount of common sense knowledge, thus the question and answering system of \citeA{Mueller:2007} has a limited scope focusing on modeling the spatial and temporal aspects of narratives involving one or two characters dining in a restaurant. He employed a combined technique using IE to extract key information about dining episodes, and common sense reasoning to build models of the dining episodes. The model is limited to only a single spatial layout consisting of the street, the dining room, and the kitchen, and further work can be done to extract information about the spatial layout from the text, and use this to construct models of room-scale space.
+
+
+
+
+
+
+
