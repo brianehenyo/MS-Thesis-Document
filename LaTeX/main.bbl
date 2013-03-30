@@ -60,6 +60,31 @@ Alani, H.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem[\protect\citeauthoryear{%
+Ang%
+, Antonio%
+, Sanchez%
+\BCBL{}\ \BBA{} Yu%
+}{%
+Ang%
+\ \protect\BOthers{.}}{%
+{\protect\APACyear{2010}}%
+}]{%
+Ang:2010}%
+\APACinsertmetastar{%
+Ang:2010}%
+Ang, K.%
+, Antonio, J.%
+, Sanchez, D.%
+\BCBL{}\ \BBA{} Yu, S.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+\APACrefbtitle{Picture {B}ooks 2.}{Picture {B}ooks 2.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
 Badulescu%
 , Girju%
 \BCBL{}\ \BBA{} Moldovan%
@@ -774,6 +799,31 @@ Niles, I.%
   {F}ormal {O}ntology in {I}nformation {S}ystems}{Proceedings of the
   {I}nternational {C}onference on {F}ormal {O}ntology in {I}nformation
   {S}ystems}\ (\BPGS\ 2--9).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Nodelman%
+}{%
+Nodelman%
+}{%
+{\protect\APACyear{2008}}%
+}]{%
+Nodelman:2008}%
+\APACinsertmetastar{%
+Nodelman:2008}%
+Nodelman, P.%
+%
+\unskip\
+\newblock
+\APACrefYear{2008}.
+\newblock
+\APACrefbtitle{The Hidden Adult: Defining Children's Literature}{The hidden
+  adult: Defining children's literature}.
+\newblock
+\APACaddressPublisher{}{Johns Hopkins University Press}.
+\newblock
+ \begin{APACrefURL} \url{http://books.google.com.ph/books?id=wKosfJZhUwQC}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem[\protect\citeauthoryear{%

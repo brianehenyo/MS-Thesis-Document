@@ -1,12 +1,14 @@
-This is BibTeX, Version 0.99cThe top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: apacite.bst
 A level-1 auxiliary file: title_page.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: chapter_1.aux
 A level-1 auxiliary file: chapter_2.aux
 A level-1 auxiliary file: chapter_3.aux
-A level-1 auxiliary file: appendix_A.aux
-Illegal, another \bibstyle command---line 14 of file main.aux
+A level-1 auxiliary file: appendix_resourceperson.aux
+A level-1 auxiliary file: appendix_personalvitae.aux
+A level-1 auxiliary file: appendix_modifications.aux
+Illegal, another \bibstyle command---line 93 of file main.aux
  : \bibstyle
  :          {apacite}
 I'm skipping whatever remains of this command
@@ -49,6 +51,7 @@ Warning--No publisher in Nastase:2003
 Warning--No address in Nastase:2003
 Warning--No publisher in Niles:2001
 Warning--No address in Niles:2001
+Warning--No address in Nodelman:2008
 Warning--No publisher in Riedl:2004
 Warning--No address in Riedl:2004
 Warning--No publisher in Rosario:2001

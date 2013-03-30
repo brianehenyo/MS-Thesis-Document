@@ -47,7 +47,7 @@ To develop a methodology that automatically identifies and extracts the relation
    \item To analyze the English sentence structures in the corpus;
    \item To derive a set of extraction patterns;
    \item To develop a representation for modelling relations of every object common in children's stories;
-   \item To design and implement an algorithm for extracting conceptual relations automatically from the corpus, and;
+   \item To implement extraction rules using GATE for extracting conceptual relations automatically from the corpus, and;
    \item To validate the resulting conceptual relations extraction tool through integration with Picture Books
 \end{enumerate}
 
@@ -102,7 +102,7 @@ In the sentence above, the event \emph{went to the market} happened simultaneous
 
 \citeA{Mueller:1999} also noted that ``story understanding goes beyond generating parse trees, disambiguating words, or filling templates, and includes the ability to answer arbitrary questions, generate paraphrases and summaries, fill arbitrary templates, make inferences, reason about the story, follow reasoning in the story, relate the story to general knowledge, and hypothesize alternative versions of the story." Thus, aside from having a huge collection of common sense knowledge, a computer system must also be able to ``make inferences about states and events not explicitly described in the text" \cite{Mueller:2003}, by performing common sense reasoning using knowledge about the world. This requires a multi-representational model of this knowledge for the various realms of space, time, needs and feelings to be built, and will be beyond the scope of the current proposal.
 
-Manual validation with the help of a linguist may be utilized to check that correct conceptual relations were extracted and stored in the ontology. Automated validation will also be performed by having Picture Books utilize the new knowledge in generating stories.
+Manual validation with the help of a linguist will not be utilized to check that correct conceptual relations were extracted and stored in the ontology. Automated validation will also be performed by having Picture Books utilize the new knowledge in generating stories.
 
 The following are indicators of a successful validation of the contents of the resulting ontology:
 \begin{itemize}
@@ -127,7 +127,104 @@ In entertainment, story generation is applied to develop interactive fiction sys
 
 Story understanding system can also benefit from using the knowledge base. Story understanding requires an enormous amount of common sense knowledge, thus the question and answering system of \citeA{Mueller:2007} has a limited scope focusing on modeling the spatial and temporal aspects of narratives involving one or two characters dining in a restaurant. He employed a combined technique using IE to extract key information about dining episodes, and common sense reasoning to build models of the dining episodes. The model is limited to only a single spatial layout consisting of the street, the dining room, and the kitchen, and further work can be done to extract information about the spatial layout from the text, and use this to construct models of room-scale space.
 
+\subsection{Research Methodology}
 
+This section discusses the systematic approach that was performed in order to accomplish the objectives of this research. Despite the chronological order of each phase, some were performed in parallel while some were backtracked to address some issues. Documentation and regular consultations with the adviser and work group members were done throughout the course of the research.
+
+\subsubsection{Requirements Analysis}
+
+After an extensive analysis of existing relevant implementations and literature, the researcher first identified the different conceptual/semantic relations that can be applied to the children's story domain. Then, redundancies in the existing relations of Picture Books was noted. Afterwards, an open-source tool was identified to aid in the extraction of relations. Lastly, en evaluation criteria was identified to validate the resulting ontology.
+
+\subsubsection{Data Gathering}
+
+During this stage, the children's story corpus consisting of 30 physical copies of children's stories were gathered and digitally encoded. Modifications were done, such as transforming dialogues into declarative sentences, to address a different scenario. Please see Appendix C for a sample of this modification. Lastly, the extraction templates were aligned with ConceptNet, while some were created based on sentence structures in the gathered children's stories.
+
+\subsubsection{Architectural Design}
+
+In this stage, the different components of the open-source tool were identified to enable a thorough and complete extraction. This includes a part-of-speech tagger, named-entity identifier, and gazetteer, among others. Other resources to be utilized were also be identified. Furthermore, the data structures which will represent the semantic relations in Picture Books will also be analyzed and designed. 
+
+\subsubsection{Implementation}
+
+The final selection of the open-source tool components and their respective customizations were done at this stage. The primary focus was given to the finalization of extraction templates and their actual implementation into rules. Lastly, extracted relations were parsed and collated.
+
+\subsubsection{Testing}
+
+Testing was done to ensure the quality of the extracted relations. Unit testing for each component was performed. After doing so, integration testing was performed to verify that each component receives the correct input from the previous component and generates the appropriate result for use by subsequent components. 
+
+Lastly, the outputs of the system were mainly evaluated by generating stories out of Picture Books. These output stories are then put through the evaluation criteria identified during the requirements analysis phase.
+
+\subsubsection{Documentation}
+
+Throughout the entire project, documentation was done to track progress. This was also to ensure that any changes and implementations in the requirements of the study will be reflected in the documents.
+
+\subsection{Calendar of Activities}
+
+Tables \ref{tab:timetableactivities1} and \ref{tab:timetableactivities2} shows a Gantt chart of the activities. Each bullet represents approximately one week worth of activity. The overlapping activities ensure that any omissions and modifications will be changed immediately. 
+
+%
+%  the following commands will be used for filling up the bullets in the Gantt chart
+%
+\newcommand{\weekone}{\textbullet}
+\newcommand{\weektwo}{\textbullet \textbullet}
+\newcommand{\weekthree}{\textbullet \textbullet \textbullet}
+\newcommand{\weekfour}{\textbullet \textbullet \textbullet \textbullet}
+
+%
+%  alternative to bullet is a star 
+%
+\begin{comment}
+   \newcommand{\weekone}{$\star$}
+   \newcommand{\weektwo}{$\star \star$}
+   \newcommand{\weekthree}{$\star \star \star$}
+   \newcommand{\weekfour}{$\star \star \star \star$ }
+\end{comment}
+
+
+
+\begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Timetable of Activities for the months of January to July 2010} \vspace{0.25em}
+\begin{tabular}{|p{2in}|c|c|c|c|c|c|c|c|} \hline
+\centering Activities (2010) & Jan & Feb & Mar & Apr & May & Jun & Jul \\ \hline
+Requirements Analysis	   	& ~~~\weektwo & \weekfour & \weekfour & \weekfour &  &  &  \\ \hline
+Data Gathering			   	&  &  & ~~~\weektwo & \weekthree~~ &  &  &  \\ \hline
+Architectural Design   		&  &  &  & ~~\weekthree & \weekfour & \weektwo~~~ &  \\ \hline
+Implementation		   		&  &  &  &  & ~~~\weektwo & \weekfour & \weekfour  \\ \hline
+Testing 			   		&  &  &  &  &  &  & \weekfour \\ \hline
+Documentation 		   		& ~~~\weektwo & \weekfour & \weekfour & \weekfour & \weekfour & \weekfour & \weekfour \\ \hline
+\end{tabular}
+\label{tab:timetableactivities1}
+\end{table}
+
+\begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Timetable of Activities for the months of August to December 2010} \vspace{0.25em}
+\begin{tabular}{|p{2in}|c|c|c|c|c|} \hline
+\centering Activities (2010) & Aug & Sep & Oct & Nov & Dec \\ \hline
+Requirements Analysis	   	 &  &  &  &  & \\ \hline
+Data Gathering			     &  &  &  &  & \\ \hline
+Architectural Design   		 &  &  &  &  & \\ \hline
+Implementation		   		 & \weekfour & \weekfour & \weekfour & \weekfour & \\ \hline
+Testing 			   		 & \weekfour & \weekfour & \weekfour & \weekfour & \\ \hline
+Documentation 		   		 & \weekfour & \weekfour & \weekfour & \weekfour & \weekfour \\ \hline
+\end{tabular}
+\label{tab:timetableactivities2}
+\end{table}
+
+\begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Timetable of Activities for the months of January to April 2013} \vspace{0.25em}
+\begin{tabular}{|p{2in}|c|c|c|c|} \hline
+\centering Activities (2010) & Jan & Feb & Mar & Apr \\ \hline
+Requirements Analysis	   	 &  &  &  & \\ \hline
+Data Gathering		         &  &  &  & \\ \hline
+Architectural Design   		 &  &  &  & \\ \hline
+Implementation		   		 & \weekfour & \weekfour &  & \\ \hline
+Testing 			   		 & \weekfour & \weekfour & \weekfour & \weekone~~~~ \\ \hline
+Documentation 		   		 & \weekfour & \weekfour & \weekfour & \weekone~~~~ \\ \hline
+\end{tabular}
+\label{tab:timetableactivities2}
+\end{table}
 
 
 

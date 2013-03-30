@@ -2,108 +2,312 @@
 %
 %   Filename    : chapter_3.tex 
 %
-%   Description : This file will contain your Research Methodology.
+%   Description : This file will contain your Theoretical Framework.
 %                 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\Section{Research Methodology}
+\Section{Theoretical Framework}
+\label{sec:theoreticalframework}
 
-This chapter discusses the systematic approach to be performed in order to accomplish the objectives of this research.
+This chapter discusses the theoretical framework through which the research problem is examined.
 
-\subsection{Data Gathering}
+\subsection{Children's Stories}
+\label{sec:childrenstories}
 
-During this stage, data gathering will be performed to identify the following: types of conceptual/semantic relations, appropriate semantic relations for the children's story domain, architecture of relation extraction systems and, algorithms for extracting conceptual relations. Additionally, the input corpus consisting of at least 30 children's stories will be gathered. Furthermore, interviews with English language professors and linguists will be conducted to verify the correctness of the input corpus. This means that if a corpus  contains dialogues, among other considerations, it is deemed incorrect. Thus, a modification of the corpus will be done to address the issue. If possible, manipulation of the input corpus will be done in order to fit the requirements of the tools to be utilized. The extraction templates will also be defined by analyzing the sentence structures in a children's story.  
+Children's stories are a subset of general fictional literature that deals primarily with childhood. Main characters are usually children but may not always be human. In most cases, children's stories can be considered fables because of animal characters that talk and act. Furthermore, children's stories tends towards fantasy and is optimistic in nature \cite{Nodelman:2008}.
 
-There will be three types of modifications done on the corpus to remove dialogues. The first type of modification is done by transforming the dialogues into declarative sentences. The second type is the usual transformation of direct to indirect speech. And lastly, the third type of modification is the explicit addition of discourse markers whenever a dialogue is modified. After removing the dialogues, pronouns will also be removed and complex sentences will be simplified. Please see Appendix C for samples of each type of modification.
+In terms of structure, children's stories are mostly direct and simple. The vocabulary used can be too simplistic and the writing style uses too many short simple sentences. Actions are highly emphasized while psychological events are usually implied in narrations. As for its overall theme, children's stories are traditionally didactic in nature. In essence, children's stories are created to primarily educate children through repetition. 
 
-\subsection{Requirements Specification}
+\subsubsection{Events}
+\label{sec:events}
 
-After gathering the data, the requirements will be defined and analyzed to determine the objectives and scope of the research. The resulting requirements specification will be validated to ensure completeness of the study and the tool to be developed. The final algorithm to be implemented should also be defined.
+For a piece of literature that has a series of events to be considered a story, events has to be related and consistent with each other. Relations between events can be signified in two ways: temporal succession and causality. Temporal succession or sequence through time is the relation between two events wherein \textit{Event A} happens before \textit{Event B}. On the other hand, causality means \textit{Event B} happened as a result of \textit{Event A}. This poses a stronger relation between events thus making it a vital component to consider a text a story. 
 
-\begin{comment}
-\begin{figure}[t]                %-- use [t] to place figure at top, [b] to place at the bottom
-   \centering                    %-- use this to center the figure
-   \includegraphics{methodology.jpg}      %-- include image file named as "sinag1.eps" 
-   \caption{Modified Waterfall Model}
-    \label{fig:methodology}
-\end{figure}
-\end{comment}
+Aside from an event's relation to another event, events can also be related to a setting or world state. For example, the action/event of \textit{going to school} for children can only happen \textit{in the morning}. Other examples include \textit{wearing a coat in the winter}, \textit{study in class}, and \textit{sleep at home}.
 
-\subsection{Architectural Design}
+Lastly, events can be categorized as voluntary and involuntary. Such voluntary events arise from the intentional doing of a character while involuntary events happen accidentally or because of natural causes.
 
-In the Architectural Design stage, the different modules will be identified as well as the different external tools to be used. This includes a part-of-speech tagger, named-entity identifier, and text simplifier, among others. Other resources to be utilized will also be identified. Afterwards, the architectural design of the tool to be developed will be defined according to the final algorithm. Furthermore, the data structures which will represent the semantic relations in Picture Books will also be analyzed and designed. 
+\subsubsection{Transition Words}
+\label{sec:transitionwords}
 
-\begin{comment}
-In the Architectural Design stage, the overall function and subsystems will be identified. Also, relationships, dependencies, and interactions among the subsystems will be determined. The resulting architectural design will be reviewed to help understand the flow and design of the system more.
-\end{comment}
-
-\subsection{Implementation}
-
-The actual implementation of the architectural design as well as the final algorithm will be done in this stage. Debugging and unit testing will be done regularly to ensure the efficiency and correctness of the tool and algorithm.  
-
-\subsection{Testing}
-
-Testing will be done to ensure the quality and efficiency of the software. Unit testing for each subsystem will be performed. After doing so, integration testing will be performed to verify that each tool/subsystem receives the correct input from the previous tool/subsystem and generates the appropriate result for use by subsequent tools/subsystems. 
-
-Test cases will be employed to check that all tools/subsystems interact correctly. System and functional testing will also be performed to check the functionality and performance of system functions. Lastly, the outputs of the system will mainly be evaluated through the use of Picture Books. The generated story of Picture Books after using the output semantic network will be evaluated by employing the same evaluation technique done in Picture Books. The output semantic network may also be evaluated by English language linguists to ensure the validity of the relations.
-
-\subsection{Documentation}
-
-Throughout the entire process of implementing the algorithm, documentation will be done to track its progress. This is also to ensure that any changes and implementations in the requirements of the study will be reflected in the documents.
-
-\subsection{Calendar of Activities}
-
-Tables \ref{tab:timetableactivities1} and \ref{tab:timetableactivities2} shows a Gantt chart of the activities. Each bullet represents approximately one week worth of activity. The overlapping activities ensure that any omissions and modifications will be changed immediately. 
-
-%
-%  the following commands will be used for filling up the bullets in the Gantt chart
-%
-\newcommand{\weekone}{\textbullet}
-\newcommand{\weektwo}{\textbullet \textbullet}
-\newcommand{\weekthree}{\textbullet \textbullet \textbullet}
-\newcommand{\weekfour}{\textbullet \textbullet \textbullet \textbullet}
-
-%
-%  alternative to bullet is a star 
-%
-\begin{comment}
-   \newcommand{\weekone}{$\star$}
-   \newcommand{\weektwo}{$\star \star$}
-   \newcommand{\weekthree}{$\star \star \star$}
-   \newcommand{\weekfour}{$\star \star \star \star$ }
-\end{comment}
-
-
+Relation between events, whether temporal succession or causality, are usually signalled in a sentence or span of text by transition words. Tables \ref{tab:transitionstime}, \ref{tab:transitionscause} and \ref{tab:transitionseffect} shows the different transition words that can signify temporal succession, causality and effect, respectively \cite{Ang:2010}.
 
 \begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
 \centering
-\caption{Timetable of Activities (Part 1)} \vspace{0.25em}
-\begin{tabular}{|p{2in}|c|c|c|c|c|c|c|c|} \hline
-\centering Activities (2010) & Jan & Feb & Mar & Apr & May & Jun & Jul \\ \hline
-Data Gathering	       		& ~~~\weektwo & \weekfour & \weekfour & \weekfour &  &  &  \\ \hline
-Requirements Specification	&  &  & ~~~\weektwo & \weekthree~~ &  &  &  \\ \hline
-Architectural Design   		&  &  &  & ~~\weekthree & \weekfour & \weektwo~~~ &  \\ \hline
-Implementation		   		&  &  &  &  & ~~~\weektwo & \weekfour & \weekfour  \\ \hline
-Testing 			   		&  &  &  &  &  &  & \weekfour \\ \hline
-Documentation 		   		& ~~~\weektwo & \weekfour & \weekfour & \weekfour & \weekfour & \weekfour & \weekfour \\ \hline
+\caption{Transition words signalling time} \vspace{0.25em}
+\begin{tabular}{|l|} \hline
+Transition Words \\ \hline
+After; after a while \\
+Before \\
+Currently \\
+During \\
+Eventually \\
+First, Second \\
+Finally \\
+Immediately \\
+Initially \\
+Lastly \\
+Later \\
+Meanwhile \\
+Next \\
+Previously \\
+Simultaneously \\
+Suddenly \\
+Then \\
+While \\
+Yesterday \\ \hline
 \end{tabular}
-\label{tab:timetableactivities1}
+\label{tab:transitionstime}
+\end{table}
+
+Temporal succession transition words such as \textit{afterwards}, \textit{later}, and \textit{before} may also suggest causality.
+
+\begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Transition words signalling cause or reason} \vspace{0.25em}
+\begin{tabular}{|l|} \hline
+Transition Words \\ \hline
+Because \\
+Due to \\
+For \\
+As \\
+Since \\ \hline
+\end{tabular}
+\label{tab:transitionscause}
 \end{table}
 
 \begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
 \centering
-\caption{Timetable of Activities (Part 2)} \vspace{0.25em}
-\begin{tabular}{|p{2in}|c|c|c|c|c|} \hline
-\centering Activities (2010) & Aug & Sep & Oct & Nov & Dec \\ \hline
-Data Gathering	       		 &  &  &  &  & \\ \hline
-Requirements Specification   &  &  &  &  & \\ \hline
-Architectural Design   		 &  &  &  &  & \\ \hline
-Implementation		   		 & \weekfour & \weekfour &  &  & \\ \hline
-Testing 			   		 & \weekfour & \weekfour & \weekfour & \weekfour & \\ \hline
-Documentation 		   		 & \weekfour & \weekfour & \weekfour & \weekfour & \weekfour \\ \hline
+\caption{Transition words signalling effect} \vspace{0.25em}
+\begin{tabular}{|l|} \hline
+Transition Words \\ \hline
+As a result \\
+Because \\
+As a consequence \\
+Consequently \\
+Hence \\
+So \\
+For this reason \\
+Therefore \\
+Thus \\ \hline
 \end{tabular}
-\label{tab:timetableactivities2}
+\label{tab:transitionseffect}
 \end{table}
+
+\subsection{Semantic ontology and Semantic relations}
+\label{sec:semanticontology}
+
+An ontology is an artifact with a set of representational primitives to model knowledge for a particular domain \cite{Gruber:2008}. The representational primitives are classes or objects, attributes of the objects and relationship of each object. The design of the semantic ontology of Picture Books is patterned after ConceptNet \cite{Liu:2004a}, a large-scale common sense knowledge base. 
+
+The nodes used by ConceptNet are of three general classes representing noun phrases, attributes, and activity phrases. A semantic relation connects two concepts while a semantic category classifies them. The semantic relations are binary relation types defined by Open Mind Commonsense project \cite{Singh:2002}. Some of the ConceptNet relations are shown in Table \ref{tab:conceptnetrel}. 
+
+\begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Sample semantic relations from ConceptNet \protect \cite{Liu:2004b}} \vspace{0.25em}
+\begin{tabular}{|l|l|} \hline
+ConceptNet relations \\ \hline
+\textbf{\emph{IsA}}(dog, animal)  \\
+\textbf{\emph{PropertyOf}}(apple, red) \\
+\textbf{\emph{PartOf}}(window, house) \\ 
+\textbf{\emph{MadeOf}}(sculpture, clay) \\
+\textbf{\emph{FirstSubeventOf}}(yawn, sleep) \\
+\textbf{\emph{EffectOf}}(become tired, sleepy) \\
+\textbf{\emph{CapableOf}}(ball, bounce) \\
+\textbf{\emph{LocationOf}}(seesaw, playground) \\
+\textbf{\emph{UsedFor}}(spoon, eat) \\ \hline
+\end{tabular}
+\label{tab:conceptnetrel}
+\end{table}
+
+\subsection{Picture Books}
+\label{sec:picturebooks}
+
+Picture Books generates a story for a given input picture that contain a background selected by the user from the background library, as well as the character and object stickers placed onto the background. The ontology is used to derive relations between concepts, which refer to objects in the picture as well as the theme associated by the system through the background. An excerpt of a generated story and the corresponding conceptual knowledge used is shown in Table \ref{tab:picturebookexcerpt}.
+
+\begin{table}[h]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Excerpt from a story generated by Picture Books with corresponding conceptual knowledge} \vspace{0.25em}
+\begin{tabular}{|c|p{6.5cm}|p{6cm}|} \hline
+Line & Story Text & Conceptual Knowledge \\ \hline
+1 & Rizzy the rabbit was in the living room. & \\
+2 & She played near a lamp. & \\
+  &  & \textbf{\emph{CapableOf}}(lamp, break) \\
+  &  & \textbf{\emph{ConceptuallyRelatedTo}}(break, break object) \\
+3 & Rizzy broke the lamp. & \\
+  &  & \textbf{\emph{EffectOf}}(break object, be scared) \\
+4 & She was scared. & \\
+  & : & \\
+5 & Rizzy told Mommy Francine that Daniel the dog broke the lamp. & \\
+  & : & \\
+  &  & \textbf{\emph{LastSubeventOf}}(break object, get punished) \\
+6 & He got punished. & \\
+  &  & \textbf{\emph{LastSubeventOf}}(get punished, grounded) \\
+  &  & \textbf{\emph{IsA}}(grounded, punishment) \\
+7 & Mommy Francine told Daniel that he was grounded. & \\
+  &  & \textbf{\emph{LastSubeventOf}}(grounded, cry) \\
+8 & He cried. & \\ \hline
+\end{tabular}
+\label{tab:picturebookexcerpt}
+\end{table}
+
+In line 1, the main character (\emph{Rizzy the Rabbit}) and the setting (\emph{living room}) were determined from the character sticker placed onto the selected background by the user. In line 2, the object (\emph{lamp}) may or may not be in the picture, but included in the generated story based on the theme that is associated to the background. In this example, the theme is \emph{being honest} through admitting your mistake (that is, the main character must not lie about breaking the lamp).
+
+Access to the ontology is needed to derive events that can happen next in the story, as shown in line 3, and the effects of the resulting event, shown in line 4. Line 5 is the starting point of the rising action, where the main character misbehaves (\emph{told a lie}) and the subsequent events and effects of the misbehavior. All the knowledge needed by Picture Books to do its task were manually encoded by the proponents into the system, based on the identified background and themes, which are appropriate to the target age group. The knowledge in ConceptNet cannot be used directly as these are not suitable for the users of Picture Books. Thus, only some of the ConceptNet knowledge as well as relations were used to build the ontology of Picture Books. Table \ref{tab:semanticrelationships} lists some of these relations defined in Picture Books following the form $<$relationship$>$($<$concept1$>$, $<$concept2$>$). 
+
+\begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Semantic relationships adopted from ConceptNet \protect \cite{Liu:2004b} with sample concepts of Picture Books} \vspace{0.25em}
+\begin{tabular}{|l|l|l|} \hline
+Semantic Category & Semantic Relationships \\ \hline
+Things       & \textbf{\emph{IsA}}(headache, pain)  \\ 
+ 			 & \textbf{\emph{PropertyOf}}(apple, healthy) \\ 
+ 			 & \textbf{\emph{PartOf}}(window, pane) \\
+ 			 & \textbf{\emph{MadeOf}}(toy car, clay) \\ \hline
+Events		 & \textbf{\emph{FirstSubeventOf}}(tell bedtime story, sleep) \\
+			 & \textbf{\emph{EventForGoalEvent}}(go to grocery store, buy food) \\
+			 & \textbf{\emph{EventForGoalState}}(clean up, be neat) \\
+			 & \textbf{\emph{EventRequiresObject}}(play, toy) \\ \hline
+Actions		 & \textbf{\emph{EffectOf}}(become dirty, itchy) \\
+			 & \textbf{\emph{EffectOfIsState}}(make friends, friendship) \\
+			 & \textbf{\emph{CapableOf}}(toy car, play) \\ \hline
+Spatial		 & \textbf{\emph{OftenNear}}(sailboat, water) \\
+			 & \textbf{\emph{LocationOf}}(teacher, school) \\ \hline
+Functions	 & \textbf{\emph{UsedFor}}(thermometer, check temperature) \\ \hline
+\end{tabular}
+\label{tab:semanticrelationships}
+\end{table}
+
+\subsection{ConceptNet}
+\label{sec:conceptnet}
+
+ConceptNet \cite{Liu:2004b} is a large-scale common sense knowledge database aimed to optimize practical inferences over real-world texts. It adopted the semantic network knowledge representation of WordNet and included 17 additional relations such as EffectOf, SubEventOf and CapableOf. This will provide a richer semantic network compared to what WordNet already has. However, there are still differences on the relations they contain. In WordNet, relations are more formal and is assumed to always happen while in the case of ConceptNet, it relations are more informal and defeasible. This means that since ConceptNet is geared towards a more practical inference, its relations may not always happen. One example would be the part-of relation between dog and pet. A dog will always be a canine but not a pet. 
+
+The ConceptNet semantic network was populated with concepts and relations through a distributed solution of acquiring common sense knowledge from the public using a web-based data entry mechanism of the Open Mind Common Sense (OMCS) project \cite{Singh:2002}. OMCS employs both semi-structured and free-form data entry approaches. The semi-structured approach utilizes extraction patterns commonly used by IE systems. Each extraction pattern or template has slots that users can fill-up, and is mapped directly to a relation.
+
+Given the template ``\textit{\underline{$<$X$>$} is a kind of \underline{$<$Y$>$}}", the possible values for \textbf{$<$X$>$} and \textbf{$<$Y$>$} that users can provide and the corresponding hypernymy (IsA) relations that are acquired are shown in Table \ref{tab:isasamples}.
+
+\begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Sample values to derive the hypernymy (\textbf{\textit{IsA}}) relations} \vspace{0.25em}
+\begin{tabular}{|l|l|l|} \hline
+$<$X$>$ & $<$Y$>$ & Relations \\ \hline
+Apple & Fruit & IsA(apple, fruit) \\ \hline
+Ball & Toy & IsA(ball, toy) \\ \hline
+Rose & Flower & IsA(rose, flower) \\ \hline
+\end{tabular}
+\label{tab:isasamples}
+\end{table}
+
+\subsection{GATE}
+\label{sec:gate}
+
+GATE (General Architecture for Textual Engineering) is a general-purpose infrastructure aimed for natural language software development. It also aims to reduce integration overheads. This is done through the provision of standard mechanisms of data communication for the the different software components. GATE also uses Java and XML as its platforms. 
+
+As a language engineering architecture, GATE provides processing resources with ANNIE as its main resource. ANNIE provides a set of reusable processing resources to facilitate language engineering tasks. It consists of the following resources: tokeniser, sentence splitter, POS tagger, gazetteer, finite state transducer or semantic tagger, orthomatcher and coreference resolver. The tokeniser splits a given text into simple tokens. The sentence splitter splits the text into sentences. The POS tagger tags each word or symbol with their specific part-of-speech tags. The gazetteer consists of lists like that of cities and organizations. It can also consist of lists of indicators, like titles and other designators. The orthomatcher performs coreference or entity tracking through the recognition of relations between entities. The coreference resolver detects identity relations between entities. Lastly, the semantic tagger consists of tailor-made rules written in JAPE language. These rules describe the patterns and annotations to be created. A JAPE grammar has a set of phases which consist of pattern rules. These phases run sequentially. 
+
+\subsection{Relation Extraction Techniques}
+\label{sec:relextraction}
+
+In extracting semantic relations, one technique is through the generation and use of extraction patterns. For each target relation, a set of extraction patterns are needed to handle all possible instances of a relation in a sentence.
+
+Table \ref{tab:patternsamples} shows other extraction patterns and the corresponding relations of ConceptNet.
+
+\begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Sample extraction patterns and corresponding ConceptNet relations} \vspace{0.25em}
+\begin{tabular}{|p{7cm}|l|} \hline
+Extraction Pattern or Template & Relations \\ \hline
+\underline{CAKE} is a kind of \underline{FOOD}. & IsA(cake, food) \\ \hline
+\underline{CAKE} is made of \underline{FLOUR}. & MadeOf(cake, flour) \\ \hline
+\underline{FLOUR} is \underline{WHITE}. & PropertyOf(flour, white) \\ \hline
+The effect of \underline{DRINKING MILK} is \underline{GOOD HEALTH}. & EffectOf(drinking milk, good health) \\ \hline
+\end{tabular}
+\label{tab:patternsamples}
+\end{table}
+
+From the examples above, an instance of an extraction pattern generates one relation. But sentences may contain conjunctive phrases, which in turn may result to multiple relations being learned, as shown in Table \ref{tab:multiplerelationssingle} for the pattern ``\textit{\underline{$<$X$>$} is made of \underline{$<$Y$>$}}".
+
+\begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Generating multiple relations from a single extraction pattern} \vspace{0.25em}
+\begin{tabular}{|l|l|} \hline
+Extraction Pattern or Template & Relations \\ \hline
+\multirow{3}{*}{\underline{CAKE} is made of \underline{FLOUR}, \underline{SUGAR}, and \underline{MILK}.} & MadeOf(cake, flour) \\
+ & MadeOf(cake, sugar) \\
+ & MadeOf(cake, milk) \\ \hline
+\end{tabular}
+\label{tab:multiplerelationssingle}
+\end{table}
+
+Part-of-speech tags may also be utilized to identify phrases and its constituents. For example, in Table \ref{tab:utilizeposforimplicit}, the noun phrase used to fill the \textit{$<$X$>$} variable in the \textit{IsA} template has three components, namely an article (``\textit{the}"), an adjective (``\textit{sweet}"), and a noun (``\textit{cake}"). Extracting this knowledge can lead to the relation \textit{PropertyOf(cake, sweet)}. 
+
+\begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Utilizing POS tags for implicit relations} \vspace{0.25em}
+\begin{tabular}{|l|p{6cm}|} \hline
+Input Sentence following a Template & Relations \\ \hline
+\multirow{2}{*}{\underline{The sweet cake} is a \underline{dessert}.} & Explicit extraction pattern: IsA(dessert, cake) \\
+ & Implicit from POS tag: PropertyOf(cake, sweet) \\ \hline
+\end{tabular}
+\label{tab:utilizeposforimplicit}
+\end{table}
+
+The input stories may contain complex sentence structures, such as conjunctions and embedded clauses. Text simplification algorithms, employed in SimText \cite{Damay:2007} may be utilized to convert these sentence structures into simpler ones. Consider the sentence ``\textit{Anna, who is the queen, went to the market; meanwhile, the king went to the mall.}" By identifying and transforming this to three simpler sentences: ``\textit{Anna is the queen. She went to the market. Meanwhile, the king went to the mall.}", the following relations can be extracted. 
+
+\noindent
+	\hspace{1 in}IsPerson(Anna) \\
+	\hspace*{1 in}HasRole(person, queen) \\
+	\hspace*{1 in}HasRole(person, king) \\
+	\hspace*{1 in}CapableOf(person, go) \\
+	\hspace*{1 in}TargetOf(go, market) \\
+	\hspace*{1 in}TargetOf(go, mall)
+	
+\subsection{Additional Relations}
+\label{sec:addrelations}
+	
+Aside from the 14 ConceptNet relations adopted by Picture Books, other semantic relations are also considered. The previous example shows some of the possible new relations that may be included in the output of the proposed system, namely:
+
+\begin{itemize}
+	\item HasRole to designate that characters may play certain roles
+	\item RoleResponsibleFor to model a specified role is responsible for a given task, e.g., the king rules a country
+	\item TargetOf to model target objects of certain actions
+\end{itemize}
+
+One of the identified limitations in the current knowledge base of Picture Books is the lack of relations to denote event occurrences. Consider again the text:
+	
+	\noindent
+	\hspace{1 in}\emph{The evening was warm. Ellen the elephant was at the school. She went with Mommy Edna to the school.}
+	
+	If appropriate relations are available, e.g., Happens to designate that an activity, such as going to school, can only happen at a certain time of day, such as morning, then the resulting text can be:
+	
+	\noindent
+	\hspace{1 in}\emph{The morning was sunny. Ellen the elephant was at the school. She went with Mommy Edna to the school.}
+	
+Certain granularities may be provided to the relations representing various aspects of time, namely season (planting can only occur during spring, snow can only fall during winter), month (Christmas in December, Valentine's in February), or even weeks, days, hours, and minutes.
+
+Mueller (2003) made use of event calculus consisting of the following predicates to model event occurrences:
+
+\begin{itemize}
+	\item Happens(e, t) represents that an event \emph{e} happens at time \emph{t}.
+	\item HoldsAt(f, t) represents that a fluent \emph{f} holds at time \emph{t}.
+	\item Initiates(e, f, t) represents that if event \emph{e} occurs at \emph{t} then fluent \emph{f} starts holding after \emph{t}.
+	\item Terminates(e, f, t) represents that if event \emph{e} occurs at \emph{t} then fluent \emph{f} stops holding after \emph{t}.
+\end{itemize}
+
+\begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Mapping of RST relations to ConceptNet relations} \vspace{0.25em}
+\begin{tabular}{|p{7cm}|l|} \hline
+RST Relation & ConceptNet Relation \\ \hline
+Cause (one event is the cause of another event) & EffectOf(event1, event2) \\ \hline
+Background (one event serves as background information for the other) & EventForGoalEvent (clean up, be neat) \\ \hline
+Example & InstanceOf \\ \hline
+\end{tabular}
+\label{tab:mappingrstconceptnet}
+\end{table}
+
+\citeA{Nakasone:2006} developed a concept representation model to convey ideas of a story, by identifying organizations of text structure using the Rhetorical Structure Theory of \citeA{Mann:1987}. RST relations can then be mapped to existing ConceptNet relations, as shown in Table \ref{tab:mappingrstconceptnet}. This will be explored in this research.
+
 
 
 
