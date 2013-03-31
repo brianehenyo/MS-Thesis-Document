@@ -976,6 +976,37 @@ Solis, C.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem[\protect\citeauthoryear{%
+Speer%
+\ \BBA{} Havasi%
+}{%
+Speer%
+\ \BBA{} Havasi%
+}{%
+{\protect\APACyear{2012}}%
+}]{%
+Speer:2012}%
+\APACinsertmetastar{%
+Speer:2012}%
+Speer, R.%
+\BCBT{}\ \BBA{} Havasi, C.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{may}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Representing General Relational Knowledge in ConceptNet
+  5}{Representing general relational knowledge in conceptnet 5}.\BBCQ{}
+\newblock
+\BIn{} N\BPBI C\BPBI C.~Chair)\ \BOthers{.}\ (\BEDS),
+  \APACrefbtitle{Proceedings of the Eight International Conference on Language
+  Resources and Evaluation (LREC'12).}{Proceedings of the eight international
+  conference on language resources and evaluation (lrec'12).}
+\newblock
+\APACaddressPublisher{Istanbul, Turkey}{European Language Resources Association
+  (ELRA)}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
 Yates%
 \ \protect\BOthers{.}}{%
 Yates%

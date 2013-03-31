@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.3.30)  31 MAR 2013 01:03
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.3.30)  1 APR 2013 03:05
 entering extended mode
 **main.tex
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.tex"
@@ -177,7 +177,17 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen115
-))
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count102
+\float@exts=\toks22
+\float@box=\box28
+\@float@everytoks=\toks23
+\@floatcapt=\box29
+)
+\@float@every@table=\toks24
+)
 
 LaTeX Warning: Unused global option(s):
     [onepage].
@@ -190,13 +200,15 @@ LaTeX Warning: Unused global option(s):
 LaTeX Warning: Label `tab:timetableactivities2' multiply defined.
 
 ) ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_2.aux")
-("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_3.aux")
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_3.aux"
+
+LaTeX Warning: Label `tab:conceptnetrel' multiply defined.
+
+) ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_4.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_resourcepers
 on.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_personalvita
-e.aux")
-("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_modification
-s.aux"))
+e.aux"))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
@@ -265,17 +277,17 @@ If that doesn't work, type  X <return>  to quit.
 
 ) ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
+\scratchcounter=\count103
 \scratchdimen=\dimen116
-\scratchbox=\box28
-\nofMPsegments=\count103
-\nofMParguments=\count104
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count105
+\scratchbox=\box30
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count106
 \MPscratchDim=\dimen117
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
-\everyMPtoPDFconversion=\toks23
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks26
 ) ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\title_page.tex"
 [1
 
@@ -308,8 +320,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [4] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.lot")
 \tf@lot=\write5
 
-[5] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_1.tex"
-[1
+[5] [6] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_1.tex
+" [1
 
 ] [2]
 Missing character: There is no … in font cmti12!
@@ -320,16 +332,16 @@ r) and MadeOf(cake,
  []
 
 [5]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 109.
+Missing character: There is no ç in font cmr12!
+ [6] [7] [8]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 183.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 109.
- [6]
-Missing character: There is no ç in font cmr12!
- [7] [8])
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 183.
+)
 [9] [10] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_2.te
 x" [11
 
@@ -362,35 +374,156 @@ Overfull \hbox (5.90286pt too wide) in paragraph at lines 183--184
  know-ledge database
  []
 
-[25] [26]
-Underfull \hbox (badness 2020) in paragraph at lines 223--223
+[25] [26] [27]
+Underfull \hbox (badness 2020) in paragraph at lines 255--255
 []\OT1/cmr/m/n/12 The ef-fect of $[]$ is
  []
 
 
-Overfull \hbox (0.40948pt too wide) in paragraph at lines 242--243
+Overfull \hbox (0.40948pt too wide) in paragraph at lines 274--275
 []\OT1/cmr/m/n/12 Part-of-speech tags may also be uti-lized to iden-tify phrase
 s and its con-stituents.
  []
 
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 []\OT1/cmr/m/n/12 Explicit ex-trac-tion pat-tern:
  []
 
-[28]
-Overfull \hbox (10.21335pt too wide) in paragraph at lines 300--307
+[28] [29]
+Overfull \hbox (10.21335pt too wide) in paragraph at lines 332--339
  [][] 
  []
 
-) [29] [30]
+) [30] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_4.tex"
+[31
+
+
+] [32]
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
+[]\OT1/cmr/m/n/12 Specifies an en-tity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]\OT1/cmr/m/n/12 LocationOf(slide, play-
+ []
+
+
+Overfull \hbox (1.50601pt too wide) in paragraph at lines 109--109
+[]\OT1/cmr/m/n/12 EventForGoalEvent| 
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 109--109
+[]\OT1/cmr/m/n/12 Represents an event
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+[]\OT1/cmr/m/n/12 EventForGoalEvent(go to
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 110--110
+[]\OT1/cmr/m/n/12 Represents an event
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+[]\OT1/cmr/m/n/12 EventForGoalState(take a
+ []
+
+
+Underfull \hbox (badness 3872) in paragraph at lines 111--111
+[]\OT1/cmr/m/n/12 Represents a cause-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+\OT1/cmr/m/n/12 effect be-tween two
+ []
+
+
+Underfull \hbox (badness 3872) in paragraph at lines 112--112
+[]\OT1/cmr/m/n/12 Represents a cause-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
+\OT1/cmr/m/n/12 effect be-tween an
+ []
+
+
+Underfull \hbox (badness 8038) in paragraph at lines 112--112
+\OT1/cmr/m/n/12 event and an end
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
+[]\OT1/cmr/m/n/12 EffectOfIsState(eat veg-eta-
+ []
+
+
+Overfull \hbox (1.22961pt too wide) in paragraph at lines 115--115
+[]\OT1/cmr/m/n/12 RoleResponsibleFor| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
+[]\OT1/cmr/m/n/12 Specifies an ac-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
+[]\OT1/cmr/m/n/12 RoleResponsibleFor(doctor,
+ []
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 116--116
+[]\OT1/cmr/m/n/12 Specifies the owner-
+ []
+
+[33] [34]
+Overfull \hbox (3.29195pt too wide) in paragraph at lines 157--157
+[]$\OML/cmm/m/it/12 <$\OT1/cmr/m/n/12 Pronoun:Possessive$\OML/cmm/m/it/12 >$| 
+ []
+
+[35]
+Overfull \hbox (1.22961pt too wide) in paragraph at lines 204--204
+[]\OT1/cmr/m/n/12 RoleResponsibleFor| 
+ []
+
+[36]
+Overfull \hbox (1.50601pt too wide) in paragraph at lines 215--215
+[]\OT1/cmr/m/n/12 EventForGoalEvent| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
+[]$\OML/cmm/m/it/12 <$\OT1/cmr/m/n/12 Event$\OML/cmm/m/it/12 >$ $<$\OT1/cmr/m/n
+/12 MotivationIndicator$\OML/cmm/m/it/12 >$ $<$\OT1/cmr/m/n/12 GoalEvent$\OML/c
+mm/m/it/12 >$ \OT1/cmr/m/n/12 :
+ []
+
+[37]
+Underfull \hbox (badness 3769) in paragraph at lines 240--240
+[]\OT1/cmr/m/n/12 OftenNear In-di-ca-
+ []
+
+
+Underfull \hbox (badness 2318) in paragraph at lines 241--241
+[]\OT1/cmr/m/n/12 CapableOf In-di-ca-
+ []
+
+[38]) [39]
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_resourcepers
 on.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-) [31
+) [40
 
 
 ]
@@ -400,35 +533,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-) [32
+) [41
 
 
-]
-("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_modification
-s.tex"
-Underfull \hbox (badness 10000) in paragraph at lines 14--26
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--41
-
- []
-
-[33
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 44--56
-
- []
-
-) [34] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.bbl"
-[35
+] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.bbl"
+[42
 
 ]
 Missing character: There is no ç in font cmr12!
- [36]
+ [43]
 Underfull \hbox (badness 4673) in paragraph at lines 814--828
 []\OT1/cmr/m/n/12 Nodelman, P.  (2008).  \OT1/cmr/m/it/12 The hid-den adult: De
 fin-ing chil-dren's lit-
@@ -441,30 +554,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 814--828
  []
 
 Missing character: There is no ’ in font cmti12!
-) [37] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.aux"
+) [44] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.aux"
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\title_page.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\abstract.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_1.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_2.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_3.aux")
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_4.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_resourcepers
 on.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_personalvita
-e.aux")
-("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_modification
-s.aux"))
+e.aux"))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3057 strings out of 493921
- 42306 string characters out of 3147279
- 107521 words of memory out of 3000000
- 6250 multiletter control sequences out of 15000+200000
+ 3135 strings out of 493921
+ 43292 string characters out of 3147279
+ 112321 words of memory out of 3000000
+ 6324 multiletter control sequences out of 15000+200000
  10979 words of font info for 41 fonts, out of 3000000 for 9000
  843 hyphenation exceptions out of 8191
- 31i,13n,29p,1764b,259s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,13n,27p,1764b,287s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/M
@@ -473,9 +585,9 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.
 ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmtt12.pfb>
-Output written on main.pdf (43 pages, 212621 bytes).
+Output written on main.pdf (51 pages, 231420 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
+ 199 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

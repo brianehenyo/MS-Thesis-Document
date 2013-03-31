@@ -198,6 +198,38 @@ Rose & Flower & IsA(rose, flower) \\ \hline
 \label{tab:isasamples}
 \end{table}
 
+Table \ref{tab:conceptnetrel} are the rest of the ConceptNet \cite{Speer:2012} relations with their corresponding sentence patterns. 
+
+\begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{ConceptNet Sentence Patterns} \vspace{0.25em}
+\begin{tabular}{|l|l|} \hline
+Relation & Sentence Pattern \\ \hline
+IsA & \textit{NP} is a kind of \textit{NP} \\ \hline
+UsedFor & \textit{NP} is used for \textit{VP} \\ \hline
+HasA & \textit{NP} has \textit{NP} \\ \hline
+CapableOf & \textit{NP} can \textit{VP} \\ \hline
+Desires & \textit{NP} wants to \textit{VP} \\ \hline
+CreatedBy & You make \textit{NP} by \textit{VP} \\ \hline
+PartOf & \textit{NP} is part of \textit{NP} \\ \hline
+Causes & The effect of \textit{VP} is \textit{NP/VP} \\ \hline
+HasFirstSubevent & The first thing you do when you \textit{VP} is \textit{NP/VP} \\ \hline
+AtLocation & Somewhere \textit{NP} can be is \textit{NP} \\ \hline
+HasProperty & \textit{NP} is \textit{AP} \\ \hline
+LocateNear & You are likely to find \textit{NP} near \textit{NP} \\ \hline
+DefinedAs & \textit{NP} is defined as \textit{NP} \\ \hline
+SymbolOf & \textit{NP} represents \textit{NP} \\ \hline
+ReceivesAction & \textit{NP} can be \textit{VP} \\ \hline
+HasPrerequisite & \textit{NP/VP} requires \textit{NP/VP} \\ \hline
+MotivatedByGoal & You would \textit{VP} because you want \textit{VP} \\ \hline
+CausesDesire & \textit{NP} would make you want to \textit{VP} \\ \hline
+MadeOf & \textit{NP} is made of \textit{NP} \\ \hline
+HasSubevent & One of the things you do when you \textit{VP} is \textit{NP/VP} \\ \hline
+HasLastSubevent & The last thing you do when you \textit{VP} is \textit{NP/VP} \\ \hline
+\end{tabular}
+\label{tab:conceptnetrel}
+\end{table}
+
 \subsection{GATE}
 \label{sec:gate}
 
@@ -265,7 +297,7 @@ The input stories may contain complex sentence structures, such as conjunctions 
 \subsection{Additional Relations}
 \label{sec:addrelations}
 	
-Aside from the 14 ConceptNet relations adopted by Picture Books, other semantic relations are also considered. The previous example shows some of the possible new relations that may be included in the output of the proposed system, namely:
+Aside from the 14 ConceptNet relations adopted by Picture Books, other semantic relations were also considered. The previous example shows some of the possible new relations that may be included in the output of the proposed system, namely:
 
 \begin{itemize}
 	\item HasRole to designate that characters may play certain roles
@@ -306,7 +338,7 @@ Example & InstanceOf \\ \hline
 \label{tab:mappingrstconceptnet}
 \end{table}
 
-\citeA{Nakasone:2006} developed a concept representation model to convey ideas of a story, by identifying organizations of text structure using the Rhetorical Structure Theory of \citeA{Mann:1987}. RST relations can then be mapped to existing ConceptNet relations, as shown in Table \ref{tab:mappingrstconceptnet}. This will be explored in this research.
+\citeA{Nakasone:2006} developed a concept representation model to convey ideas of a story, by identifying organizations of text structure using the Rhetorical Structure Theory of \citeA{Mann:1987}. RST relations can then be mapped to existing ConceptNet relations, as shown in Table \ref{tab:mappingrstconceptnet}.
 
 
 

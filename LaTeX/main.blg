@@ -5,10 +5,10 @@ A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: chapter_1.aux
 A level-1 auxiliary file: chapter_2.aux
 A level-1 auxiliary file: chapter_3.aux
+A level-1 auxiliary file: chapter_4.aux
 A level-1 auxiliary file: appendix_resourceperson.aux
 A level-1 auxiliary file: appendix_personalvitae.aux
-A level-1 auxiliary file: appendix_modifications.aux
-Illegal, another \bibstyle command---line 93 of file main.aux
+Illegal, another \bibstyle command---line 95 of file main.aux
  : \bibstyle
  :          {apacite}
 I'm skipping whatever remains of this command

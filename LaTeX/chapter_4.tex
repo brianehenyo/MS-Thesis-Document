@@ -1,0 +1,264 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Filename    : chapter_4.tex 
+%
+%   Description : This file will contain your Design and Implementation.
+%                 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section{Design and Implementation}
+\label{sec:designimplementation}
+
+This chapter discusses the design and implementation of the open-source tool to extract relations. It includes the architectural design, extraction rules and issues encountered during development.
+
+\subsection{Corpus}
+\label{sec:corpus}
+
+The input corpus for this study is comprised of 30 children's stories. Each were encoded digitally and modified to remove dialogues. The raw version was retained and used with the modified stories. Overall, 60 stories were used to extract the relations. Shown in Table \ref{tab:stories} are the different story groups and their corresponding age groups. 
+
+\begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Children's Story Groups} \vspace{0.25em}
+\begin{tabular}{|p{4cm}|p{2cm}|p{3cm}|} \hline
+Group Name & No. of Stories & Age Group \\ \hline
+Topsy Tim					& 5 & 4-7 y.o. \\ \hline
+Little Life Lessons			& 16 & 4-7 y.o. \\ \hline
+Jumpstart					& 7 & 8-10 y.o. \\ \hline
+Winnie the Pooh				& 2 & 8-10 y.o. \\ \hline
+\end{tabular}
+\label{tab:stories}
+\end{table}
+
+\subsubsection{Modifications}
+\label{sec:modifications}
+
+As mentioned, each children's story in the corpus underwent different types of modifications to clean the data and simulate different scenarios or story formats. And in order to illustrate the different modifications, here is an unmodified excerpt from one of the stories already in the corpus entitled ``A Wild Weather Day".
+
+\begin{verse}
+\itshape
+It was a wild and windy day. The JumpStart ship was headed for Tree Fort Island. \\
+Frankie was at the wheel. The sails flapped in the wind. The ship raced through the water. \\
+``Why are we going so fast?" Pierre asked. ``The wind is blowing us along on our adventure," CJ said. ``Did you know that wind is just air that is strong and fast?" \\
+``Like Frankie!" Pierre said. ``He's strong and fast, too." \\
+``Why is the sky getting so dark?" Pierre asked. \\
+``I know why it's dark!" Eleanor said. ``Clouds get dark when they fill up with tiny drops of water." \\
+``Look! They're almost the same color as your bow," Pierre said. \\
+A big drop of rain fell on Pierre's nose. ``Oh, no!" he said. ``It's starting to rain!" \\
+``The rain is coming from the clouds," CJ said. \\
+``The water in tne clouds got too heavy, and now it's falling down on us!" \\
+``Just like when Hopsalot waters his garden," said Pierre. \\
+\end{verse}
+
+The first type of modification is done by transforming the dialogues into declarative sentences. Here is the modified version of the excerpt above:
+
+\begin{verse}
+\itshape
+It was a wild and windy day. The JumpStart ship was headed for Tree Fort Island. \\
+Frankie was at the wheel. The sails flapped in the wind. The ship raced through the water. \\
+They are going so fast. The wind is blowing them along on their adventure. The wind is just air that is strong and fast. \\
+Frankie is like the wind. He's strong and fast, too. \\
+The sky is getting so dark.\\
+Eleanor knows why it is dark. Clouds get dark when they fill up with tiny drops of water. \\
+They are almost the same color as Eleanor's bow. \\
+A big drop of rain fell on Pierre's nose. It is starting to rain! \\
+The rain is coming from the clouds. \\
+The water in the clouds got too heavy, and now it is falling down on them! \\
+Just like when Hopsalot waters his garden. \\
+\end{verse}
+
+The second type is the usual transformation of direct to indirect speech. 
+
+\begin{verse}
+\itshape
+It was a wild and windy day. The JumpStart ship was headed for Tree Fort Island. \\
+Frankie was at the wheel. The sails flapped in the wind. The ship raced through the water. \\
+Pierre asked why they were going so fast. CJ said that the wind was blowing them along on their adventure. He also asked if they know that wind is just air that is strong and fast. \\
+Pierre said like Frankie. Pierre said that Frankie was strong and fast, too. \\
+Pierre asked why the sky was getting so dark.\\
+Eleanor said that she knew why it is dark. She explained that clouds get dark when they fill up with tiny drops of water.\\
+Pierre said look! They are almost the same color as Eleanor's bow. \\
+A big drop of rain fell on Pierre's nose. He was shocked. It is starting to rain. \\
+CJ said that the rain is coming from the clouds. \\
+The water in the clouds got too heavy, and now it is falling down on them. \\
+Pierre said that it is just like when Hopsalot waters his garden. \\
+\end{verse}
+	
+While modifying, there may be cases wherein a specific sentence or a line uttered by a character will be omitted or transformed into a declarative sentence not containing the original word/s. Such sentences can be interjections like ``Oh my!" and ``Alas!". These can be transformed as ``She was shocked" and ``He was concerned."
+
+Aside from these, modifications such as removing contractions and periods (.) that do not actually mean the end of a sentence. With contractions, they were put back in their long form. For example, \textit{they'll} was transformed to \textit{they will}. This modification does not mean the tool used to extract the relations could not handle contractions. This just makes the results cleaner. It also disambiguates contractions from possessive nouns. For example, instances like \textit{Helen's} may mean ownership or just \textit{Helen is}. Removing nuances like this allows the tool to produce a more valid POS tagging and of course, extraction. 
+
+As with the periods (.) like those found in titles (\textit{Mr.} and \textit{Dr.}), they were removed and the titles were transformed also into their long forms. For example, \textit{Mrs.} is transformed into \textit{Missus}. 
+
+Lastly, story-specific modifications were done for the two \textit{Winnie the Pooh} stories. After careful examination, it was evident that the author was using non-existing English words in the dialogues of its characters. Words like \textit{suspicionated} and \textit{splendiferous} appeared in the story \textit{Everyone is special}. \textit{Tigger} is usually the character that uses such words due to his character trait. Such words were transformed to their actual English word counterparts. For example, \textit{suspicionated} and \textit{splendiferous} were transformed into \textit{suspected} and \textit{splendid}, respectively. This will make sure that all words are correctly tagged and the extracted relations contain valid concepts.
+
+\subsection{Target Relations}
+\label{sec:relations}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Target Relations} \vspace{0.25em}
+\begin{tabular}{|p{3.5cm}|p{4cm}|p{5.5cm}|} \hline
+Element & Description & Example \\ \hline
+IsA					& Specifies what kind an entity is. & IsA(dog, pet) \\ \hline
+PropertyOf			& Specifies an adjective to describe an entity. & PropertyOf(mango, yellow) \\ \hline
+PartOf				& Specifies the \textit{parthood} of an entity in another entity. & PartOf(knob, door) \\ \hline
+MadeOf				& Specifies a component of an entity. & MadeOf(door, wood) \\ \hline
+CapableOf			& Specifies what an entity can do. & CapableOf(kid, jump) \\ \hline
+OftenNear			& Specifies an entity near another entity in most instances. & OftenNear(chair, table) \\ \hline
+LocationOf			& Specifies the location of an entity. & LocationOf(slide, play-ground) \\ \hline
+EventForGoalEvent	& Represents an event that causes the fulfillment of a goal event. & EventForGoalEvent(go to playground, play football) \\ \hline
+EventForGoalState	& Represents an event that causes the fulfillment of a goal state. & EventForGoalState(take a bath, be clean) \\ \hline
+EffectOf			& Represents a cause-effect between two events. & EffectOf(skip breakfast, hungry) \\ \hline
+EffectOfIsState		& Represents a cause-effect between an event and an end state. & EffectOfIsState(eat vegetables, health) \\ \hline
+Happens				& Specifies the time an event/state happens. & Happens(breakfast, morning) \\ \hline
+HasRole				& Specifies the role on a person in the story. & HasRole(Kisha, teacher) \\ \hline
+RoleResponsibleFor	& Specifies an action done by a role. & RoleResponsibleFor(doctor, diagnose) \\ \hline
+Owns				& Specifies the owner-ship of an object. & Owns(teacher, book) \\ \hline
+\end{tabular}
+\label{tab:targetrel}
+\end{table}
+
+For the purpose of this research, sixteen (16) relations were identified to be extracted. They were deemed to be related and helpful to the development of common sense knowledge for the children's story domain. Table \ref{tab:targetrel} contains the final list of target relations to be extracted in this study.
+
+Based on their intended functions, these relations can be classified into different groups (See Table \ref{tab:classification}). 
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Classification of Target Relations} \vspace{0.25em}
+\begin{tabular}{|p{4cm}|p{6.5cm}|} \hline
+Category & Relations \\ \hline
+Things		& IsA, PropertyOf, PartOf, MadeOf, HasRole \\ \hline
+Agents		& CapableOf, RoleResponsibleFor \\ \hline
+Events		& EventForGoalEvent, EventForGoalState \\ \hline
+Causal		& EffectOf, EffectOfIsState \\ \hline
+Spatial		& LocationOf, OftenNear \\ \hline
+Functional	& UsedFor \\ \hline
+World		& Happens, Owns \\ \hline
+\end{tabular}
+\label{tab:classification}
+\end{table}
+
+The \textit{things} category can be used to describe the characters, objects, events and settings of the story. The \textit{agents} category specifies the intentional actions that can be done by the characters. \textit{Events} describe the temporal succession of events in terms of desire while \textit{causal} relations provide information on causality. \textit{Spatial} relations describe the location of objects and characters. \textit{Functional} describe the actions that can be done with an object. Lastly, \textit{world} relations provide a universal truth about characters, objects and events.
+
+\subsection{Extraction Templates}
+\label{sec:extractiontemplates}
+
+Extraction templates refer to the different ways a certain relation is manifested in a sentence or a span of text. Since most of the relations to be extracted were adopted from ConceptNet, the initial decision was to just follow the templates they have been using to crowd-source data (see Section 3.4). However, due to the contrast of sentence complexity between ConceptNet sentence patterns and the sentences in the corpus, additional templates were added to address different instances. As for the additional relations like \textit{Happens}, the RST was followed.
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Template Elements} \vspace{0.25em}
+\begin{tabular}{|p{4cm}|p{6.5cm}|} \hline
+Element & Description \\ \hline
+$<$NP$>$					& Noun Phrase \\ \hline
+$<$NP:JobTitle$>$			& Noun Phrase indicating a Job Title \\ \hline
+$<$Noun:Possessive$>$		& Possessive Noun \\ \hline
+$<$AP$>$					& Adjective Phrase \\ \hline
+$<$Pronoun:Possessive$>$	& Possessive Pronoun \\ \hline
+$<$Verb$>$					& Verb in root form \\ \hline
+$<$VP$>$					& Verb Phrase \\ \hline
+$<$VP:Gerund$>$				& Gerund \\ \hline
+$<$PP:Temporal$>$			& Temporal Prepositional Phrase \\ \hline
+$<$Event$>$					& Event (usually a VP) \\ \hline
+$<$GoalEvent$>$				& A desired event \\ \hline
+$<$GoalState$>$				& A desired state \\ \hline
+$<$Cause$>$					& Cause \\ \hline
+$<$Effect$>$				& Event effect \\ \hline
+$<$EffectState$>$			& State effect \\ \hline
+$<$\textit{X}Indicator$>$	& Relation-specific Indicator \\ \hline
+\end{tabular}
+\label{tab:templateelements}
+\end{table}
+
+In Table \ref{tab:templateelements}, some relations used \textit{indicators} to denote the presence of a relation in the sentence. This is similar to the transition words discussed in Section 3.1.2. These will be discussed in detail in \ref{sec:indicators}.
+
+Shown in Table \ref{tab:templates1} are the templates used for relations that can be extracted within a single sentence. While in Table \ref{tab:templates2}, shown are the templates used for relations that can be extracted within a sentence and across 2 sentences. Beside each template is a sample sentence. All templates are already the combination of ConceptNet sentence patterns and thos manually derived from the corpus.
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Extraction Templates of each Relation (within a sentence)} \vspace{0.25em}
+\begin{tabular}{|p{3.5cm}|p{10cm}|} \hline
+Relation & Extraction Template/s \\ \hline
+IsA					& $<$NP$>$ $<$IsAIndicator$>$ $<$NP$>$ : A dog is a kind of canine. \\
+					& $<$NP$>$, $<$NP$>$, is : The dog, a canine, is... \\ \hline
+PropertyOf			& $<$AP$>$ $<$NP$>$ : The red ball... \\
+					& $<$NP$>$ ... $<$AP$>$ : The ball is red. \\ \hline
+PartOf				& $<$NP$>$ $<$PartOfIndicator$>$ $<$NP$>$ : A window is a part of a house. \\
+					& $<$Noun:Possessive$>$ ... $<$NP$>$ : The house's window... \\
+					& $<$Pronoun:Possessive$>$ ... $<$NP$>$ : Her head... \\ \hline
+MadeOf				& $<$NP$>$ $<$MadeOfIndicator$>$ $<$NP$>$ : A cake is made of flour. \\ \hline
+OftenNear			& $<$NP$>$ $<$OftenNearIndicator$>$ $<$NP$>$ : The vase is near the window. \\ \hline
+CapableOf			& $<$NP$>$ ... $<$Verb$>$ : The boy jumps. \\
+					& $<$NP$>$ $<$CapableOfIndicator$>$ $<$VP$>$ : The boy can jump. \\ \hline
+LocationOf			& $<$NP$>$ $<$LocationOfIndicator$>$ $<$NP$>$ : The slide is at the playground. \\ \hline
+UsedFor				& $<$NP$>$ $<$UsedForIndicator$>$ $<$VP$>$ : A rolling pin is used for baking. \\
+					& $<$VP:Gerund$>$ $<$UsedForIndicator$>$ $<$NP$>$ : Baking requires a measuring cup. \\
+					& $<$VP$>$ $<$UsedForIndicator$>$ $<$NP$>$: Kisha hit with a bat. \\ \hline
+Owns				& $<$NP$>$ $<$OwnsIndicator$>$ $<$NP$>$ : Kisha owns a car. \\
+					& $<$Noun:Possessive$>$ ... $<$NP$>$ : The dog's collar... \\
+					& $<$Pronoun:Possessive$>$ ... $<$NP$>$ : Their home... \\ \hline
+Happens				& $<$VP$>$ ... $<$PP:Temporal$>$ : ...go to school in the morning. \\
+					& $<$PP:Temporal$>$ ... $<$VP$>$ : At night, Kisha sleeps... \\ \hline
+HasRole				& $<$NP$>$ $<$IsAIndicator$>$ $<$NP:JobTitle$>$ : Helen is a teacher. \\
+					& $<$NP$>$, $<$NP:JobTitle$>$, is : Helen, a teacher, is... \\ \hline
+RoleResponsibleFor	& $<$NP:JobTitle$>$ ... $<$VP$>$ : The doctor cleaned... \\
+					& $<$VP$>$ by $<$NP:JobTitle$>$ : Kisha's sickness was diagnosed by the doctor. \\ \hline
+\end{tabular}
+\label{tab:templates1}
+\end{table}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Extraction Templates of each Relation (across sentences)} \vspace{0.25em}
+\begin{tabular}{|p{3.5cm}|p{10cm}|} \hline
+Relation & Extraction Template/s \\ \hline
+EventForGoalEvent	& $<$GoalEvent$>$ ... $<$Event$>$ : Kisha wants to buy a car. She saved all her lunch money. \\
+					& $<$Event$>$ $<$MotivationIndicator$>$ $<$GoalEvent$>$ : Kisha saved all her lunch money because she wants to buy a car. \\ \hline
+EventForGoalState	& $<$GoalState$>$ ... $<$Event$>$ :  Kisha wants to be slim. She ran around the park during mornings. \\
+					& $<$Event$>$ $<$MotivationIndicator$>$ $<$GoalState$>$ : Kisha always ran in the morning because she wants to be slim. \\ \hline
+EffectOf			& $<$Cause$>$ ... $<$Effect$>$ : Because of the accident, the child cried. \\
+					& $<$Effect$>$ ... $<$Cause$>$ : The child cried because of the accident. \\ \hline			
+EffectOfIsState		& $<$Cause$>$ ... $<$EffectState$>$ : Because of the accident, the child was sad. \\
+					& $<$EffectState$>$ ... $<$Cause$>$ : The child was sad because of the accident. \\ \hline		
+\end{tabular}
+\label{tab:templates2}
+\end{table}
+
+\subsection{Indicators}
+\label{sec:indicators}
+
+Indicators are transition words that aid in identifying explicit relations. In this study, 12 lists of indicators were created. Nine (9) are used in the templates above while the other 3 are used in the background. Table \ref{tab:indicators} shows the different types of indicators created.
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Relation Indicators} \vspace{0.25em}
+\begin{tabular}{|p{3.5cm}|p{10cm}|} \hline
+Name & Indicators \\ \hline
+IsA Indicators				& is a kind of, is a, is, is a type of, is an, 's a kind of, 's a, 's, 's a type of, 's an \\ \hline
+PartOf Indicators			& is a part of, is part of, has \\ \hline
+MadeOf Indicators			& is made of, is comprised of, form, become, becomes, forms \\ \hline
+OftenNear Indicators		& is near, is beside \\ \hline
+CapableOf Indicators		& can, could \\ \hline
+LocationOf Indicators		& is at, is located at, can be found at, in \\ \hline
+UsedFor Indicators			& is used for, requires, required, require, with \\ \hline
+Owns Indicators 			& owns, own, owned, has, have, had \\ \hline
+Motivation Indicators		& because, Because, since, Since, due, Due \\ \hline
+Goal Indicators				& because, Because, since, Since, due, Due \\ \hline
+Cause Indicators			& because, Because, since, Since, due to, Due to, for, For, as, As \\ \hline
+Effect Indicators			& as a result, As a result, Because of this, because of this, As a consequence, as a consequence, consequently, Consequently, 								hence, Hence, so, So, For this reason, for this reason, therefore, Therefore, thus, Thus \\ \hline
+\end{tabular}
+\label{tab:indicators}
+\end{table}
+
+\subsection{Architectural Design}
+\label{sec:archidesign}
+
+\subsection{Post-Processing}
+\label{sec:postprocessing}
+
+
+
+
+
+
+

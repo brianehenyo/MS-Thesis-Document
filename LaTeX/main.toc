@@ -6,12 +6,12 @@
 \contentsline {subsubsection}{\numberline {1.2.2}Specific Objectives}{3}
 \contentsline {subsection}{\numberline {1.3}Scope and Limitations of the Research}{3}
 \contentsline {subsection}{\numberline {1.4}Significance of the Research}{6}
-\contentsline {subsection}{\numberline {1.5}Research Methodology}{8}
-\contentsline {subsubsection}{\numberline {1.5.1}Requirements Analysis}{8}
+\contentsline {subsection}{\numberline {1.5}Research Methodology}{7}
+\contentsline {subsubsection}{\numberline {1.5.1}Requirements Analysis}{7}
 \contentsline {subsubsection}{\numberline {1.5.2}Data Gathering}{8}
 \contentsline {subsubsection}{\numberline {1.5.3}Architectural Design}{8}
-\contentsline {subsubsection}{\numberline {1.5.4}Implementation}{9}
-\contentsline {subsubsection}{\numberline {1.5.5}Testing}{9}
+\contentsline {subsubsection}{\numberline {1.5.4}Implementation}{8}
+\contentsline {subsubsection}{\numberline {1.5.5}Testing}{8}
 \contentsline {subsubsection}{\numberline {1.5.6}Documentation}{9}
 \contentsline {subsection}{\numberline {1.6}Calendar of Activities}{9}
 \contentsline {section}{\numberline {2}Review of Related Literature}{11}
@@ -27,8 +27,15 @@
 \contentsline {subsection}{\numberline {3.4}ConceptNet}{25}
 \contentsline {subsection}{\numberline {3.5}GATE}{26}
 \contentsline {subsection}{\numberline {3.6}Relation Extraction Techniques}{27}
-\contentsline {subsection}{\numberline {3.7}Additional Relations}{28}
-\contentsline {section}{\numberline {A}Resource Persons}{31}
-\contentsline {section}{\numberline {B}Personal Vitae}{32}
-\contentsline {section}{\numberline {C}Sample Children's Story Modification}{33}
-\contentsline {section}{References}{35}
+\contentsline {subsection}{\numberline {3.7}Additional Relations}{29}
+\contentsline {section}{\numberline {4}Design and Implementation}{31}
+\contentsline {subsection}{\numberline {4.1}Corpus}{31}
+\contentsline {subsubsection}{\numberline {4.1.1}Modifications}{31}
+\contentsline {subsection}{\numberline {4.2}Target Relations}{34}
+\contentsline {subsection}{\numberline {4.3}Extraction Templates}{35}
+\contentsline {subsection}{\numberline {4.4}Indicators}{38}
+\contentsline {subsection}{\numberline {4.5}Architectural Design}{39}
+\contentsline {subsection}{\numberline {4.6}Post-Processing}{39}
+\contentsline {section}{\numberline {A}Resource Persons}{40}
+\contentsline {section}{\numberline {B}Personal Vitae}{41}
+\contentsline {section}{References}{42}
