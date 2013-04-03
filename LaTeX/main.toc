@@ -14,28 +14,48 @@
 \contentsline {subsubsection}{\numberline {1.5.5}Testing}{8}
 \contentsline {subsubsection}{\numberline {1.5.6}Documentation}{9}
 \contentsline {subsection}{\numberline {1.6}Calendar of Activities}{9}
-\contentsline {section}{\numberline {2}Review of Related Literature}{11}
-\contentsline {subsection}{\numberline {2.1}Information and Relation Extraction Systems}{11}
-\contentsline {subsection}{\numberline {2.2}Semantic Relations}{16}
-\contentsline {subsection}{\numberline {2.3}Knowledge Representations}{18}
-\contentsline {section}{\numberline {3}Theoretical Framework}{21}
-\contentsline {subsection}{\numberline {3.1}Children's Stories}{21}
-\contentsline {subsubsection}{\numberline {3.1.1}Events}{21}
-\contentsline {subsubsection}{\numberline {3.1.2}Transition Words}{22}
-\contentsline {subsection}{\numberline {3.2}Semantic ontology and Semantic relations}{23}
-\contentsline {subsection}{\numberline {3.3}Picture Books}{24}
-\contentsline {subsection}{\numberline {3.4}ConceptNet}{25}
-\contentsline {subsection}{\numberline {3.5}GATE}{26}
-\contentsline {subsection}{\numberline {3.6}Relation Extraction Techniques}{27}
-\contentsline {subsection}{\numberline {3.7}Additional Relations}{29}
-\contentsline {section}{\numberline {4}Design and Implementation}{31}
-\contentsline {subsection}{\numberline {4.1}Corpus}{31}
-\contentsline {subsubsection}{\numberline {4.1.1}Modifications}{31}
-\contentsline {subsection}{\numberline {4.2}Target Relations}{34}
-\contentsline {subsection}{\numberline {4.3}Extraction Templates}{35}
-\contentsline {subsection}{\numberline {4.4}Indicators}{38}
-\contentsline {subsection}{\numberline {4.5}Architectural Design}{39}
-\contentsline {subsection}{\numberline {4.6}Post-Processing}{39}
-\contentsline {section}{\numberline {A}Resource Persons}{40}
-\contentsline {section}{\numberline {B}Personal Vitae}{41}
-\contentsline {section}{References}{42}
+\contentsline {section}{\numberline {2}Review of Related Literature}{10}
+\contentsline {subsection}{\numberline {2.1}Information and Relation Extraction Systems}{10}
+\contentsline {subsection}{\numberline {2.2}Semantic Relations}{15}
+\contentsline {subsection}{\numberline {2.3}Knowledge Representations}{17}
+\contentsline {section}{\numberline {3}Theoretical Framework}{20}
+\contentsline {subsection}{\numberline {3.1}Children's Stories}{20}
+\contentsline {subsubsection}{\numberline {3.1.1}Events}{20}
+\contentsline {subsubsection}{\numberline {3.1.2}Transition Words}{21}
+\contentsline {subsection}{\numberline {3.2}Semantic ontology and Semantic relations}{22}
+\contentsline {subsection}{\numberline {3.3}Picture Books}{23}
+\contentsline {subsection}{\numberline {3.4}ConceptNet}{24}
+\contentsline {subsection}{\numberline {3.5}GATE}{25}
+\contentsline {subsubsection}{\numberline {3.5.1}Document Reset}{26}
+\contentsline {subsubsection}{\numberline {3.5.2}English Tokeniser}{27}
+\contentsline {subsubsection}{\numberline {3.5.3}Gazetteer}{27}
+\contentsline {subsubsection}{\numberline {3.5.4}Sentence Splitter}{27}
+\contentsline {subsubsection}{\numberline {3.5.5}Part of Speech Tagger}{28}
+\contentsline {subsubsection}{\numberline {3.5.6}Semantic Tagger}{28}
+\contentsline {subsubsection}{\numberline {3.5.7}Orthographic Coreferencer}{28}
+\contentsline {subsubsection}{\numberline {3.5.8}Pronominal Coreference}{28}
+\contentsline {subsubsection}{\numberline {3.5.9}Morphological Analyzer}{28}
+\contentsline {subsubsection}{\numberline {3.5.10}Chunker}{29}
+\contentsline {subsubsection}{\numberline {3.5.11}Transducer}{29}
+\contentsline {subsection}{\numberline {3.6}Relation Extraction Techniques}{30}
+\contentsline {subsection}{\numberline {3.7}Additional Relations}{31}
+\contentsline {section}{\numberline {4}Design and Implementation}{33}
+\contentsline {subsection}{\numberline {4.1}Corpus}{33}
+\contentsline {subsubsection}{\numberline {4.1.1}Modifications}{33}
+\contentsline {subsection}{\numberline {4.2}Target Relations}{36}
+\contentsline {subsection}{\numberline {4.3}Extraction Templates}{37}
+\contentsline {subsection}{\numberline {4.4}Indicators}{40}
+\contentsline {subsection}{\numberline {4.5}Architectural Design}{41}
+\contentsline {subsubsection}{\numberline {4.5.1}Resolving Story-specific Named Entities}{42}
+\contentsline {subsubsection}{\numberline {4.5.2}Recognizing Target Relations}{43}
+\contentsline {subsection}{\numberline {4.6}Post-Processing}{44}
+\contentsline {section}{\numberline {5}Results and Analysis}{46}
+\contentsline {subsection}{\numberline {5.1}Methodology}{46}
+\contentsline {subsubsection}{\numberline {5.1.1}Examining the Picture Books Themes}{46}
+\contentsline {subsubsection}{\numberline {5.1.2}Grouping Target Relation Types}{47}
+\contentsline {subsubsection}{\numberline {5.1.3}Selected Relations}{49}
+\contentsline {subsection}{\numberline {5.2}Extraction Analysis}{50}
+\contentsline {subsection}{\numberline {5.3}Story Analysis}{50}
+\contentsline {section}{\numberline {A}Resource Persons}{55}
+\contentsline {section}{\numberline {B}Personal Vitae}{56}
+\contentsline {section}{References}{57}

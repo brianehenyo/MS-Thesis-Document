@@ -14,7 +14,7 @@ This chapter discusses the design and implementation of the open-source tool to 
 \subsection{Corpus}
 \label{sec:corpus}
 
-The input corpus for this study is comprised of 30 children's stories. Each were encoded digitally and modified to remove dialogues. The raw version was retained and used with the modified stories. Overall, 60 stories were used to extract the relations. Shown in Table \ref{tab:stories} are the different story groups and their corresponding age groups. 
+The input corpus for this study is comprised of 30 children's stories. Each were encoded digitally and modified to remove dialogues. The raw version was retained and used with the modified stories. For this research, the 2 corpus are named \emph{RAW} and \emph{MODIFIED}. Overall, 60 stories were used to extract the relations. Shown in Table \ref{tab:stories} are the different story groups and their corresponding age groups. 
 
 \begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
 \centering
@@ -170,9 +170,9 @@ $<$\textit{X}Indicator$>$	& Relation-specific Indicator \\ \hline
 \label{tab:templateelements}
 \end{table}
 
-In Table \ref{tab:templateelements}, some relations used \textit{indicators} to denote the presence of a relation in the sentence. This is similar to the transition words discussed in Section 3.1.2. These will be discussed in detail in \ref{sec:indicators}.
+In Table \ref{tab:templateelements}, \textit{indicators} ($<$\textit{X}Indicator$>$) are used to denote the presence of a relation in the sentence. This is similar to the transition words discussed in Section 3.1.2. These will be discussed in detail in Section  \ref{sec:indicators}.
 
-Shown in Table \ref{tab:templates1} are the templates used for relations that can be extracted within a single sentence. While in Table \ref{tab:templates2}, shown are the templates used for relations that can be extracted within a sentence and across 2 sentences. Beside each template is a sample sentence. All templates are already the combination of ConceptNet sentence patterns and thos manually derived from the corpus.
+Shown in Table \ref{tab:templates1} are the templates used for relations that can be extracted within a single sentence. While in Table \ref{tab:templates2}, shown are the templates used for relations that can be extracted within a sentence and across 2 sentences. Beside each template is a sample sentence. All templates are already the combination of ConceptNet sentence patterns and those manually derived from the corpus.
 
 \begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
 \centering
@@ -245,7 +245,7 @@ Owns Indicators 			& owns, own, owned, has, have, had \\ \hline
 Motivation Indicators		& because, Because, since, Since, due, Due \\ \hline
 Goal Indicators				& because, Because, since, Since, due, Due \\ \hline
 Cause Indicators			& because, Because, since, Since, due to, Due to, for, For, as, As \\ \hline
-Effect Indicators			& as a result, As a result, Because of this, because of this, As a consequence, as a consequence, consequently, Consequently, 								hence, Hence, so, So, For this reason, for this reason, therefore, Therefore, thus, Thus \\ \hline
+Effect Indicators			& as a result, As a result, Because of this, because of this, As a consequence, as a consequence, consequently, Consequently, hence, Hence, so, So, For this reason, for this reason, therefore, Therefore, thus, Thus \\ \hline
 \end{tabular}
 \label{tab:indicators}
 \end{table}
@@ -253,8 +253,130 @@ Effect Indicators			& as a result, As a result, Because of this, because of this
 \subsection{Architectural Design}
 \label{sec:archidesign}
 
+The architecture of the system is mostly dependent on the open-source tool GATE (See Section 3.5). The \textit{unstructured corpora} refers to the input children's stories. Each story must undergo the modifications mentioned in Section \ref{sec:modifications}. The components shown in Figure \ref{fig:archidesign} comprise the architectural design. Each must be included in a GATE Application Pipeline that will be run.
+
+\begin{figure}[h]                %-- use [t] to place figure at top, [b] to place at the bottom
+   \centering                    %-- use this to center the figure
+   \includegraphics{archidesign1.jpg}      %-- include image file named as "sinag1.eps" 
+   \caption{Architectural Design}
+    \label{fig:archidesign}
+\end{figure}
+
+Each children's story text from the \textit{unstructured corpora} is opened in GATE by creating a Gate Document. Once the GATE documents are created, the next step is to create a GATE Corpus and add the documents. First, the GATE application resets the input of any previous annotations. This applies only if the input has already been annotated before passing through GATE. After cleaning, the input is parsed into tokens. The input was then  split into sentences and each token was annotated with their respective part-of-speech tags. After that, named-entities from the defined gazetteers were annotated. Then, pronouns are matched with the named-entities they are referring to in the text. 
+
+Then, each token are processed to identify their lemmas, affixes and chunks. Lastly, the input text is ran through a transducer. This will finally identify all the target relations and create the appropriate annotations for each.
+
+The output of the GATE tool is an annotated version of the story that also contain the extracted target relations.
+
+\subsubsection{Resolving Story-specific Named Entities}
+\label{sec:gazetteer}
+
+In this implementation, a gazetteer resource was used to identify named entities in the input texts. However, the predefined lists does not cover some of the named entities in the children's story corpora. Such include characters, locations and roles. For example, in the \textit{Winnie the Pooh} set of stories, \textit{Pooh}, \textit{Piglet} and \textit{Tigger}, among others, are not included. Thus, additional lists are needed. Aside from the named entities found in stories, gazetteers are also created for indicators, world states and emotions, among others. These will be used by the transducer in its annotation patterns. A total of 20 new gazetteers were created for this study. Shown in Table \ref{tab:newgazetteersind} are the gazetteers created for indicators.
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{New Gazetteers (Indicators)} \vspace{0.25em}
+\begin{tabular}{|p{5cm}|p{5cm}|} \hline
+File Name & Description \\ \hline
+isaindicator.lst			& IsA Indicators \\ \hline
+partofindicator.lst			& PartOf Indicators \\ \hline
+madeofindicator.lst			& MadeOf Indicators \\ \hline
+oftennearindicator.lst		& OftenNear Indicators \\ \hline
+capableofindicator.lst		& CapableOf Indicators \\ \hline
+locationofindicator.lst		& LocationOf Indicators \\ \hline
+usedforindicator.lst		& UsedFor Indicators \\ \hline
+ownsindicator.lst 			& Owns Indicators \\ \hline
+motivationindicator.lst		& Motivation Indicators \\ \hline
+goalindicator.lst			& Goal Indicators \\ \hline
+causeindicator.lst			& Cause Indicators \\ \hline
+effectindicator.lst			& Effect Indicators \\ \hline
+\end{tabular}
+\label{tab:newgazetteersind}
+\end{table}
+
+Table \ref{tab:newgazetteersstory} shows the gazetteers created for the story characters, locations and objects. Others were added to assist in improving the extraction of target relations.
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{New Gazetteers (Miscellaneous)} \vspace{0.25em}
+\begin{tabular}{|p{5cm}|p{5cm}|} \hline
+File Name & Description \\ \hline
+storyLoc.lst		& Story Locations \\ \hline
+animal.lst			& Animals \\ \hline
+bodypart.lst		& Body Parts \\ \hline
+position.lst		& Spatial markers \\ \hline
+object.lst			& Objects \\ \hline
+character.lst		& Story Characters \\ \hline
+emotion.lst			& Emotions \\ \hline
+worldstate.lst 		& World States \\ \hline
+\end{tabular}
+\label{tab:newgazetteersstory}
+\end{table}
+
+\subsubsection{Recognizing Target Relations}
+\label{sec:recogtarget}
+
+In order to extract the target relations, a number of JAPE phases must be created to recognise and annotate them in the input texts. A total of 23 customized JAPE phases were created for this purpose. Shown in Table \ref{tab:newjaperel} are the new JAPE phases to recognize the target relations. Table \ref{tab:newjapemisc} shows the other JAPE phases that are usually prerequisites of the target relation JAPE phases.
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{New JAPE Phases (Target Relations)} \vspace{0.25em}
+\begin{tabular}{|p{6cm}|p{5cm}|} \hline
+File Name & Description \\ \hline
+isARelation.jape					& IsA Phase \\ \hline
+partOfRelation.jape					& PartOf Phase \\ \hline
+madeOfRelation.jape					& MadeOf Phase \\ \hline
+oftenNearRelation.jape				& OftenNear Phase \\ \hline
+capableOfRelation.jape				& CapableOf Phase \\ \hline
+locationOfRelation.jape				& LocationOf Phase \\ \hline
+usedForRelation.jape				& UsedFor Phase \\ \hline
+ownsRelation.jape 					& Owns Phase \\ \hline
+effectOf.jape						& EffectOf Phase \\ \hline
+effectOfIsState.jape				& EffectOfIsState Phase \\ \hline
+eventForGoalEvent.jape				& EventForGoalEvent Phase \\ \hline
+eventForGoalState.jape				& EventForGoalState Phase \\ \hline
+happens.jape						& Happens Phase \\ \hline
+hasRoleRelation.jape				& HasRole Phase \\ \hline
+roleResponsibleForRelation.jape		& RoleResponsibleFor Phase \\ \hline
+\end{tabular}
+\label{tab:newjaperel}
+\end{table}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{New JAPE Phases (Miscellaneous)} \vspace{0.25em}
+\begin{tabular}{|p{5cm}|p{5cm}|} \hline
+File Name & Description \\ \hline
+cause.jape				& Identify causes \\ \hline
+effect.jape				& Identify effects \\ \hline
+event.jape				& Identify events \\ \hline
+goal.jape				& Identify goals \\ \hline
+goalEvent.jape			& Identify goal events \\ \hline
+goalState.jape			& Identify goal states \\ \hline
+preprocessing1.jape		& Identify named entities based on new gazetteers \\ \hline
+\end{tabular}
+\label{tab:newjapemisc}
+\end{table}
+
 \subsection{Post-Processing}
 \label{sec:postprocessing}
+
+After running the GATE tool to annotate the stories, all post-processing were done semi-automatically. Since the output of GATE is just the annotated version of the input corpus, the annotated stories were saved as XML from the GATE program. These XML files contain all annotations like \textit{Token} and \textit{Sentence}, among others.  The target relations were then extracted to a PBREL file. 
+
+PBREL files are created for the purpose of this study. It contains all extracted target relations from a story. Aside from the relations and their corresponding concepts, the rules used to extract them are also included for debugging purposes. An excerpt from \textit{A wild weather day.pbrel} is shown below.
+
+\begin{verse}
+\itshape
+UsedFor(snacks,eating) UsedForRelation3 \\
+Owns(their,adventure) OwnsRelation3\\
+Owns(Pierre,garden) OwnsRelation3\\
+CapableOf(thunder,go) CapableOfRelation1\\
+EffectOf(stopped blowing,stopped falling) EffectOf4\\
+EffectOf(shook the clubhouse,looked out the window) EffectOf4\\
+EffectOf(got really cold,turned into balls of ice) EffectOf4\\
+\end{verse}
+
+After creating PBREL files for each story, the extracted relations were then collated into a single CPBREL (Collated PBREL) file for each big group of stories (\emph{RAW} and \emph{MODIFIED}). Aside from collating, redundant relations were also removed. The final CPBREL files for the \emph{RAW} and \emph{MODIFIED} stories were used in the testing stage.
 
 
 

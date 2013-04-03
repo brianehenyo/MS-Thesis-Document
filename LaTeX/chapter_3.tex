@@ -198,7 +198,7 @@ Rose & Flower & IsA(rose, flower) \\ \hline
 \label{tab:isasamples}
 \end{table}
 
-Table \ref{tab:conceptnetrel} are the rest of the ConceptNet \cite{Speer:2012} relations with their corresponding sentence patterns. 
+Table \ref{tab:conceptnetrel} shows the rest of the ConceptNet \cite{Speer:2012} relations with their corresponding sentence patterns. 
 
 \begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
 \centering
@@ -236,6 +236,105 @@ HasLastSubevent & The last thing you do when you \textit{VP} is \textit{NP/VP} \
 GATE (General Architecture for Textual Engineering) is a general-purpose infrastructure aimed for natural language software development. It also aims to reduce integration overheads. This is done through the provision of standard mechanisms of data communication for the the different software components. GATE also uses Java and XML as its platforms. 
 
 As a language engineering architecture, GATE provides processing resources with ANNIE as its main resource. ANNIE provides a set of reusable processing resources to facilitate language engineering tasks. It consists of the following resources: tokeniser, sentence splitter, POS tagger, gazetteer, finite state transducer or semantic tagger, orthomatcher and coreference resolver. The tokeniser splits a given text into simple tokens. The sentence splitter splits the text into sentences. The POS tagger tags each word or symbol with their specific part-of-speech tags. The gazetteer consists of lists like that of cities and organizations. It can also consist of lists of indicators, like titles and other designators. The orthomatcher performs coreference or entity tracking through the recognition of relations between entities. The coreference resolver detects identity relations between entities. Lastly, the semantic tagger consists of tailor-made rules written in JAPE language. These rules describe the patterns and annotations to be created. A JAPE grammar has a set of phases which consist of pattern rules. These phases run sequentially. 
+
+\subsubsection{Document Reset}
+\label{sec:docreset}
+
+Since a single GATE document can go through a GATE application a number of times, the Document Reset resource must be included before any other resource. This will ensure that the document is returned to its original state, without all the previous annotations. 
+
+\subsubsection{English Tokeniser}
+\label{sec:tokeniser}
+
+This GATE resource splits the input document into tokens such as words (uppercase vs lowercase), punctuations, symbols, spaces and numbers. After splitting the text, a transducer then improves the output of the normal tokeniser. The final output is based on the requirements of the Englsh part-of-speech tagger. A sample improvement is the joining of the three tokens \textit{don}, \textit{'} and \textit{t} to produce two tokens \textit{do} and \textit{n't}.
+
+\subsubsection{Gazetteer}
+\label{sec:gazetteer}
+
+A gazetteer is a resource that identifies entity names within a text with based on predefined lists. Each gazetteer is a plain text file that has one entry per line. This may contain a set of names like names of characters, locations and job titles, to name a few. Shown below is an excerpt of the predefined gazetteer \textit{jobtitles.lst}
+
+\begin{verse}
+account Manager \\
+office Manager\\
+analyst\\
+engineer\\
+sales manager\\
+doctor\\
+software engineer\\
+business analyst\\
+managing director\\
+\end{verse}
+
+Because this resource can use a number of gazetteers to identify entity names, an index file (lists.def) is used. Each time this resource detects a gazetteer entry in the text, a \textit{Lookup} annotation is created.
+
+\subsubsection{Sentence Splitter}
+\label{sec:sentencesplitter}
+
+The sentence splitter, as the name suggests, segments the input GATE document into sentences and creates a \textit{Sentence} annotation. A sentence break is annotated as \textit{Split}. 
+
+\subsubsection{Part of Speech Tagger}
+\label{sec:pos}
+
+This resource adds a part-of-speech tag as a feature to the existing Token annotations. It uses a default lexicon and ruleset. It was the result of training on a large dataset from the Wall Street Journal.
+
+\subsubsection{Semantic Tagger}
+\label{sec:semantictagger}
+
+Based on the JAPE language, the named-entity transducer resource uses the annotations created in previous phases to produce outputs of annotated entities. Sample annotations created in this phase are \textit{Person} and \textit{Location}.
+
+\subsubsection{Orthographic Coreferencer}
+\label{sec:ortho}
+
+The Orthomatcher is mainly responsible in making sure that named entities identified by the semantic tagger which mean the same thing are matched accordingly. It does not actually produce new annotations. Rather, this resource adds a \textit{matches} attribute to the named entities which contain the IDs of matching entities. For example, if the words \textit{Coca-Cola} and \textit{Coke} were tagged in a text, the Orthomatcher will add the \textit{matches} attribute containing the IDs of these two words. 
+
+As resource, it uses a lookup table of aliases to perform coreference. 
+
+\subsubsection{Pronominal Coreference}
+\label{sec:pronominal}
+
+In a nutshell, this GATE resource identifies the named entity a pronoun is referring to in a text. It uses the output of pervious phases, specially the Orthographic Coreferencer. And like the Orthomatcher, it just adds the \textit{matches} attribute to the appropriate annotation.
+
+\subsubsection{Morphological Analyzer}
+\label{sec:morphological}
+
+The GATE Morphological Analyzer takes a tokenized document as input. It then runs through all the tokens and based on their part-of-speech tag, the lemma and affix are identified. These are then added as attributes to the token. 
+
+\subsubsection{Chunker}
+\label{sec:chunker}
+
+Though not really a part of GATE, this additional resource by OpenNLP identifies the different phrases or \textit{chunks} in sentence. For each token, a \textit{chunk} attribute is added based on the \textit{category} of a token. Here are some \textit{chunks} identified by this resource:
+
+\begin{verse}
+B-NP token begins of a noun phrase;\\
+I-NP token is inside a noun phrase;\\
+B-VP token begins a verb phrase;\\
+I-VP token is inside a verb phrase;\\
+O token is outside any phrase;\\
+B-PP token begins a prepositional phrase;\\
+B-ADVP token begins an adverbial phrase.
+\end{verse}
+
+\subsubsection{Transducer}
+\label{sec:transducer}
+
+JAPE or Java Annotation Patterns Engine, allows the identification of regular expression in annotation on GATE documents. One must create a JAPE grammar that contains phases running sequentially. Each phase has a set of rules that run based on priorities. Each rule has a left-hand-side (LHS) and a right-hand-side (RHS). The LHS contain the annotation pattern while the RHS contain the action to be done once the pattern is matched. Shown below is a sample JAPE rule:
+
+\begin{verse}
+Phase: Jobtitle  \\
+Input: Lookup  \\
+Options: control = appelt debug = true  \\
+Rule: Jobtitle1  \\
+(  \\
+ {Lookup.majorType == jobtitle}  \\
+ (  \\
+  {Lookup.majorType == jobtitle}  \\
+ )?  \\
+)  \\
+:jobtitle  \\
+-->  \\
+ :jobtitle.JobTitle = {rule = "JobTitle1"}\\
+\end{verse}
+
+In this example, the LHS tells us that the rule is trying to look for 2 consecutive Lookup annotations with the \textit{majortype} attribute equal to \textit{jobtitle}. The second Lookup annotation is optional because of the question mark symbol (?) following it. After recognizing the said annotation pattern, the rule then creates a new annotation \textit{JobTitle} and adds the \textit{rule} attribute to it. It will have the value JobTitle1.
 
 \subsection{Relation Extraction Techniques}
 \label{sec:relextraction}
