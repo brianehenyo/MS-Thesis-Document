@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.3.30)  4 APR 2013 03:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.3.30)  4 APR 2013 22:35
 entering extended mode
 **main.tex
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.tex"
@@ -187,7 +187,22 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box29
 )
 \@float@every@table=\toks24
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty"
+Package: alltt 1997/06/16 v2.0g defines alltt environment
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count103
+\rotFPtop=\skip50
+\rotFPbot=\skip51
+\rot@float@box=\box30
+\rot@mess@toks=\toks25
+))
 
 LaTeX Warning: Unused global option(s):
     [onepage].
@@ -206,10 +221,29 @@ LaTeX Warning: Label `tab:conceptnetrel' multiply defined.
 LaTeX Warning: Label `sec:gazetteer' multiply defined.
 
 ) ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_5.aux")
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_6.aux"
+
+LaTeX Warning: Label `sec:pos' multiply defined.
+
+)
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_resourcepers
 on.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_personalvita
-e.aux"))
+e.aux")
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_stories.aux"
+
+LaTeX Warning: Label `tab:stories' multiply defined.
+
+) ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_results.au
+x")
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_ontology.aux
+"
+
+LaTeX Warning: Label `tab:grpbauth' multiply defined.
+
+)
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_generated.au
+x"))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
@@ -278,17 +312,17 @@ If that doesn't work, type  X <return>  to quit.
 
 ) ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count103
+\scratchcounter=\count104
 \scratchdimen=\dimen116
-\scratchbox=\box30
-\nofMPsegments=\count104
-\nofMParguments=\count105
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count106
+\scratchbox=\box31
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count107
 \MPscratchDim=\dimen117
-\MPnumerator=\count107
-\makeMPintoPDFobject=\count108
-\everyMPtoPDFconversion=\toks26
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
+\everyMPtoPDFconversion=\toks27
 ) ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\title_page.tex"
 [1
 
@@ -313,16 +347,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.toc" [2
 
 ]
-[3])
+[3] [4])
 \tf@toc=\write3
- [4] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.lof")
+ [5] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.lof")
 \tf@lof=\write4
-
-[5] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.lot"
-[6])
+ [6] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.lot"
+[7] [8])
 \tf@lot=\write5
- [7] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_1.tex" [
-1
+ [9]
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_1.tex"
+[1
 
 ] [2]
 Missing character: There is no … in font cmti12!
@@ -517,7 +551,7 @@ Underfull \hbox (badness 2318) in paragraph at lines 241--241
 []\OT1/cmr/m/n/12 CapableOf In-di-ca-
  []
 
-[40] <archidesign1.jpg, id=160, 240.9pt x 298.11375pt>
+[40] <archidesign1.jpg, id=167, 240.9pt x 298.11375pt>
 File: archidesign1.jpg Graphic file (type jpg)
  <use archidesign1.jpg>
 Package pdftex.def Info: archidesign1.jpg used on input line 260.
@@ -534,6 +568,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 356--356
 
 [44]) [45]
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_5.tex"
+Underfull \hbox (badness 3942) in paragraph at lines 30--30
+[]\OT1/cmr/bx/n/12 Mapped Tar-get Re-la-
+ []
+
+
 Underfull \hbox (badness 5607) in paragraph at lines 32--32
 []\OT1/cmr/m/n/12 isA, ca-pa-bleOf, ef-fectOf,
  []
@@ -576,7 +615,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--52
 \OT1/cmr/m/n/12 has-Role, rol-eRe-spon-si-ble-
  []
 
-<altpath.jpg, id=180, 323.70938pt x 240.9pt>
+<altpath.jpg, id=187, 323.70938pt x 240.9pt>
 File: altpath.jpg Graphic file (type jpg)
  <use altpath.jpg>
 Package pdftex.def Info: altpath.jpg used on input line 63.
@@ -585,7 +624,7 @@ Package pdftex.def Info: altpath.jpg used on input line 63.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[47] <altpatheffectofisstate.jpg, id=185, 331.99031pt x 200.24812pt>
+[47] <altpatheffectofisstate.jpg, id=191, 331.99031pt x 200.24812pt>
 File: altpatheffectofisstate.jpg Graphic file (type jpg)
 
 <use altpatheffectofisstate.jpg>
@@ -597,714 +636,40 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [48 <C:/Users/Briane/Dropbox/THESIS/MS Thesis Document/LaTeX/altpath.jpg>]
 [49 <C:/Users/Briane/Dropbox/THESIS/MS Thesis Document/LaTeX/altpatheffectofiss
-tate.jpg>]
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.109 [1]
-           The morning was sunny.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
+tate.jpg>] [50] [51] [52]
+LaTeX Font Info:    Try loading font information for OT1+txtt on input line 216
+.
 
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.110 [2]
-           Edward the elephant was in the dining room.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
+("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\ot1txtt.fd"
+File: ot1txtt.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OT1/txtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/txtt/b/n' tried instead on input line 217.
+LaTeX Font Info:    Font shape `OT1/txtt/m/it' in size <12> not available
+(Font)              Font shape `OT1/txtt/m/sl' tried instead on input line 224.
 
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.111 [3]
-           He played near breakable glass of water.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
+LaTeX Font Info:    Font shape `OT1/txtt/bx/it' in size <12> not available
+(Font)              Font shape `OT1/txtt/b/sl' tried instead on input line 224.
 
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.112 [4]
-           Daddy Sam told Edward to be careful.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
+ [53]
+Overfull \hbox (12.84668pt too wide) in paragraph at lines 275--275
+[]\OT1/txtt/m/n/12 [7]  Edward told Mommy Edna that Porky the pig broke glass o
+f water.[] 
+ []
 
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.113 [5]
-           Edward continued to play glass of water near.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
+[54] [55]) [56]
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_6.tex"
+[57
 
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.116 [8]
-           He hid away from Daddy Sam.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
 
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.118 [10]
-           Daddy Sam called Edward.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.119 [11]
-           Daddy Sam told Edward that he should have obeyed.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.120 [12]
-           He felt sorry.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.121 [13]
-           Daddy Sam cleaned up glass of water.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.122 [14]
-           Edward helped Daddy Sam to clean up.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.123 [15]
-           Daddy Sam reminded Edward to be careful.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.124 [16]
-           Being careful is important.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.125 [17]
-           From that day onwards, Edward always was careful.
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-[50]
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.133 [1]
-           The afternoon was sunny.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.134 [2]
-           Edward the elephant was in the dining room.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.135 [3]
-           He played near breakable glass of water.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.136 [4]
-           Mommy Edna told Edward to be careful.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.137 [5]
-           Edward continued to play glass of water near.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.140 [8]
-           He hid away from Mommy Edna.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.142 [10]
-           Mommy Edna called Edward.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.143 [11]
-           Mommy Edna told Edward that he should have obeyed.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.144 [12]
-           Edward felt sorry.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.145 [13]
-           Mommy Edna cleaned up glass of water.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.146 [14]
-           Edward helped Mommy Edna to clean up.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.147 [15]
-           She reminded Edward to be careful.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.148 [16]
-           Being careful is important.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.149 [17]
-           From that day onwards, Edward always was careful.
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.159 [1]
-           The morning was warm.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.160 [2]
-           Edward the elephant was in the dining room.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-[51]
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.161 [3]
-           He played near breakable glass of water.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.163 [5]
-           He was worried.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.164 [6]
-           Mommy Edna saw that glass of water was smashed.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.165 [7]
-           Edward told Mommy Edna that Porky the pig broke glass of water.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.166 [8]
-           He was sad.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.167 [9]
-           Porky cried.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.168 [10]
-           Edward felt guilty.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.170 [12]
-           Mommy Edna told Edward that he should have been honest.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.171 [13]
-           He apologized to Mommy Edna.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.172 [14]
-           Edward apologized to Porky.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.173 [15]
-           Mommy Edna told Edward to be honest.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.174 [16]
-           Mommy Edna told Edward that being honest is good.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.175 [17]
-           From that day onwards, Edward always was honest.
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-[52]
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.186 [2]
-           Playing is the playground.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.187 [3]
-           An oak had trunk.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.188 [4]
-           A person had a toe.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.189 [5]
-           A book had paper.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.190 [6]
-           It had ink.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.191 [7]
-           Playing is dirty.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.192 [8]
-           It was healthy.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.195 [11]
-           Eating dinner is the evening.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.196 [12]
-           Going to the school is the morning.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.197 [13]
-           A fireman was rescuing.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.198 [14]
-           A librarian was organizing.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.199 [15]
-           Daddy Sam had a ball.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.200 [16]
-           He had the tricycle.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.201 [17]
-           From then on, Roy always took the bath.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \ignorespaces 
-l.208 [12]
-           Going to the school is saying goodbye.\\
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-[53]) [54]
+] [58]) [59]
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_resourcepers
 on.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-) [55
+) [60
 
 
 ]
@@ -1314,15 +679,191 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-) [56
+) [61
 
 
-] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.bbl"
-[57
+]
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_stories.tex"
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]\OT1/cmr/bx/n/12 Story
+ []
+
+) [62
+
+
+]
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_results.tex"
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
+[]\OT1/cmr/bx/n/12 Story
+ []
+
+
+Overfull \hbox (2.85562pt too wide) in paragraph at lines 58--58
+[]\OT1/cmr/bx/n/12 Proper-
+ []
+
+
+Overfull \hbox (2.22089pt too wide) in paragraph at lines 58--58
+[]\OT1/cmr/bx/n/12 Part-
+ []
+
+
+Overfull \hbox (1.96185pt too wide) in paragraph at lines 58--58
+[]\OT1/cmr/bx/n/12 Made-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
+[]\OT1/cmr/bx/n/12 Capa-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
+[]\OT1/cmr/bx/n/12 Often-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
+[]\OT1/cmr/bx/n/12 Loca-
+ []
+
+[63
+
+
+]
+Overfull \hbox (1.36534pt too wide) in paragraph at lines 98--98
+[]\OT1/cmr/bx/n/12 EventFor-
+ []
+
+
+Overfull \hbox (4.91393pt too wide) in paragraph at lines 98--98
+\OT1/cmr/bx/n/12 GoalEvent| 
+ []
+
+
+Overfull \hbox (1.36534pt too wide) in paragraph at lines 98--98
+[]\OT1/cmr/bx/n/12 EventFor-
+ []
+
+
+Overfull \hbox (1.49031pt too wide) in paragraph at lines 98--98
+\OT1/cmr/bx/n/12 GoalState| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+[]\OT1/cmr/bx/n/12 EffectOf-
+ []
+
+[64]
+Overfull \hbox (22.488pt too wide) in paragraph at lines 137--172
+ [][] 
+ []
+
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+[]\OT1/cmr/bx/n/12 Story
+ []
+
+
+Overfull \hbox (2.85562pt too wide) in paragraph at lines 178--178
+[]\OT1/cmr/bx/n/12 Proper-
+ []
+
+
+Overfull \hbox (2.22089pt too wide) in paragraph at lines 178--178
+[]\OT1/cmr/bx/n/12 Part-
+ []
+
+
+Overfull \hbox (1.96185pt too wide) in paragraph at lines 178--178
+[]\OT1/cmr/bx/n/12 Made-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+[]\OT1/cmr/bx/n/12 Capa-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+[]\OT1/cmr/bx/n/12 Often-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+[]\OT1/cmr/bx/n/12 Loca-
+ []
+
+[66]
+Overfull \hbox (1.36534pt too wide) in paragraph at lines 218--218
+[]\OT1/cmr/bx/n/12 EventFor-
+ []
+
+
+Overfull \hbox (4.91393pt too wide) in paragraph at lines 218--218
+\OT1/cmr/bx/n/12 GoalEvent| 
+ []
+
+
+Overfull \hbox (1.36534pt too wide) in paragraph at lines 218--218
+[]\OT1/cmr/bx/n/12 EventFor-
+ []
+
+
+Overfull \hbox (1.49031pt too wide) in paragraph at lines 218--218
+\OT1/cmr/bx/n/12 GoalState| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+[]\OT1/cmr/bx/n/12 EffectOf-
+ []
+
+[67]
+Overfull \hbox (22.488pt too wide) in paragraph at lines 257--292
+ [][] 
+ []
+
+[68]) [69]
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_ontology.tex
+" [70
+
+
+] [71]
+Overfull \hbox (57.71466pt too wide) in paragraph at lines 118--125
+ [][] 
+ []
+
+[72] [73]
+Overfull \hbox (40.09666pt too wide) in paragraph at lines 219--247
+ [][] 
+ []
+
+[74]
+Overfull \hbox (38.46057pt too wide) in paragraph at lines 252--276
+ [][] 
+ []
+
+[75]
+Overfull \hbox (48.9785pt too wide) in paragraph at lines 281--289
+ [][] 
+ []
+
+) [76]
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_generated.te
+x" [77
+
+
+] [78] [79] [80] [81] [82]) [83]
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.bbl" [84
 
 ]
 Missing character: There is no ç in font cmr12!
- [58]
+
+[85]
 Underfull \hbox (badness 4673) in paragraph at lines 814--828
 []\OT1/cmr/m/n/12 Nodelman, P.  (2008).  \OT1/cmr/m/it/12 The hid-den adult: De
 fin-ing chil-dren's lit-
@@ -1335,7 +876,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 814--828
  []
 
 Missing character: There is no ’ in font cmti12!
-) [59] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.aux"
+) [86] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.aux"
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\title_page.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\abstract.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_1.aux")
@@ -1343,20 +884,28 @@ Missing character: There is no ’ in font cmti12!
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_3.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_4.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_5.aux")
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_6.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_resourcepers
 on.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_personalvita
-e.aux"))
+e.aux")
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_stories.aux"
+) ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_results.au
+x")
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_ontology.aux
+")
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_generated.au
+x"))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3189 strings out of 493921
- 44590 string characters out of 3147279
- 112958 words of memory out of 3000000
- 6367 multiletter control sequences out of 15000+200000
- 10979 words of font info for 41 fonts, out of 3000000 for 9000
+ 3418 strings out of 493921
+ 49664 string characters out of 3147279
+ 147887 words of memory out of 3000000
+ 6544 multiletter control sequences out of 15000+200000
+ 12041 words of font info for 44 fonts, out of 3000000 for 9000
  843 hyphenation exceptions out of 8191
  31i,13n,27p,1764b,287s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
@@ -1365,11 +914,12 @@ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmtt12.pfb>
-Output written on main.pdf (67 pages, 353185 bytes).
+lic/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfo
+nts/txbtt.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts/txbtt.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts/txtt.pfb>
+Output written on main.pdf (96 pages, 425748 bytes).
 PDF statistics:
- 253 PDF objects out of 1000 (max. 8388607)
+ 353 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

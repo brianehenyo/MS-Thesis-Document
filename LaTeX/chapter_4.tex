@@ -32,7 +32,7 @@ Winnie the Pooh				& 2 & 8-10 y.o. \\ \hline
 \subsubsection{Modifications}
 \label{sec:modifications}
 
-As mentioned, each children's story in the corpus underwent different types of modifications to clean the data and simulate different scenarios or story formats. And in order to illustrate the different modifications, here is an unmodified excerpt from one of the stories already in the corpus entitled ``A Wild Weather Day".
+As mentioned, each children's story in the corpus underwent different types of modifications to clean the data of any inconsistencies. And in order to illustrate the different modifications, here is an unmodified excerpt from one of the stories already in the corpus entitled ``A Wild Weather Day".
 
 \begin{verse}
 \itshape
@@ -87,7 +87,7 @@ While modifying, there may be cases wherein a specific sentence or a line uttere
 
 Aside from these, modifications such as removing contractions and periods (.) that do not actually mean the end of a sentence. With contractions, they were put back in their long form. For example, \textit{they'll} was transformed to \textit{they will}. This modification does not mean the tool used to extract the relations could not handle contractions. This just makes the results cleaner. It also disambiguates contractions from possessive nouns. For example, instances like \textit{Helen's} may mean ownership or just \textit{Helen is}. Removing nuances like this allows the tool to produce a more valid POS tagging and of course, extraction. 
 
-As with the periods (.) like those found in titles (\textit{Mr.} and \textit{Dr.}), they were removed and the titles were transformed also into their long forms. For example, \textit{Mrs.} is transformed into \textit{Missus}. 
+As with the periods (.) like those found in titles (\textit{Mr.} and \textit{Dr.}), they were removed and the titles were transformed back into their long forms. For example, \textit{Mrs.} is transformed into \textit{Missus}. 
 
 Lastly, story-specific modifications were done for the two \textit{Winnie the Pooh} stories. After careful examination, it was evident that the author was using non-existing English words in the dialogues of its characters. Words like \textit{suspicionated} and \textit{splendiferous} appeared in the story \textit{Everyone is special}. \textit{Tigger} is usually the character that uses such words due to his character trait. Such words were transformed to their actual English word counterparts. For example, \textit{suspicionated} and \textit{splendiferous} were transformed into \textit{suspected} and \textit{splendid}, respectively. This will make sure that all words are correctly tagged and the extracted relations contain valid concepts.
 
@@ -98,7 +98,7 @@ Lastly, story-specific modifications were done for the two \textit{Winnie the Po
 \centering
 \caption{Target Relations} \vspace{0.25em}
 \begin{tabular}{|p{3.5cm}|p{4cm}|p{5.5cm}|} \hline
-Element & Description & Example \\ \hline
+\textbf{Element} & \textbf{Description} & \textbf{Example} \\ \hline
 IsA					& Specifies what kind an entity is. & IsA(dog, pet) \\ \hline
 PropertyOf			& Specifies an adjective to describe an entity. & PropertyOf(mango, yellow) \\ \hline
 PartOf				& Specifies the \textit{parthood} of an entity in another entity. & PartOf(knob, door) \\ \hline
@@ -126,7 +126,7 @@ Based on their intended functions, these relations can be classified into differ
 \centering
 \caption{Classification of Target Relations} \vspace{0.25em}
 \begin{tabular}{|p{4cm}|p{6.5cm}|} \hline
-Category & Relations \\ \hline
+\textbf{Category} & \textbf{Relations} \\ \hline
 Things		& IsA, PropertyOf, PartOf, MadeOf, HasRole \\ \hline
 Agents		& CapableOf, RoleResponsibleFor \\ \hline
 Events		& EventForGoalEvent, EventForGoalState \\ \hline
@@ -149,7 +149,7 @@ Extraction templates refer to the different ways a certain relation is manifeste
 \centering
 \caption{Template Elements} \vspace{0.25em}
 \begin{tabular}{|p{4cm}|p{6.5cm}|} \hline
-Element & Description \\ \hline
+\textbf{Element} & \textbf{Description} \\ \hline
 $<$NP$>$					& Noun Phrase \\ \hline
 $<$NP:JobTitle$>$			& Noun Phrase indicating a Job Title \\ \hline
 $<$Noun:Possessive$>$		& Possessive Noun \\ \hline
@@ -165,12 +165,12 @@ $<$GoalState$>$				& A desired state \\ \hline
 $<$Cause$>$					& Cause \\ \hline
 $<$Effect$>$				& Event effect \\ \hline
 $<$EffectState$>$			& State effect \\ \hline
-$<$\textit{X}Indicator$>$	& Relation-specific Indicator \\ \hline
+$<$Indicator$>$				& Relation-specific Indicator \\ \hline
 \end{tabular}
 \label{tab:templateelements}
 \end{table}
 
-In Table \ref{tab:templateelements}, \textit{indicators} ($<$\textit{X}Indicator$>$) are used to denote the presence of a relation in the sentence. This is similar to the transition words discussed in Section 3.1.2. These will be discussed in detail in Section  \ref{sec:indicators}.
+Table \ref{tab:templateelements} shows the different elements present in an extraction template. Nine (9) are tagged morphological information while the rest are custom tags created for this study. Lastly, \textit{indicators} ($<$Indicator$>$) are used to denote the presence of a relation in the sentence. This is similar to the transition words discussed in Section 3.1.2. These will be discussed in detail in Section  \ref{sec:indicators}.
 
 Shown in Table \ref{tab:templates1} are the templates used for relations that can be extracted within a single sentence. While in Table \ref{tab:templates2}, shown are the templates used for relations that can be extracted within a sentence and across 2 sentences. Beside each template is a sample sentence. All templates are already the combination of ConceptNet sentence patterns and those manually derived from the corpus.
 
@@ -178,7 +178,7 @@ Shown in Table \ref{tab:templates1} are the templates used for relations that ca
 \centering
 \caption{Extraction Templates of each Relation (within a sentence)} \vspace{0.25em}
 \begin{tabular}{|p{3.5cm}|p{10cm}|} \hline
-Relation & Extraction Template/s \\ \hline
+\textbf{Relation} & \textbf{Extraction Template/s} \\ \hline
 IsA					& $<$NP$>$ $<$IsAIndicator$>$ $<$NP$>$ : A dog is a kind of canine. \\
 					& $<$NP$>$, $<$NP$>$, is : The dog, a canine, is... \\ \hline
 PropertyOf			& $<$AP$>$ $<$NP$>$ : The red ball... \\
@@ -211,7 +211,7 @@ RoleResponsibleFor	& $<$NP:JobTitle$>$ ... $<$VP$>$ : The doctor cleaned... \\
 \centering
 \caption{Extraction Templates of each Relation (across sentences)} \vspace{0.25em}
 \begin{tabular}{|p{3.5cm}|p{10cm}|} \hline
-Relation & Extraction Template/s \\ \hline
+\textbf{Relation} & \textbf{Extraction Template/s} \\ \hline
 EventForGoalEvent	& $<$GoalEvent$>$ ... $<$Event$>$ : Kisha wants to buy a car. She saved all her lunch money. \\
 					& $<$Event$>$ $<$MotivationIndicator$>$ $<$GoalEvent$>$ : Kisha saved all her lunch money because she wants to buy a car. \\ \hline
 EventForGoalState	& $<$GoalState$>$ ... $<$Event$>$ :  Kisha wants to be slim. She ran around the park during mornings. \\
@@ -233,7 +233,7 @@ Indicators are transition words that aid in identifying explicit relations. In t
 \centering
 \caption{Relation Indicators} \vspace{0.25em}
 \begin{tabular}{|p{3.5cm}|p{10cm}|} \hline
-Name & Indicators \\ \hline
+\textbf{Name} & \textbf{Indicators} \\ \hline
 IsA Indicators				& is a kind of, is a, is, is a type of, is an, 's a kind of, 's a, 's, 's a type of, 's an \\ \hline
 PartOf Indicators			& is a part of, is part of, has \\ \hline
 MadeOf Indicators			& is made of, is comprised of, form, become, becomes, forms \\ \hline
@@ -277,7 +277,7 @@ In this implementation, a gazetteer resource was used to identify named entities
 \centering
 \caption{New Gazetteers (Indicators)} \vspace{0.25em}
 \begin{tabular}{|p{5cm}|p{5cm}|} \hline
-File Name & Description \\ \hline
+\textbf{File Name} & \textbf{Description} \\ \hline
 isaindicator.lst			& IsA Indicators \\ \hline
 partofindicator.lst			& PartOf Indicators \\ \hline
 madeofindicator.lst			& MadeOf Indicators \\ \hline
@@ -300,7 +300,7 @@ Table \ref{tab:newgazetteersstory} shows the gazetteers created for the story ch
 \centering
 \caption{New Gazetteers (Miscellaneous)} \vspace{0.25em}
 \begin{tabular}{|p{5cm}|p{5cm}|} \hline
-File Name & Description \\ \hline
+\textbf{File Name} & \textbf{Description} \\ \hline
 storyLoc.lst		& Story Locations \\ \hline
 animal.lst			& Animals \\ \hline
 bodypart.lst		& Body Parts \\ \hline
@@ -322,7 +322,7 @@ In order to extract the target relations, a number of JAPE phases must be create
 \centering
 \caption{New JAPE Phases (Target Relations)} \vspace{0.25em}
 \begin{tabular}{|p{6cm}|p{5cm}|} \hline
-File Name & Description \\ \hline
+\textbf{File Name} & \textbf{Description} \\ \hline
 isARelation.jape					& IsA Phase \\ \hline
 partOfRelation.jape					& PartOf Phase \\ \hline
 madeOfRelation.jape					& MadeOf Phase \\ \hline
@@ -346,7 +346,7 @@ roleResponsibleForRelation.jape		& RoleResponsibleFor Phase \\ \hline
 \centering
 \caption{New JAPE Phases (Miscellaneous)} \vspace{0.25em}
 \begin{tabular}{|p{5cm}|p{5cm}|} \hline
-File Name & Description \\ \hline
+\textbf{File Name} & \textbf{Description} \\ \hline
 cause.jape				& Identify causes \\ \hline
 effect.jape				& Identify effects \\ \hline
 event.jape				& Identify events \\ \hline

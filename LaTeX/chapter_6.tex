@@ -1,0 +1,60 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Filename    : chapter_6.tex 
+%
+%   Description : This file will contain your Conclusion and Recommendations.
+%                 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section{Conclusion and Recommendations}
+\label{sec:conclusionandreco}
+
+This chapter discusses the conclusion of this research and provides recommendations and suggestions for future researches.
+
+\subsection{Conclusion}
+\label{sec:conclusion}
+
+Based on the results obtained through the evaluation of the extractor, it was proven possible to extract new semantic relations from children's stories and feed them into Picture Books' ontology. New relations were used accordingly and interchangeably, and new sentences were inserted. However, due to the limited themes currently present in Picture Books, not all extracted relations was used. There were also cases wherein all extracted relations won't be valid for Picture Books' use because the story where they came from are completely different from the existing themes. Another issue was Picture Books' way of accessing its ontology. Instead of using the relation names as reference, the relation category is used. Since each category has more than 1 relation associated, incorrect searches may still arise. Thus rendering the attempt to improve Picture Books' conceptual knowledge less remarkable. Lastly, it is not enough to just add new concepts and relations in the current ontology. Additional steps must be taken depending on how the ontology path you are trying to branch is accessed.
+
+As for the extracted relations, their quality was greatly affected by the following:
+
+\subsubsection{Part-of-speech Tags}
+\label{sec:pos}
+
+The quality and accuracy of the part-of-speech tags supplied by GATE greatly affected the relations extracted. Because most of the extraction rules/templates mainly use part-of-speech tags in their annotation patterns, a slight mistake may cause the relation to have incorrect concepts or to have it not extracted at all. Here is a sample sentence to illustrate this scenario:
+
+\begin{verse}
+\itshape
+Tigger takes a bath because he wants to be clean.
+\end{verse}
+
+One relation that can be extracted from this would be \textit{EventForGoalState(takes a bath,be clean)}. However, after numerous attempts in the application, that relation will not be extracted because \textit{clean} is tagged as a verb. The researcher's rule for \textit{EventForGoalState} requires the child concept to be an adjective for it to be called a desired state.
+
+\subsubsection{Extraction rules}
+\label{sec:templates}
+
+Because the current set of extraction rules are generalized based on ConceptNet sentence patterns and the sentences present in the current corpora, there is a perceived limit in the capabilities of the extractor. And in the attempt to cover all sentence patterns with the least number of rules, exceptional cases may not be covered. Also, these rules cannot handle implied relations. If there are any implied ones in the text, the rules won't recognize them unless they were explicitly indicated after modification. Lastly, these rules do not have enough semantic information for most words. When a different sense of a word is used in a sentence, there is no way for the extractor to recognise it. It will rely solely on the part-of-speech and named-entity tags to extract a relation.
+
+\subsection{Recommendations}
+\label{sec:reco}
+
+Overall, the relation extractor was able to produce good enough relations to be used by any story generation system. The following are recommendations for future improvement:
+
+\begin{itemize}
+\item Improve the extraction rules. Incorporate as many patterns as possible. If allowable, run a big corpora through a machine learning tool that will learn all possible sentence patterns for each relation type.
+\item Allow inferencing between relations as they are extracted. This will improve the compactness of the ontology.
+\item Focus more on extracting event relations since they are not usually explicitly indicated in a span of text. 
+\item Look for a language resource that can supply accurate semantic information.
+\item Look for experts that can create a gold standard for the different relations to improve the evaluation of the results. Aside from this, have experts that can consistently evaluate the generated story after adding new relations.
+\item Since it is now possible to branch out in ontology searches, it would be advisable to keep track of previously chosen concepts that is expected to be used throughout the story. This will avoid conflicting details and make the output stories more coherent.
+\item To be able to use all extracted relations, devise a way to automatically add new themes in Picture Books based on the themes found in the corpora. 
+\end{itemize}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,292 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Filename    : appendix_ontology.tex
+%
+%   Description : This file will contain information about your Ontology
+%                 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Section{New Ontology Entries}
+\label{sec:appendixontology}
+
+The following tables show the actual ontology entries added during testing. 
+
+\subsection{Group A Relations}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{New Lexicon Entries (Group A)} \vspace{0.25em}
+\begin{tabular}{|l|l|l|} \hline
+\textbf{Word} & \textbf{WORD ID} & \textbf{ONTO ID} \\ \hline
+fall & WORD0440 & ONTO0242 \\ \hline
+drop & WORD0441 & ONTO0243 \\ \hline
+cracked & WORD0442 & ONTO0244 \\ \hline
+smashed & WORD0443 & ONTO0245 \\ \hline
+knick knack & WORD0444 & ONTO0246 \\ \hline
+rejoice & WORD0445 & ONTO0247 \\ \hline
+revel & WORD0446 & ONTO0248 \\ \hline
+relationship & WORD0447 & ONTO0249 \\ \hline
+closeness & WORD0448 & ONTO0250 \\ \hline
+be worried* & WORD0083 WORD0374 & ONTO0251 \\ \hline
+be shocked* & WORD0083 WORD0414 & ONTO0252 \\ \hline
+game* & WORD0344 & ONTO0253 \\ \hline
+\end{tabular}
+\label{tab:grpalex}
+\end{table}
+
+\textit{Note:}
+*ONLY an entry in the concept table was added. Word is already existing in the lexicon.
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{New Ontology Entries (Group A) (Part 1)} \vspace{0.25em}
+\begin{tabular}{|l|l|l|l|} \hline
+\textbf{OntoID} & \textbf{SemanticRelation} & \textbf{Element2} & \textbf{Category} \\ \hline
+ONTO0074 & capableOf & ONTO0242 & action \\ \hline
+ONTO0074 & capableOf & ONTO0243 & action \\ \hline
+ONTO0075 & capableOf & ONTO0242 & action \\ \hline
+ONTO0075 & capableOf & ONTO0243 & action \\ \hline
+ONTO0242 & conceptuallyRelatedTo & ONTO0078 & generic \\ \hline
+ONTO0242 & isA & ONTO0077 & things \\ \hline
+ONTO0243 & conceptuallyRelatedTo & ONTO0078 & generic \\ \hline
+ONTO0243 & isA & ONTO0077 & things \\ \hline
+ONTO0244 & isA & ONTO0098 & things \\ \hline
+ONTO0245 & isA & ONTO0098 & things \\ \hline
+ONTO0246 & exampleOf & ONTO0066 & things \\ \hline
+ONTO0246 & exampleOf & ONTO0067 & things \\ \hline
+ONTO0246 & exampleOf & ONTO0068 & things \\ \hline
+ONTO0247 & eventRequiresObject & ONTO0002 & event \\ \hline
+ONTO0247 & eventRequiresObject & ONTO0246 & event \\ \hline
+ONTO0247 & eventRequiresObject & ONTO0253 & event \\ \hline
+ONTO0248 & eventRequiresObject & ONTO0002 & event \\ \hline
+ONTO0248 & eventRequiresObject & ONTO0246 & event \\ \hline
+ONTO0248 & eventRequiresObject & ONTO0253 & event \\ \hline
+ONTO0249 & lastSubeventOf & ONTO0151 & event \\ \hline
+ONTO0250 & lastSubeventOf & ONTO0151 & event \\ \hline
+\end{tabular}
+\label{tab:grpaonto}
+\end{table}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{New Ontology Entries (Group A) (Part 2)} \vspace{0.25em}
+\begin{tabular}{|l|l|l|l|} \hline
+\textbf{OntoID} & \textbf{SemanticRelation} & \textbf{Element2} & \textbf{Category} \\ \hline
+ONTO0251 & desiresEvent & ONTO0190 & goal \\ \hline
+ONTO0251 & isA & ONTO0156 & things \\ \hline
+ONTO0252 & desiresEvent & ONTO0190 & goal \\ \hline
+ONTO0252 & isA & ONTO0156 & things \\ \hline
+ONTO0253 & exampleOf & ONTO0069 & things \\ \hline
+ONTO0253 & exampleOf & ONTO0070 & things \\ \hline
+ONTO0253 & exampleOf & ONTO0071 & things \\ \hline
+ONTO0253 & exampleOf & ONTO0220 & things \\ \hline
+ONTO0191 & propertyOf & ONTO0244 & things \\ \hline
+ONTO0191 & propertyOf & ONTO0245 & things \\ \hline
+ONTO0001 & eventRequiresObject & ONTO0246 & event \\ \hline
+ONTO0001 & eventRequiresObject & ONTO0253 & event \\ \hline
+ONTO0080 & eventForGoalEvent & ONTO0247 & event \\ \hline
+ONTO0080 & eventForGoalEvent & ONTO0248 & event \\ \hline
+ONTO0149 & effectOfIsState & ONTO0249 & action \\ \hline
+ONTO0149 & effectOfIsState & ONTO0250 & action \\ \hline
+ONTO0210 & conceptuallyRelatedTo & ONTO0249 & generic \\ \hline
+ONTO0210 & conceptuallyRelatedTo & ONTO0250 & generic \\ \hline
+ONTO0078 & effectOf & ONTO0251 & action \\ \hline
+ONTO0078 & effectOf & ONTO0252 & action \\ \hline
+\end{tabular}
+\label{tab:grpaonto2}
+\end{table}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{New Author Goal Entries (Group A)} \vspace{0.25em}
+\begin{tabular}{|l|l|} \hline
+\textbf{GoalID} & AUTH0087 \\ \hline
+\textbf{Name} & Result of lesson is friendship \\ \hline
+\textbf{Goal} & CGOL0013(Target:\%ontoGoal(\%lesson\%,WORD0447)\%); \\ \hline
+\textbf{Consequence} & CGOL0044(Target:WORD0332); \\ \hline
+ & \\ \hline
+\textbf{GoalID} & AUTH0088 \\ \hline
+\textbf{Name} & Result of lesson is friendship \\ \hline
+\textbf{Goal} & CGOL0013(Target:\%ontoGoal(\%lesson\%,WORD0448)\%); \\ \hline
+\textbf{Consequence} & CGOL0044(Target:WORD0332); \\ \hline
+\end{tabular}
+\label{tab:grpaauth}
+\end{table}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{New Story Plot Tracker Entries (Group A)} \vspace{0.25em}
+\begin{tabular}{|l|l|l|} \hline
+\textbf{PlotID} & SPAT0052 & SPAT0053 \\ \hline
+\textbf{Name} & Inform Lesson & Inform Lesson \\ \hline
+\textbf{Stage} & Solution & Solution \\ \hline
+\textbf{AuthorGoals} & AUTH0087;AUTH0043;AUTH0044 & AUTH0088;AUTH0043;AUTH0044 \\ \hline
+\end{tabular}
+\label{tab:grpaspat}
+\end{table}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Modified Theme Entry (Group A)} \vspace{0.25em}
+\begin{tabular}{|l|l|} \hline
+\textbf{ThemeID} & THME0015 \\ \hline
+\textbf{InitActivity} & WORD0324 WORD0117 WORD0149 \\ \hline
+\textbf{Lesson} & WORD0083 WORD0243 \\ \hline
+\textbf{MoralLesson} & BE BRAVE (school) \\ \hline
+\textbf{RelatedObjects} & OB013;OB018;OB028;OB030;OB006;OB012;OB003 \\ \hline
+\textbf{Problem} & SPAT0026 \\ \hline
+\textbf{RisingAction} & SPAT0027 \\ \hline
+\textbf{Solution} & SPAT0028;SPAT0052;SPAT0053 \\ \hline
+\textbf{Climax} & SPAT0017 \\ \hline
+\textbf{InitSettings} & WORD0178 WORD0145 \\ \hline
+\textbf{InitTime} & WORD0147;WORD0150;WORD0018;WORD0153 \\ \hline
+\end{tabular}
+\label{tab:grpathm}
+\end{table}
+
+\subsection{Group B Relations}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{New Lexicon Entries (Group B)} \vspace{0.25em}
+\begin{tabular}{|l|l|l|} \hline
+\textbf{Word} & \textbf{WORD ID} & \textbf{ONTO ID} \\ \hline
+oak & WORD0449 & ONTO0255 \\ \hline
+trunk & WORD0450 & ONTO0256 \\ \hline
+root & WORD0451 & ONTO0257 \\ \hline
+back & WORD0452 & ONTO0258 \\ \hline
+head & WORD0453 & ONTO0259 \\ \hline
+leg* & WORD0042 & ONTO0260 \\ \hline
+toe & WORD0454 & ONTO0261 \\ \hline
+person & WORD0455 & ONTO0262 \\ \hline
+book* & WORD0185 & ONTO0263 \\ \hline
+paper & WORD0456 & ONTO0264 \\ \hline
+ink & WORD0457 & ONTO0265 \\ \hline
+glue & WORD0458 & ONTO0266 \\ \hline
+dinner & WORD0459 & ONTO0267 \\ \hline
+eat dinner & WORD0242 WORD0459 & ONTO0268 \\ \hline
+fireman & WORD0460 & ONTO0269 \\ \hline
+librarian & WORD0461 & ONTO0270 \\ \hline
+rescue & WORD0462 & ONTO0271 \\ \hline
+organize & WORD0463 & ONTO0272 \\ \hline
+home* & WORD0352 & ONTO0254 \\ \hline
+dirty* & WORD0077 & ONTO0273 \\ \hline
+\end{tabular}
+\label{tab:grpblex}
+\end{table}
+
+\textit{Note:}
+*ONLY an entry in the concept table was added. Word is already existing in the lexicon.
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{New Ontology Entries (Group B)} \vspace{0.25em}
+\begin{tabular}{|l|l|l|l|} \hline
+\textbf{OntoID} & \textbf{SemanticRelation} & \textbf{Element2} & \textbf{Category} \\ \hline
+ONTO0002 & locationOf & ONTO0033 & spatial \\ \hline
+ONTO0054 & partOf & ONTO0038 & things \\ \hline
+ONTO0054 & partOf & ONTO0254 & things \\ \hline
+ONTO0262 & owns & ONTO0003 & generic \\ \hline
+ONTO0262 & owns & ONTO0070 & generic \\ \hline
+ONTO0270 & roleResponsibleFor & ONTO0272 & action \\ \hline
+ONTO0269 & roleResponsibleFor & ONTO0271 & action \\ \hline
+ONTO0161 & happens & ONTO0043 & event \\ \hline
+ONTO0268 & happens & ONTO0043 & event \\ \hline
+ONTO0139 & happens & ONTO0039 & event \\ \hline
+ONTO0038 & oftenNear & ONTO0055 & spatial \\ \hline
+ONTO0038 & oftenNear & ONTO0058 & spatial \\ \hline
+ONTO0038 & oftenNear & ONTO0057 & spatial \\ \hline
+ONTO0001 & eventForGoalState & ONTO0115 & event \\ \hline
+ONTO0001 & eventForGoalState & ONTO0273 & event \\ \hline
+ONTO0001 & eventForGoalState & ONTO0155 & event \\ \hline
+ONTO0263 & madeOf & ONTO0266 & things \\ \hline
+ONTO0263 & madeOf & ONTO0265 & things \\ \hline
+ONTO0263 & madeOf & ONTO0264 & things \\ \hline
+ONTO0262 & partOf & ONTO0261 & things \\ \hline
+ONTO0262 & partOf & ONTO0260 & things \\ \hline
+ONTO0262 & partOf & ONTO0259 & things \\ \hline
+ONTO0262 & partOf & ONTO0258 & things \\ \hline
+ONTO0255 & partOf & ONTO0257 & things \\ \hline
+ONTO0255 & partOf & ONTO0256 & things \\ \hline
+ONTO0262 & hasRole & ONTO0269 & function \\ \hline
+ONTO0262 & hasRole & ONTO0270 & function \\ \hline
+\end{tabular}
+\label{tab:grpbonto}
+\end{table}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{New Author Goal Entries (Group B) (Part 1)} \vspace{0.25em}
+\begin{tabular}{|l|l|} \hline
+\textbf{GoalID} & AUTH0078 \\ \hline
+\textbf{Name} & Show Set B \\ \hline
+\textbf{Goal} & CGOL0038(Agens:WORD0097,Target:\%ontoSpatial(WORD0097)\%); \\ \hline
+\textbf{Consequence} & CGOL0038(Agens:WORD0022,Target:\%ontoSpatial(WORD0022)\%); \\ \hline
+ & \\ \hline
+\textbf{GoalID} & AUTH0079 \\ \hline
+\textbf{Name} & Show partOf \\ \hline
+\textbf{Goal} & CGOL0044(Agens:WORD0449,Target:\%ontoThings(WORD0449)\%); \\ \hline
+\textbf{Consequence} & CGOL0044(Agens:WORD0455,Target:\%ontoThings(WORD0455)\%); \\ \hline
+ & \\ \hline
+\textbf{GoalID} & AUTH0080 \\ \hline
+\textbf{Name} & Show madeOf \\ \hline
+\textbf{Goal} & CGOL0044(Agens:WORD0185,Target:\%ontoThings(WORD0185)\%); \\ \hline
+\textbf{Consequence} & CGOL0044(Agens:WORD0185,Target:\%ontoThings(WORD0185)\%); \\ \hline
+ & \\ \hline
+\textbf{GoalID} & AUTH0081 \\ \hline
+\textbf{Name} & Show eventForGoalState \\ \hline
+\textbf{Goal} & CGOL0038(Agens:WORD0022,Target:\%ontoEvent(WORD0022)\%); \\ \hline
+\textbf{Consequence} & CGOL0038(Agens:WORD0022,Target:\%ontoEvent(WORD0022)\%); \\ \hline
+ & \\ \hline
+\textbf{GoalID} & AUTH0082 \\ \hline
+\textbf{Name} & Show oftenNear \\ \hline
+\textbf{Goal} & CGOL0038(Agens:WORD0149,Target:\%ontoSpatial(WORD0149)\%); \\ \hline
+\textbf{Consequence} & CGOL0038(Agens:WORD0149,Target:\%ontoSpatial(WORD0149)\%); \\ \hline
+ & \\ \hline
+\end{tabular}
+\label{tab:grpbauth}
+\end{table}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{New Author Goal Entries (Group B) (Part 2)} \vspace{0.25em}
+\begin{tabular}{|l|l|} \hline
+\textbf{GoalID} & AUTH0083 \\ \hline
+\textbf{Name} & Show happens \\ \hline
+\textbf{Goal} & CGOL0038(Agens:WORD0242 WORD0459,\\
+ & Target:\%ontoEvent(WORD0242 WORD0459)\%); \\ \hline
+\textbf{Consequence} & CGOL0038(Agens:WORD0324 WORD0117 WORD0149,\\
+ & Target:\%ontoEvent(WORD0324 WORD0117 WORD0149)\%); \\ \hline
+ & \\ \hline
+\textbf{GoalID} & AUTH0084 \\ \hline
+\textbf{Name} & Show roleResponsibleFor \\ \hline
+\textbf{Goal} & CGOL0006(Agens:WORD0460,Target:\%ontoAction(WORD0460)\%); \\ \hline
+\textbf{Consequence} & CGOL0006(Agens:WORD0461,Target:\%ontoAction(WORD0461)\%); \\ \hline
+ & \\ \hline
+\textbf{GoalID} & AUTH0085 \\ \hline
+\textbf{Name} & Show owns \\ \hline
+\textbf{Goal} & CGOL0044(Agens:\%job\%,Target:\%ontoGeneric(WORD0455)\%); \\ \hline
+\textbf{Consequence} & CGOL0044(Agens:\%job\%,Target:\%ontoGeneric(WORD0455)\%); \\ \hline
+ & \\ \hline
+\textbf{GoalID} & AUTH0086 \\ \hline
+\textbf{Name} & Shown hasRole \\ \hline
+\textbf{Goal} & CGOL0027(Agens:\%job\%,Target:\%ontoFunction(WORD0455)\%); \\ \hline
+\textbf{Consequence} & CGOL0027(Agens:\%job\%,Target:\%ontoFunction(WORD0455)\%); \\ \hline
+\end{tabular}
+\label{tab:grpbauth}
+\end{table}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Modified Story Plot Tracker Entry (Group B)} \vspace{0.25em}
+\begin{tabular}{|l|l|} \hline
+\textbf{PlotID} & SPAT0004 \\ \hline
+\textbf{Name} & Learn the benefit \\ \hline
+\textbf{Stage} & Climax \\ \hline
+\textbf{AuthorGoals} & AUTH0007;AUTH0078;AUTH0079;AUTH0080;AUTH0081; \\
+ & AUTH0082;AUTH0083;AUTH0084;AUTH0085;AUTH0086;AUTH0008 \\ \hline
+\end{tabular}
+\label{tab:grpbspat}
+\end{table}
+
+
+

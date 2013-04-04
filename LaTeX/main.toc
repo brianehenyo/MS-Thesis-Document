@@ -54,8 +54,19 @@
 \contentsline {subsubsection}{\numberline {5.1.1}Examining the Picture Books Themes}{46}
 \contentsline {subsubsection}{\numberline {5.1.2}Grouping Target Relation Types}{47}
 \contentsline {subsubsection}{\numberline {5.1.3}Selected Relations}{49}
-\contentsline {subsection}{\numberline {5.2}Extraction Analysis}{50}
-\contentsline {subsection}{\numberline {5.3}Story Analysis}{50}
-\contentsline {section}{\numberline {A}Resource Persons}{55}
-\contentsline {section}{\numberline {B}Personal Vitae}{56}
-\contentsline {section}{References}{57}
+\contentsline {subsection}{\numberline {5.2}Extraction Analysis}{49}
+\contentsline {subsection}{\numberline {5.3}Story Analysis}{53}
+\contentsline {section}{\numberline {6}Conclusion and Recommendations}{57}
+\contentsline {subsection}{\numberline {6.1}Conclusion}{57}
+\contentsline {subsubsection}{\numberline {6.1.1}Part-of-speech Tags}{57}
+\contentsline {subsubsection}{\numberline {6.1.2}Extraction rules}{58}
+\contentsline {subsection}{\numberline {6.2}Recommendations}{58}
+\contentsline {section}{\numberline {A}Resource Persons}{60}
+\contentsline {section}{\numberline {B}Personal Vitae}{61}
+\contentsline {section}{\numberline {C}Children's Stories}{62}
+\contentsline {section}{\numberline {D}Detailed Extraction Results}{63}
+\contentsline {section}{\numberline {E}New Ontology Entries}{70}
+\contentsline {subsection}{\numberline {E.1}Group A Relations}{70}
+\contentsline {subsection}{\numberline {E.2}Group B Relations}{73}
+\contentsline {section}{\numberline {F}Generated Stories}{77}
+\contentsline {section}{References}{84}

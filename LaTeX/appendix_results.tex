@@ -1,0 +1,293 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Filename    : appendix_results.tex
+%
+%   Description : This file will contain information about your Results
+%                 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Section{Detailed Extraction Results}
+\label{sec:appendixresults}
+
+The following tables show the detailed results of the relation extraction. 
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Detailed Overall Result} \vspace{0.25em}
+\begin{tabular}{|l|l|l|l|l|} \hline
+ & \multicolumn{2}{ |c| }{\textbf{Raw}} & \multicolumn{2}{ |c| }{\textbf{Modified}} \\ \hline
+\textbf{Story Codes} & \textbf{Unique} & \textbf{Redundant} & \textbf{Unique} & \textbf{Redundant} \\ \hline
+S1 & 92 & 10 & 111 & 35 \\ \hline
+S2 & 267 & 61 & 218 & 36 \\ \hline
+S3 & 51 & 14 & 48 & 9 \\ \hline
+S4 & 75 & 18 & 68 & 16 \\ \hline
+S5 & 117 & 52 & 88 & 34 \\ \hline
+S6 & 58 & 23 & 54 & 41 \\ \hline
+S7 & 69 & 28 & 57 & 23 \\ \hline
+S8 & 232 & 66 & 213 & 50 \\ \hline
+S9 & 204 & 71 & 181 & 44 \\ \hline
+S10 & 142 & 58 & 125 & 38 \\ \hline
+S11 & 143 & 54 & 113 & 30 \\ \hline
+S12 & 200 & 93 & 191 & 56 \\ \hline
+S13 & 124 & 58 & 118 & 43 \\ \hline
+S14 & 138 & 78 & 137 & 48 \\ \hline
+S15 & 404 & 120 & 384 & 95 \\ \hline
+S16 & 305 & 98 & 258 & 65 \\ \hline
+S17 & 329 & 102 & 317 & 77 \\ \hline
+S18 & 381 & 162 & 356 & 101 \\ \hline
+S19 & 285 & 195 & 257 & 141 \\ \hline
+S20 & 350 & 154 & 399 & 182 \\ \hline
+S21 & 324 & 124 & 297 & 93 \\ \hline
+S22 & 335 & 268 & 313 & 190 \\ \hline
+S23 & 291 & 120 & 304 & 106 \\ \hline
+S24 & 326 & 149 & 320 & 126 \\ \hline
+S25 & 301 & 186 & 274 & 120 \\ \hline
+S26 & 299 & 132 & 278 & 122 \\ \hline
+S27 & 314 & 255 & 282 & 146 \\ \hline
+S28 & 298 & 221 & 261 & 174 \\ \hline
+S29 & 405 & 213 & 386 & 181 \\ \hline
+S30 & 313 & 122 & 291 & 98 \\ \hline
+TOTAL & 7172 & 3305 & 6699 & 2520 \\ \hline
+\end{tabular}
+\label{tab:all}
+\end{table}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Raw Corpus: Detailed Overall Result per Relation (Part 1)} \vspace{0.25em}
+\begin{tabular}{|p{1.5cm}|p{.75cm}|p{1.5cm}|p{1cm}|p{1.25cm}|p{1.25cm}|p{1.5cm}|p{1.5cm}|} \hline
+\textbf{Story Code} & \textbf{IsA} & \textbf{Proper-tyOf} & \textbf{Part-Of}  & \textbf{Made-Of} & \textbf{Capa-bleOf} & \textbf{Often-Near} & \textbf{Loca-tionOf} \\ \hline
+S1 & 1 & 36 & 1 & 0 & 31 & 0 & 3 \\ \hline
+S2 & 6 & 86 & 2 & 0 & 43 & 0 & 5 \\ \hline
+S3 & 4 & 13 & 3 & 0 & 12 & 0 & 0 \\ \hline
+S4 & 2 & 31 & 0 & 0 & 11 & 0 & 0 \\ \hline
+S5 & 3 & 24 & 1 & 0 & 26 & 0 & 2 \\ \hline
+S6 & 2 & 21 & 2 & 0 & 8 & 0 & 4 \\ \hline
+S7 & 4 & 17 & 1 & 0 & 14 & 0 & 2 \\ \hline
+S8 & 5 & 71 & 0 & 0 & 44 & 0 & 4 \\ \hline
+S9 & 2 & 71 & 2 & 0 & 35 & 0 & 2 \\ \hline
+S10 & 3 & 65 & 1 & 0 & 12 & 0 & 4 \\ \hline
+S11 & 1 & 42 & 0 & 0 & 21 & 0 & 0 \\ \hline
+S12 & 4 & 60 & 3 & 0 & 49 & 0 & 6 \\ \hline
+S13 & 3 & 54 & 3 & 0 & 18 & 0 & 2 \\ \hline
+S14 & 2 & 82 & 0 & 0 & 15 & 0 & 1 \\ \hline
+S15 & 13 & 128 & 9 & 0 & 76 & 0 & 7 \\ \hline
+S16 & 11 & 81 & 1 & 0 & 40 & 0 & 1 \\ \hline
+S17 & 3 & 133 & 2 & 0 & 49 & 0 & 4 \\ \hline
+S18 & 13 & 151 & 4 & 0 & 47 & 0 & 2 \\ \hline
+S19 & 3 & 86 & 1 & 0 & 27 & 0 & 0 \\ \hline
+S20 & 13 & 163 & 9 & 0 & 62 & 0 & 1 \\ \hline
+S21 & 11 & 109 & 3 & 0 & 35 & 0 & 10 \\ \hline
+S22 & 9 & 142 & 0 & 0 & 30 & 0 & 9 \\ \hline
+S23 & 6 & 109 & 0 & 0 & 50 & 0 & 6 \\ \hline
+S24 & 7 & 159 & 0 & 0 & 29 & 0 & 9 \\ \hline
+S25 & 8 & 110 & 3 & 0 & 36 & 0 & 6 \\ \hline
+S26 & 16 & 100 & 3 & 0 & 35 & 0 & 6 \\ \hline
+S27 & 6 & 100 & 2 & 0 & 36 & 0 & 8 \\ \hline
+S28 & 5 & 105 & 5 & 0 & 32 & 0 & 7 \\ \hline
+S29 & 16 & 197 & 6 & 0 & 35 & 0 & 16 \\ \hline
+S30 & 9 & 154 & 4 & 0 & 22 & 0 & 9 \\ \hline
+TOTAL & 191 & 2700 & 71 & 0 & 980 & 0 & 136 \\ \hline
+\end{tabular}
+\label{tab:raw1}
+\end{table}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Raw Corpus: Detailed Overall Result per Relation (Part 2)} \vspace{0.25em}
+\begin{tabular}{|l|p{2cm}|p{2cm}|l|p{2cm}|} \hline
+\textbf{Story Code} & \textbf{EventFor-GoalEvent} & \textbf{EventFor-GoalState} & \textbf{EffectOf} & \textbf{EffectOf-IsState} \\ \hline
+S1 & 3 & 0 & 26 & 0 \\ \hline
+S2 & 12 & 0 & 36 & 0 \\ \hline
+S3 & 1 & 0 & 9 & 0 \\ \hline
+S4 & 1 & 0 & 9 & 0 \\ \hline
+S5 & 3 & 0 & 17 & 0 \\ \hline
+S6 & 1 & 0 & 7 & 0 \\ \hline
+S7 & 1 & 0 & 15 & 0 \\ \hline
+S8 & 14 & 3 & 44 & 0 \\ \hline
+S9 & 15 & 1 & 35 & 0 \\ \hline
+S10 & 5 & 0 & 18 & 0 \\ \hline
+S11 & 8 & 0 & 19 & 0 \\ \hline
+S12 & 11 & 0 & 28 & 0 \\ \hline
+S13 & 8 & 1 & 17 & 0 \\ \hline
+S14 & 9 & 0 & 13 & 0 \\ \hline
+S15 & 23 & 3 & 64 & 0 \\ \hline
+S16 & 20 & 1 & 68 & 0 \\ \hline
+S17 & 26 & 0 & 66 & 0 \\ \hline
+S18 & 27 & 4 & 55 & 0 \\ \hline
+S19 & 33 & 2 & 56 & 0 \\ \hline
+S20 & 36 & 0 & 72 & 0 \\ \hline
+S21 & 26 & 5 & 61 & 0 \\ \hline
+S22 & 32 & 1 & 59 & 0 \\ \hline
+S23 & 16 & 5 & 74 & 0 \\ \hline
+S24 & 16 & 2 & 57 & 0 \\ \hline
+S25 & 27 & 0 & 45 & 0 \\ \hline
+S26 & 20 & 0 & 66 & 0 \\ \hline
+S27 & 23 & 1 & 62 & 0 \\ \hline
+S28 & 29 & 1 & 56 & 0 \\ \hline
+S29 & 17 & 0 & 49 & 0 \\ \hline
+S30 & 18 & 1 & 55 & 0 \\ \hline
+TOTAL & 481 & 31 & 1258 & 0 \\ \hline
+\end{tabular}
+\label{tab:raw2}
+\end{table}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Raw Corpus: Detailed Overall Result per Relation (Part 3)} \vspace{0.25em}
+\begin{tabular}{|l|l|l|l|l|l|} \hline
+\textbf{Story Code} & \textbf{UsedFor} & \textbf{Happens} & \textbf{HasRole} & \textbf{RoleResponsibleFor} & \textbf{Owns} \\ \hline
+S1 & 6 & 0 & 0 & 0 & 3 \\ \hline
+S2 & 7 & 0 & 1 & 1 & 19 \\ \hline
+S3 & 3 & 0 & 0 & 0 & 3 \\ \hline
+S4 & 1 & 1 & 0 & 0 & 12 \\ \hline
+S5 & 1 & 0 & 1 & 0 & 10 \\ \hline
+S6 & 4 & 0 & 0 & 0 & 5 \\ \hline
+S7 & 0 & 0 & 0 & 0 & 3 \\ \hline
+S8 & 8 & 0 & 0 & 0 & 20 \\ \hline
+S9 & 2 & 0 & 0 & 0 & 16 \\ \hline
+S10 & 5 & 0 & 0 & 3 & 9 \\ \hline
+S11 & 3 & 0 & 0 & 0 & 19 \\ \hline
+S12 & 14 & 0 & 0 & 0 & 16 \\ \hline
+S13 & 3 & 0 & 1 & 0 & 8 \\ \hline
+S14 & 1 & 0 & 1 & 0 & 13 \\ \hline
+S15 & 5 & 10 & 1 & 3 & 42 \\ \hline
+S16 & 11 & 7 & 0 & 0 & 17 \\ \hline
+S17 & 14 & 1 & 0 & 0 & 19 \\ \hline
+S18 & 15 & 2 & 1 & 0 & 35 \\ \hline
+S19 & 17 & 4 & 1 & 1 & 26 \\ \hline
+S20 & 16 & 6 & 0 & 0 & 21 \\ \hline
+S21 & 12 & 0 & 1 & 2 & 22 \\ \hline
+S22 & 5 & 0 & 0 & 0 & 26 \\ \hline
+S23 & 6 & 1 & 0 & 0 & 31 \\ \hline
+S24 & 12 & 0 & 0 & 0 & 29 \\ \hline
+S25 & 9 & 0 & 0 & 0 & 30 \\ \hline
+S26 & 3 & 3 & 3 & 0 & 23 \\ \hline
+S27 & 19 & 0 & 0 & 0 & 25 \\ \hline
+S28 & 8 & 1 & 0 & 0 & 12 \\ \hline
+S29 & 8 & 2 & 0 & 0 & 40 \\ \hline
+S30 & 10 & 0 & 0 & 1 & 8 \\ \hline
+TOTAL & 228 & 38 & 11 & 11 & 562 \\ \hline
+\end{tabular}
+\label{tab:raw3}
+\end{table}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Modified Corpus: Detailed Overall Result per Relation (Part 1)} \vspace{0.25em}
+\begin{tabular}{|p{1.5cm}|p{.75cm}|p{1.5cm}|p{1cm}|p{1.25cm}|p{1.25cm}|p{1.5cm}|p{1.5cm}|} \hline
+\textbf{Story Code} & \textbf{IsA} & \textbf{Proper-tyOf} & \textbf{Part-Of}  & \textbf{Made-Of} & \textbf{Capa-bleOf} & \textbf{Often-Near} & \textbf{Loca-tionOf} \\ \hline
+S1 & 1 & 36 & 1 & 0 & 27 & 0 & 2 \\ \hline
+S2 & 9 & 99 & 2 & 0 & 64 & 0 & 5 \\ \hline
+S3 & 4 & 14 & 3 & 0 & 14 & 0 & 0 \\ \hline
+S4 & 2 & 33 & 0 & 0 & 17 & 0 & 0 \\ \hline
+S5 & 2 & 29 & 1 & 0 & 41 & 0 & 3 \\ \hline
+S6 & 2 & 21 & 2 & 0 & 10 & 0 & 4 \\ \hline
+S7 & 4 & 17 & 1 & 0 & 20 & 0 & 2 \\ \hline
+S8 & 6 & 77 & 3 & 0 & 58 & 0 & 4 \\ \hline
+S9 & 3 & 74 & 3 & 0 & 50 & 0 & 2 \\ \hline
+S10 & 3 & 66 & 1 & 0 & 24 & 0 & 2 \\ \hline
+S11 & 4 & 40 & 0 & 0 & 36 & 0 & 0 \\ \hline
+S12 & 4 & 58 & 3 & 0 & 48 & 0 & 5 \\ \hline
+S13 & 3 & 53 & 4 & 0 & 21 & 0 & 2 \\ \hline
+S14 & 2 & 80 & 0 & 0 & 18 & 0 & 1 \\ \hline
+S15 & 11 & 144 & 10 & 0 & 82 & 0 & 8 \\ \hline
+S16 & 12 & 101 & 1 & 0 & 49 & 0 & 2 \\ \hline
+S17 & 7 & 141 & 2 & 0 & 57 & 0 & 4 \\ \hline
+S18 & 12 & 152 & 7 & 0 & 68 & 0 & 1 \\ \hline
+S19 & 7 & 95 & 2 & 0 & 37 & 0 & 0 \\ \hline
+S20 & 15 & 141 & 9 & 0 & 61 & 0 & 1 \\ \hline
+S21 & 13 & 125 & 3 & 0 & 41 & 0 & 10 \\ \hline
+S22 & 12 & 155 & 0 & 0 & 33 & 0 & 11 \\ \hline
+S23 & 8 & 111 & 0 & 0 & 45 & 0 & 7 \\ \hline
+S24 & 8 & 164 & 0 & 0 & 27 & 0 & 9 \\ \hline
+S25 & 10 & 120 & 5 & 0 & 39 & 0 & 6 \\ \hline
+S26 & 17 & 117 & 4 & 0 & 42 & 0 & 6 \\ \hline
+S27 & 9 & 105 & 3 & 0 & 55 & 0 & 8 \\ \hline
+S28 & 8 & 118 & 5 & 0 & 47 & 0 & 6 \\ \hline
+S29 & 19 & 212 & 5 & 0 & 35 & 0 & 16 \\ \hline
+S30 & 11 & 159 & 4 & 0 & 27 & 0 & 10 \\ \hline
+TOTAL & 228 & 2857 & 84 & 0 & 1193 & 0 & 137 \\ \hline
+\end{tabular}
+\label{tab:mod1}
+\end{table}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Modified Corpus: Detailed Overall Result per Relation (Part 2)} \vspace{0.25em}
+\begin{tabular}{|l|p{2cm}|p{2cm}|l|p{2cm}|} \hline
+\textbf{Story Code} & \textbf{EventFor-GoalEvent} & \textbf{EventFor-GoalState} & \textbf{EffectOf} & \textbf{EffectOf-IsState} \\ \hline
+S1 & 3 & 0 & 14 & 0 \\ \hline
+S2 & 13 & 2 & 46 & 0 \\ \hline
+S3 & 1 & 0 & 9 & 0 \\ \hline
+S4 & 4 & 0 & 7 & 0 \\ \hline
+S5 & 8 & 0 & 22 & 0 \\ \hline
+S6 & 1 & 0 & 9 & 0 \\ \hline
+S7 & 5 & 0 & 17 & 0 \\ \hline
+S8 & 14 & 3 & 39 & 0 \\ \hline
+S9 & 16 & 1 & 35 & 0 \\ \hline
+S10 & 9 & 0 & 20 & 0 \\ \hline
+S11 & 20 & 0 & 25 & 0 \\ \hline
+S12 & 17 & 0 & 35 & 0 \\ \hline
+S13 & 13 & 1 & 15 & 0 \\ \hline
+S14 & 11 & 0 & 15 & 0 \\ \hline
+S15 & 24 & 3 & 61 & 0 \\ \hline
+S16 & 26 & 1 & 70 & 0 \\ \hline
+S17 & 31 & 2 & 47 & 0 \\ \hline
+S18 & 32 & 4 & 49 & 0 \\ \hline
+S19 & 35 & 2 & 56 & 0 \\ \hline
+S20 & 35 & 0 & 50 & 0 \\ \hline
+S21 & 28 & 7 & 55 & 0 \\ \hline
+S22 & 37 & 0 & 52 & 0 \\ \hline
+S23 & 17 & 4 & 60 & 0 \\ \hline
+S24 & 19 & 2 & 58 & 0 \\ \hline
+S25 & 31 & 2 & 46 & 0 \\ \hline
+S26 & 22 & 0 & 61 & 0 \\ \hline
+S27 & 32 & 1 & 60 & 0 \\ \hline
+S28 & 31 & 1 & 61 & 0 \\ \hline
+S29 & 20 & 0 & 46 & 0 \\ \hline
+S30 & 25 & 1 & 56 & 0 \\ \hline
+TOTAL & 580 & 37 & 1196 & 0 \\ \hline
+\end{tabular}
+\label{tab:mod2}
+\end{table}
+
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Modified Corpus: Detailed Overall Result per Relation (Part 3)} \vspace{0.25em}
+\begin{tabular}{|l|l|l|l|l|l|} \hline
+\textbf{Story Code} & \textbf{UsedFor} & \textbf{Happens} & \textbf{HasRole} & \textbf{RoleResponsibleFor} & \textbf{Owns} \\ \hline
+S1 & 4 & 0 & 0 & 0 & 3 \\ \hline
+S2 & 6 & 0 & 1 & 1 & 19 \\ \hline
+S3 & 3 & 0 & 0 & 0 & 3 \\ \hline
+S4 & 1 & 0 & 0 & 0 & 11 \\ \hline
+S5 & 1 & 0 & 1 & 1 & 8 \\ \hline
+S6 & 4 & 1 & 0 & 0 & 4 \\ \hline
+S7 & 0 & 0 & 0 & 0 & 3 \\ \hline
+S8 & 8 & 0 & 0 & 0 & 20 \\ \hline
+S9 & 2 & 0 & 0 & 0 & 18 \\ \hline
+S10 & 7 & 0 & 0 & 3 & 7 \\ \hline
+S11 & 3 & 0 & 0 & 0 & 15 \\ \hline
+S12 & 15 & 0 & 0 & 0 & 15 \\ \hline
+S13 & 4 & 0 & 1 & 0 & 7 \\ \hline
+S14 & 1 & 0 & 1 & 0 & 9 \\ \hline
+S15 & 3 & 9 & 1 & 3 & 44 \\ \hline
+S16 & 15 & 8 & 0 & 0 & 20 \\ \hline
+S17 & 14 & 1 & 0 & 0 & 23 \\ \hline
+S18 & 15 & 2 & 2 & 0 & 37 \\ \hline
+S19 & 17 & 3 & 1 & 1 & 29 \\ \hline
+S20 & 10 & 4 & 0 & 0 & 24 \\ \hline
+S21 & 12 & 0 & 3 & 2 & 25 \\ \hline
+S22 & 7 & 0 & 0 & 0 & 28 \\ \hline
+S23 & 6 & 1 & 0 & 0 & 32 \\ \hline
+S24 & 15 & 0 & 0 & 0 & 24 \\ \hline
+S25 & 12 & 0 & 0 & 0 & 30 \\ \hline
+S26 & 3 & 2 & 3 & 0 & 22 \\ \hline
+S27 & 17 & 0 & 0 & 0 & 24 \\ \hline
+S28 & 8 & 1 & 0 & 0 & 12 \\ \hline
+S29 & 8 & 2 & 0 & 0 & 42 \\ \hline
+S30 & 11 & 0 & 0 & 2 & 7 \\ \hline
+TOTAL & 232 & 34 & 14 & 13 & 565 \\ \hline
+\end{tabular}
+\label{tab:mod3}
+\end{table}
+
