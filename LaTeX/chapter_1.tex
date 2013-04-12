@@ -54,7 +54,7 @@ To develop a methodology that automatically identifies and extracts the relation
 \subsection{Scope and Limitations of the Research}
 \label{sec:scopelimitations}
 
-At least 30 children's stories were collected to form the input corpus for the extraction tool to be developed. These were then be modified to remove the dialogues. Analysis of the English sentence structures in these stories were performed to identify the types of relations that are present. This information were used to derive a set of patterns or templates for extracting conceptual relations. An extraction tool was used to use the extraction patterns to automatically locate instances of a known relation in the corpus.
+At least 30 children's stories were collected to form the input corpus for the extraction tool to be developed. These were then be modified to remove the dialogues and to clean of inconsistencies. Analysis of the English sentence structures in these stories were performed to identify the types of relations that are present. This information were used to derive a set of patterns or templates for extracting conceptual relations. An extraction tool was used to use the extraction patterns to automatically locate instances of a known relation in the corpus.
 
 One relation may be expressed in various ways in text. Consider the hypernymy (IsA) relation, wherein the following sentences are possible ways of expressing it:
 
@@ -82,7 +82,7 @@ Since stories are sequences of events, their analysis may necessitate the creati
 
 Since Picture Books' knowledge base currently does not provide relations about when certain events can occur, the main character went to school in the evening. 
 
-Sixteen (16) new semantic relations, resulting from those identified using RST, from analyzing the sample corpus, and from reviewing other works such as \cite{Mueller:2003} for modeling time and event occurrences, may be created in this research. The main relations, mostly from ConcepNet and Picture Books, include IsA, PropertyOf, PartOf, MadeOf, EventForGoalEvent, EventForGoalState, EffectOf, EffectOfIsState, CapableOf, OftenNear, LocationOf and, UsedFor. Additional relations include Happens(e, t) which represents that a fluent \emph{f} holds at time \emph{t}, HasRole which represent character roles, RoleResponsibleFor which represent actions/events done by a specific role and lastly, Owns which represent ownership. 
+Sixteen (16) new semantic relations, resulting from analyzing the sample corpus, and from reviewing other works such as \cite{Mueller:2003} for modeling time and event occurrences, were created in this research. The main relations, mostly from ConcepNet and Picture Books, include IsA, PropertyOf, PartOf, MadeOf, EventForGoalEvent, EventForGoalState, EffectOf, EffectOfIsState, CapableOf, OftenNear, LocationOf and, UsedFor. Additional relations include Happens(e, t) which represents that a fluent \emph{f} holds at time \emph{t}, HasRole which represent character roles, RoleResponsibleFor which represent actions/events done by a specific role and lastly, Owns which represent ownership. 
 
 \citeA{Alani:2003} noted that it is inevitable for duplicate and contradictory information to be extracted from the input corpus. But he further noted that handling such information is challenging for automatic extraction and ontology population approaches. Thus, this was not be considered in the current proposal.
 
@@ -104,7 +104,7 @@ To put it simply, the Picture Books' code base was not be modified in any way to
 
 \citeA{Mueller:1999} also noted that ``story understanding goes beyond generating parse trees, disambiguating words, or filling templates, and includes the ability to answer arbitrary questions, generate paraphrases and summaries, fill arbitrary templates, make inferences, reason about the story, follow reasoning in the story, relate the story to general knowledge, and hypothesize alternative versions of the story." Thus, aside from having a huge collection of common sense knowledge, a computer system must also be able to ``make inferences about states and events not explicitly described in the text" \cite{Mueller:2003}, by performing common sense reasoning using knowledge about the world. This requires a multi-representational model of this knowledge for the various realms of space, time, needs and feelings to be built, and will be beyond the scope of the current proposal.
 
-Manual validation with the help of a linguist was not be utilized. Automated validation was be performed by having Picture Books utilize the new knowledge in generating stories.
+Manual validation with the help of a linguist was not utilized. Automated validation was performed by having Picture Books utilize the new knowledge in generating stories.
 
 \subsection{Significance of the Research}
 \label{sec:significance}

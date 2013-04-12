@@ -85,7 +85,7 @@ Pierre said that it is just like when Hopsalot waters his garden. \\
 	
 While modifying, there may be cases wherein a specific sentence or a line uttered by a character will be omitted or transformed into a declarative sentence not containing the original word/s. Such sentences can be interjections like ``Oh my!" and ``Alas!". These can be transformed as ``She was shocked" and ``He was concerned."
 
-Aside from these, modifications such as removing contractions and periods (.) that do not actually mean the end of a sentence. With contractions, they were put back in their long form. For example, \textit{they'll} was transformed to \textit{they will}. This modification does not mean the tool used to extract the relations could not handle contractions. This just makes the results cleaner. It also disambiguates contractions from possessive nouns. For example, instances like \textit{Helen's} may mean ownership or just \textit{Helen is}. Removing nuances like this allows the tool to produce a more valid POS tagging and of course, extraction. 
+Aside from these, modifications such as removing contractions and periods (.) that do not actually mean the end of a sentence were done. With contractions, they were put back in their long form. For example, \textit{they'll} was transformed to \textit{they will}. This modification does not mean the tool used to extract the relations could not handle contractions. This just makes the results cleaner. It also disambiguates contractions from possessive nouns. For example, instances like \textit{Helen's} may mean ownership or just \textit{Helen is}. Removing nuances like these allows the tool to produce a more valid POS tagging and of course, extraction. 
 
 As with the periods (.) like those found in titles (\textit{Mr.} and \textit{Dr.}), they were removed and the titles were transformed back into their long forms. For example, \textit{Mrs.} is transformed into \textit{Missus}. 
 
@@ -106,6 +106,7 @@ MadeOf				& Specifies a component of an entity. & MadeOf(door, wood) \\ \hline
 CapableOf			& Specifies what an entity can do. & CapableOf(kid, jump) \\ \hline
 OftenNear			& Specifies an entity near another entity in most instances. & OftenNear(chair, table) \\ \hline
 LocationOf			& Specifies the location of an entity. & LocationOf(slide, play-ground) \\ \hline
+UsedFor				& Specifies the use of an object in an activity. & UsedFor(toy, play) \\ \hline
 EventForGoalEvent	& Represents an event that causes the fulfillment of a goal event. & EventForGoalEvent(go to playground, play football) \\ \hline
 EventForGoalState	& Represents an event that causes the fulfillment of a goal state. & EventForGoalState(take a bath, be clean) \\ \hline
 EffectOf			& Represents a cause-effect between two events. & EffectOf(skip breakfast, hungry) \\ \hline
@@ -143,7 +144,7 @@ The \textit{things} category can be used to describe the characters, objects, ev
 \subsection{Extraction Templates}
 \label{sec:extractiontemplates}
 
-Extraction templates refer to the different ways a certain relation is manifested in a sentence or a span of text. Since most of the relations to be extracted were adopted from ConceptNet, the initial decision was to just follow the templates they have been using to crowd-source data (see Section 3.4). However, due to the contrast of sentence complexity between ConceptNet sentence patterns and the sentences in the corpus, additional templates were added to address different instances. As for the additional relations like \textit{Happens}, the RST was followed.
+Extraction templates refer to the different ways a certain relation is manifested in a sentence or a span of text. Since most of the relations to be extracted were adopted from ConceptNet, the initial decision was to just follow the templates they have been using to crowd-source data (see Section 3.4). However, due to the contrast of sentence complexity between ConceptNet sentence patterns and the sentences in the corpus, additional templates were added to address different instances. 
 
 \begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
 \centering
@@ -170,7 +171,7 @@ $<$Indicator$>$				& Relation-specific Indicator \\ \hline
 \label{tab:templateelements}
 \end{table}
 
-Table \ref{tab:templateelements} shows the different elements present in an extraction template. Nine (9) are tagged morphological information while the rest are custom tags created for this study. Lastly, \textit{indicators} ($<$Indicator$>$) are used to denote the presence of a relation in the sentence. This is similar to the transition words discussed in Section 3.1.2. These will be discussed in detail in Section  \ref{sec:indicators}.
+Table \ref{tab:templateelements} shows the different elements present in an extraction template. Nine (9) are tagged chunk information while the rest are custom tags created for this study. Lastly, \textit{indicators} ($<$Indicator$>$) are used to denote the presence of a relation in the sentence. This is similar to the transition words discussed in Section 3.1.2. These will be discussed in detail in Section  \ref{sec:indicators}.
 
 Shown in Table \ref{tab:templates1} are the templates used for relations that can be extracted within a single sentence. While in Table \ref{tab:templates2}, shown are the templates used for relations that can be extracted within a sentence and across 2 sentences. Beside each template is a sample sentence. All templates are already the combination of ConceptNet sentence patterns and those manually derived from the corpus.
 
