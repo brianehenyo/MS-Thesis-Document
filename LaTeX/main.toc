@@ -5,15 +5,15 @@
 \contentsline {subsubsection}{\numberline {1.2.1}General Objective}{3}
 \contentsline {subsubsection}{\numberline {1.2.2}Specific Objectives}{3}
 \contentsline {subsection}{\numberline {1.3}Scope and Limitations of the Research}{3}
-\contentsline {subsection}{\numberline {1.4}Significance of the Research}{6}
+\contentsline {subsection}{\numberline {1.4}Significance of the Research}{5}
 \contentsline {subsection}{\numberline {1.5}Research Methodology}{7}
 \contentsline {subsubsection}{\numberline {1.5.1}Requirements Analysis}{7}
-\contentsline {subsubsection}{\numberline {1.5.2}Data Gathering}{8}
-\contentsline {subsubsection}{\numberline {1.5.3}Architectural Design}{8}
+\contentsline {subsubsection}{\numberline {1.5.2}Data Gathering}{7}
+\contentsline {subsubsection}{\numberline {1.5.3}Architectural Design}{7}
 \contentsline {subsubsection}{\numberline {1.5.4}Implementation}{8}
 \contentsline {subsubsection}{\numberline {1.5.5}Testing}{8}
-\contentsline {subsubsection}{\numberline {1.5.6}Documentation}{9}
-\contentsline {subsection}{\numberline {1.6}Calendar of Activities}{9}
+\contentsline {subsubsection}{\numberline {1.5.6}Documentation}{8}
+\contentsline {subsection}{\numberline {1.6}Calendar of Activities}{8}
 \contentsline {section}{\numberline {2}Review of Related Literature}{10}
 \contentsline {subsection}{\numberline {2.1}Information and Relation Extraction Systems}{10}
 \contentsline {subsection}{\numberline {2.2}Semantic Relations}{15}
@@ -24,49 +24,52 @@
 \contentsline {subsubsection}{\numberline {3.1.2}Transition Words}{21}
 \contentsline {subsection}{\numberline {3.2}Semantic ontology and Semantic relations}{22}
 \contentsline {subsection}{\numberline {3.3}Picture Books}{23}
-\contentsline {subsection}{\numberline {3.4}ConceptNet}{24}
-\contentsline {subsection}{\numberline {3.5}GATE}{25}
-\contentsline {subsubsection}{\numberline {3.5.1}Document Reset}{26}
-\contentsline {subsubsection}{\numberline {3.5.2}English Tokeniser}{27}
-\contentsline {subsubsection}{\numberline {3.5.3}Gazetteer}{27}
-\contentsline {subsubsection}{\numberline {3.5.4}Sentence Splitter}{27}
-\contentsline {subsubsection}{\numberline {3.5.5}Part of Speech Tagger}{28}
-\contentsline {subsubsection}{\numberline {3.5.6}Semantic Tagger}{28}
-\contentsline {subsubsection}{\numberline {3.5.7}Orthographic Coreferencer}{28}
-\contentsline {subsubsection}{\numberline {3.5.8}Pronominal Coreference}{28}
-\contentsline {subsubsection}{\numberline {3.5.9}Morphological Analyzer}{28}
-\contentsline {subsubsection}{\numberline {3.5.10}Chunker}{29}
-\contentsline {subsubsection}{\numberline {3.5.11}Transducer}{29}
-\contentsline {subsection}{\numberline {3.6}Relation Extraction Techniques}{30}
-\contentsline {subsection}{\numberline {3.7}Additional Relations}{31}
-\contentsline {section}{\numberline {4}Design and Implementation}{33}
-\contentsline {subsection}{\numberline {4.1}Corpus}{33}
-\contentsline {subsubsection}{\numberline {4.1.1}Modifications}{33}
-\contentsline {subsection}{\numberline {4.2}Target Relations}{36}
-\contentsline {subsection}{\numberline {4.3}Extraction Templates}{37}
-\contentsline {subsection}{\numberline {4.4}Indicators}{40}
-\contentsline {subsection}{\numberline {4.5}Architectural Design}{41}
-\contentsline {subsubsection}{\numberline {4.5.1}Resolving Story-specific Named Entities}{42}
-\contentsline {subsubsection}{\numberline {4.5.2}Recognizing Target Relations}{43}
-\contentsline {subsection}{\numberline {4.6}Post-Processing}{44}
-\contentsline {section}{\numberline {5}Results and Analysis}{46}
-\contentsline {subsection}{\numberline {5.1}Methodology}{46}
-\contentsline {subsubsection}{\numberline {5.1.1}Examining the Picture Books Themes}{46}
-\contentsline {subsubsection}{\numberline {5.1.2}Grouping Target Relation Types}{47}
-\contentsline {subsubsection}{\numberline {5.1.3}Selected Relations}{49}
-\contentsline {subsection}{\numberline {5.2}Extraction Analysis}{49}
-\contentsline {subsection}{\numberline {5.3}Story Analysis}{53}
-\contentsline {section}{\numberline {6}Conclusion and Recommendations}{57}
-\contentsline {subsection}{\numberline {6.1}Conclusion}{57}
-\contentsline {subsubsection}{\numberline {6.1.1}Part-of-speech Tags}{57}
-\contentsline {subsubsection}{\numberline {6.1.2}Extraction rules}{58}
-\contentsline {subsection}{\numberline {6.2}Recommendations}{58}
-\contentsline {section}{\numberline {A}Resource Persons}{60}
-\contentsline {section}{\numberline {B}Personal Vitae}{61}
-\contentsline {section}{\numberline {C}Children's Stories}{62}
-\contentsline {section}{\numberline {D}Detailed Extraction Results}{63}
-\contentsline {section}{\numberline {E}New Ontology Entries}{70}
-\contentsline {subsection}{\numberline {E.1}Group A Relations}{70}
-\contentsline {subsection}{\numberline {E.2}Group B Relations}{73}
-\contentsline {section}{\numberline {F}Generated Stories}{77}
-\contentsline {section}{References}{84}
+\contentsline {subsubsection}{\numberline {3.3.1}Knowledge}{23}
+\contentsline {subsubsection}{\numberline {3.3.2}Story Elements}{25}
+\contentsline {subsection}{\numberline {3.4}ConceptNet}{26}
+\contentsline {subsection}{\numberline {3.5}GATE}{27}
+\contentsline {subsubsection}{\numberline {3.5.1}Document Reset}{28}
+\contentsline {subsubsection}{\numberline {3.5.2}English Tokeniser}{28}
+\contentsline {subsubsection}{\numberline {3.5.3}Gazetteer}{29}
+\contentsline {subsubsection}{\numberline {3.5.4}Sentence Splitter}{29}
+\contentsline {subsubsection}{\numberline {3.5.5}Part of Speech Tagger}{29}
+\contentsline {subsubsection}{\numberline {3.5.6}Semantic Tagger}{30}
+\contentsline {subsubsection}{\numberline {3.5.7}Orthographic Coreferencer}{30}
+\contentsline {subsubsection}{\numberline {3.5.8}Pronominal Coreference}{30}
+\contentsline {subsubsection}{\numberline {3.5.9}Morphological Analyzer}{30}
+\contentsline {subsubsection}{\numberline {3.5.10}Chunker}{30}
+\contentsline {subsubsection}{\numberline {3.5.11}Transducer}{31}
+\contentsline {subsection}{\numberline {3.6}Template-Based Extraction}{32}
+\contentsline {section}{\numberline {4}Design and Implementation}{34}
+\contentsline {subsection}{\numberline {4.1}Corpus}{34}
+\contentsline {subsubsection}{\numberline {4.1.1}Modifications}{34}
+\contentsline {subsection}{\numberline {4.2}Target Relations}{39}
+\contentsline {subsection}{\numberline {4.3}Extraction Templates}{41}
+\contentsline {subsection}{\numberline {4.4}Indicators}{44}
+\contentsline {subsection}{\numberline {4.5}Architectural Design}{46}
+\contentsline {subsubsection}{\numberline {4.5.1}Resolving Story-specific Named Entities}{47}
+\contentsline {subsubsection}{\numberline {4.5.2}Recognizing Target Relations}{48}
+\contentsline {subsection}{\numberline {4.6}Post-Processing}{50}
+\contentsline {section}{\numberline {5}Results and Analysis}{51}
+\contentsline {subsection}{\numberline {5.1}Methodology}{51}
+\contentsline {subsubsection}{\numberline {5.1.1}Quantitative Evaluation}{51}
+\contentsline {subsubsection}{\numberline {5.1.2}Story Evaluation}{51}
+\contentsline {subsection}{\numberline {5.2}Extraction Analysis}{55}
+\contentsline {subsubsection}{\numberline {5.2.1}Uniqueness and Redundancies}{55}
+\contentsline {subsubsection}{\numberline {5.2.2}Zero Extraction}{57}
+\contentsline {subsubsection}{\numberline {5.2.3}Quality}{57}
+\contentsline {subsection}{\numberline {5.3}Story Analysis}{58}
+\contentsline {section}{\numberline {6}Conclusion and Recommendations}{62}
+\contentsline {subsection}{\numberline {6.1}Conclusion}{62}
+\contentsline {subsubsection}{\numberline {6.1.1}Part-of-speech Tags}{62}
+\contentsline {subsubsection}{\numberline {6.1.2}Extraction rules}{63}
+\contentsline {subsection}{\numberline {6.2}Recommendations}{63}
+\contentsline {section}{\numberline {A}Resource Persons}{65}
+\contentsline {section}{\numberline {B}Personal Vitae}{66}
+\contentsline {section}{\numberline {C}Children's Stories}{67}
+\contentsline {section}{\numberline {D}Detailed Extraction Results}{68}
+\contentsline {section}{\numberline {E}New Ontology Entries}{75}
+\contentsline {subsection}{\numberline {E.1}Group A Relations}{75}
+\contentsline {subsection}{\numberline {E.2}Group B Relations}{78}
+\contentsline {section}{\numberline {F}Generated Stories}{82}
+\contentsline {section}{References}{89}

@@ -197,37 +197,6 @@ Cheng, T.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem[\protect\citeauthoryear{%
-Damay%
-, Lojico%
-, Lu%
-, Tarantan%
-\BCBL{}\ \BBA{} Ong%
-}{%
-Damay%
-\ \protect\BOthers{.}}{%
-{\protect\APACyear{2007}}%
-}]{%
-Damay:2007}%
-\APACinsertmetastar{%
-Damay:2007}%
-Damay, J.%
-, Lojico, G.%
-, Lu, K.%
-, Tarantan, R.%
-\BCBL{}\ \BBA{} Ong, E.%
-%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2007}{}{}.
-\newblock
-\BBOQ{}\APACrefatitle{Simplifying {T}ext in {M}edical {L}iterature}{Simplifying
-  {T}ext in {M}edical {L}iterature}.\BBCQ{}
-\newblock
-\APACjournalVolNumPages{Journal of {R}esearch in {S}cience, {C}omputing, and
-  {E}ngineering}{}{}{37--48}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem[\protect\citeauthoryear{%
 Fillmore%
 , Baker%
 \BCBL{}\ \BBA{} Lowe%

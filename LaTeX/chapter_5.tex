@@ -14,12 +14,20 @@ This chapter discusses the overall quality of the extracted relations. It also d
 \subsection{Methodology}
 \label{sec:methodology}
 
+This section details the strategies employed in evaluating the quality and completeness of the extracted relations.
+
+\subsubsection{Quantitative Evaluation}
+
+A gold standard was 
+
+\subsubsection{Story Evaluation}
+
 In order to validate the quality of the extracted relations, they were used to generate stories in Picture Books. First, Picture Books was examined to determine which themes can be used. Then, the target relations extracted from the \textit{RAW} and \textit{MODIFIED} corpora were evaluated to see whether any of them can be easily inserted into the existing Picture Books ontology. Additional relations were manually added by the researcher for the target relations which did not have valid extractions from either corpora. Then, the Picture Books databases were manually updated with a select number of valid extractions, as well as the additional ones. 
 
-\subsubsection{Examining the Picture Books Themes}
+\subsubsection*{Examining the Picture Books Themes}
 \label{sec:examinethemes}
 
-Aside from checking the valid extractions that can be used for testing, the researcher also examined the themes of Picture Books. There are two motivations for this. First, the researcher would like to determine which among the themes can be used for testing. And secondly, he would like to map which target relation types can be tested for each theme selected.
+Aside from checking the valid extractions that can be used for testing, the themes of Picture Books were also examined. There are two motivations for this. First, the researcher would like to determine which among the themes can be used for testing. And secondly, he would like to map which target relation types can be tested for each theme selected.
 
 After carefully tracing the ontology accesses and searches within the 15 different themes, five (5) were identified. Table \ref{tab:mapthemerel} shows the themes selected for testing with the mapped target relation types.
 
@@ -39,7 +47,7 @@ THME0015: Be Brave			& effectOfIsState \\ \hline
 
 After examination, only 7 target relation types were possible to be tested using the existing Picture Books themes.
 
-\subsubsection{Grouping Target Relation Types}
+\subsubsection*{Grouping Target Relation Types}
 \label{sec:grouprel}
 
 Since only 7 target relation types can be tested by branching the existing ontology accesses and searches in the existing themes (See Section \ref{sec:examinethemes}), another group was created. This includes the 9 remaining target relation types which were not present in any of Picture Books' existing themes. A summary of the grouping is shown in Table \ref{tab:relgroups}.
@@ -54,7 +62,7 @@ isA, capableOf, propertyOf, effectOf, effectOfIsState, usedFor, eventForGoalEven
 \label{tab:relgroups}
 \end{table}
 
-\subsubsection*{Group A Relations}
+\emph{Group A Relations}
 
 For this group, 9 new lexicon entries and 12 new concepts were added into the database. The discrepancy was due to the words already existing in the lexicon but not as concepts to be used for ontology searches. Then, forty-one (41) new ontology entries were added to branch from existing ontology searches. Shown in Figure \ref{fig:altpath} is a sample alternative path created for this study. This is for author goal AUTH0026 of theme THME0003 (Be Careful).
 
@@ -78,13 +86,13 @@ However, as an exceptional case in this group of relations, the \textit{EffectOf
 
 Appendix E shows all the additional entries in the Picture Books lexicon and ontology.
 
-\subsubsection*{Group B Relations}
+\emph{Group B Relations}
 
 Because Group B relations did not exist in the current version of Picture Books' ontology, author goals were created to show the relations in the generated stories. 16 new lexicon entries and 20 new concepts were added into the database. Then, 27 new ontology entries were added. Finally, 9 new author goals were created and inserted as additional author goals of story plot tracker SPAT0004. 
 
 For this group of relations, the theme THME0001 (Take Bath) was used. Each relation type had 2 representative sentences created and were included in the final story generated. None of the concepts and sentences were made coherent to the rest of the story. Appendix E shows all the additional entries in the Picture Books lexicon and ontology.
 
-\subsubsection{Selected Relations}
+\subsubsection*{Selected Relations}
 \label{sec:selectedrelations}
 
 Out of all the extracted relations from the \textit{RAW} and \textit{MODIFIED} corpora, only 6 relations were used and all of them are \textit{PartOf} relations. The rest of the relations used for testing were manually created. 
@@ -96,21 +104,11 @@ Group B, on the other hand, did not require the extracted relation to be coheren
 \subsection{Extraction Analysis}
 \label{sec:extractionanalysis}
 
-There was a total of 13,871 unique relations extracted from the \textit{RAW} and \textit{MODIFIED} corpora. Tables \ref{tab:modifiedtotal} and \ref{tab:rawtotal} show the breakdown of numbers for each group of stories in each corpora.
+\subsubsection{Uniqueness and Redundancies}
 
-\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
-\centering
-\caption{Modified Corpus: Number of Unique and Redundant Relations Extracted} \vspace{0.25em}
-\begin{tabular}{|p{4cm}|p{3cm}|p{3cm}|} \hline
-\textbf{Story Group} & \textbf{Unique} & \textbf{Redundant} \\ \hline
-Jumpstart & 729 & 206 \\ \hline
-Winnie the Pooh & 436 & 137 \\ \hline
-Topsy Tim & 747 & 341 \\ \hline
-Little Life Lessons & 5260 & 2621 \\ \hline
-\textbf{TOTAL} & \textbf{7172} & \textbf{3305} \\ \hline
-\end{tabular}
-\label{tab:modifiedtotal}
-\end{table}
+In this evaluation, the number of unique extractions were analyzed to determine whether the modifications created more relations valid for extraction. Also, duplicate or redundant extractions are also analyzed to see whether they were reduced after modification.
+
+There was a total of 13,871 unique relations extracted from the \textit{RAW} and \textit{MODIFIED} corpora. Tables \ref{tab:modifiedtotal} and \ref{tab:rawtotal} show the breakdown of numbers for each group of stories in each corpora.
 
 \begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
 \centering
@@ -126,7 +124,37 @@ Little Life Lessons & 4977 & 2017 \\ \hline
 \label{tab:rawtotal}
 \end{table}
 
-From these numbers, it is evident that the \textit{Modified} corpus had 473 more relations extracted than the \textit{Raw} corpus. This suggests that the modifications done introduced new concepts, thus allowing the application to extract more unique relations. These modifications may have also introduced more redundant relations as the number increased by 785. This was even more than the increase in unique relations. 
+\begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
+\centering
+\caption{Modified Corpus: Number of Unique and Redundant Relations Extracted} \vspace{0.25em}
+\begin{tabular}{|p{4cm}|p{3cm}|p{3cm}|} \hline
+\textbf{Story Group} & \textbf{Unique} & \textbf{Redundant} \\ \hline
+Jumpstart & 729 & 206 \\ \hline
+Winnie the Pooh & 436 & 137 \\ \hline
+Topsy Tim & 747 & 341 \\ \hline
+Little Life Lessons & 5260 & 2621 \\ \hline
+\textbf{TOTAL} & \textbf{7172} & \textbf{3305} \\ \hline
+\end{tabular}
+\label{tab:modifiedtotal}
+\end{table}
+
+From these numbers, it is evident that the \textit{Modified} corpus had 473 more relations extracted than the \textit{Raw} corpus. This suggests that the modifications done introduced new concepts, thus allowing the application to extract more unique relations. These modifications may have also introduced more redundant relations as the number increased by 785. This was even more than the increase in unique relations. Here are sample passages from \textit{CJ and the Mysterious Map}:
+
+\begin{verse}
+\itshape
+``And how do you suggest we get up there?" asked Edison.\\
+``What are you doing?" asked Edison.\\
+\end{verse}
+
+These are non-adjacent sentences from the story. After running this in the extraction tool, they yielded zero extractions. Then they were modified to this:
+
+\begin{verse}
+\itshape
+Edison asked CJ some suggestions.\\
+Edison asked what CJ is doing.\\
+\end{verse}
+
+Now, each sentence was able to produce 2 new \textit{CapableOf} extractions. However, both of them are \textit{CapableOf(Edison,ask)}. And after examining the modified story, there were more sentences of this structure that yielded the same relation. 
 
 In terms of relations, Table \ref{tab:reltotal} shows the breakdown of extracted relations per corpora. The delta after modification is also shown. 
 
@@ -178,7 +206,11 @@ Pooh thinks Tigger is very sorry. Pooh asks Rabbit if he can forgive and forget.
 
 In this example, the verb \textit{said} was removed after modification, thus avoiding the possibility of another relation being extracted. It seems that modifications, such as this, improved the result for the \textit{Modified} corpus because the relation is not really a valid and logical extraction. However, the possibility that valid extractions may also be omitted in the process cannot be discounted.
 
-From the same table, it is important to note that the \textit{EffectOfIsState}, \textit{MadeOf} and \textit{OftenNear} relations had 0 extractions from either corpora. This seems to be caused by their high dependence on indicators unlike the rest of the relations.
+\subsubsection{Zero Extraction}
+
+From the same table, it is important to note that the \textit{EffectOfIsState}, \textit{MadeOf} and \textit{OftenNear} relations had 0 extractions from either corpora. This was caused by their high dependence on indicators, incorrect part-of-speech tags and limitation on the number of sentences it can extract from. 
+
+\subsubsection{Quality}
 
 In terms of extraction quality, there are some relations which may have been incorrectly extracted or which may not be extracted at all because of incorrect tags. For instance, this relation was extracted from the \textit{Jumpstart} story group:
 
@@ -221,10 +253,10 @@ Overall, the new relations were used accordingly. They were randomly selected an
 [3]  He played near breakable glass of water.
 [4]  Daddy Sam told Edward to be careful.
 [5]  Edward continued to play glass of water near.
-\emph{\textbf{[6]  He broke it.}}
-\emph{\textbf{[7]  Edward was scared.}}
+\underline{\emph{\textbf{[6]  He broke it.}}}
+\underline{\emph{\textbf{[7]  Edward was scared.}}}
 [8]  He hid away from Daddy Sam.
-\emph{\textbf{[9]  Daddy Sam saw that glass of water was broken.}}
+\underline{\emph{\textbf{[9]  Daddy Sam saw that glass of water was broken.}}}
 [10] Daddy Sam called Edward.
 [11] Daddy Sam told Edward that he should have obeyed.
 [12] He felt sorry.
@@ -245,10 +277,10 @@ This used the original relations of Picture Books. The highlighted lines show th
 [3]  He played near breakable glass of water.
 [4]  Mommy Edna told Edward to be careful.
 [5]  Edward continued to play glass of water near.
-\emph{\textbf{[6]  Edward fell it.}}
-\emph{\textbf{[7]  Edward was worried.}}
+\underline{\emph{\textbf{[6]  Edward fell it.}}}
+\underline{\emph{\textbf{[7]  Edward was worried.}}}
 [8]  He hid away from Mommy Edna.
-\emph{\textbf{[9]  Mommy Edna saw that glass of water was cracked.}}
+\underline{\emph{\textbf{[9]  Mommy Edna saw that glass of water was cracked.}}}
 [10] Mommy Edna called Edward.
 [11] Mommy Edna told Edward that he should have obeyed.
 [12] Edward felt sorry.
@@ -269,14 +301,14 @@ Another new story worth pointing out is this:
 [1]  The morning was warm.
 [2]  Edward the elephant was in the dining room.
 [3]  He played near breakable glass of water.
-\emph{\textbf{[4]  Edward fell glass of water.}}
+\underline{\emph{\textbf{[4]  Edward fell glass of water.}}}
 [5]  He was worried.
 [6]  Mommy Edna saw that glass of water was smashed.
 [7]  Edward told Mommy Edna that Porky the pig broke glass of water.
 [8]  He was sad.
 [9]  Porky cried.
 [10] Edward felt guilty.
-\emph{\textbf{[11] Edward told Mommy Edna that he dropped glass of water.}}
+\underline{\emph{\textbf{[11] Edward told Mommy Edna that he dropped glass of water.}}}
 [12] Mommy Edna told Edward that he should have been honest.
 [13] He apologized to Mommy Edna.
 [14] Edward apologized to Porky.
@@ -300,8 +332,8 @@ The reason why this happens is because Picture Books searches its ontology not b
 [6]  It had ink.
 [7]  Playing is dirty.
 [8]  It was healthy.
-\emph{\textbf{[9]  The school was the market.}}
-\emph{\textbf{[10] It was generic.}}
+\underline{\emph{\textbf{[9]  The school was the market.}}}
+\underline{\emph{\textbf{[10] It was generic.}}}
 [11] Eating dinner is the evening.
 [12] Going to the school is the morning.
 [13] A fireman was rescuing.
@@ -315,7 +347,7 @@ Another example is with the same story but lines 11 and 12 are changed to the fo
 
 \begin{alltt}
 [11] Eating dinner is the evening.
-[12] Going to the school is \emph{\textbf{saying goodbye}}.
+\underline{[12] Going to the school is \emph{\textbf{saying goodbye}}.}
 \end{alltt}
 
 These two sentences are using the \textit{Happens} relation. But in line 12, the relation \textit{FirstSubeventOf} was used because they are both \textit{event} relations. This happens for ontology accesses that only have 1 argument.

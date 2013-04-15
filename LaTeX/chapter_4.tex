@@ -14,7 +14,7 @@ This chapter discusses the design and implementation of the open-source tool to 
 \subsection{Corpus}
 \label{sec:corpus}
 
-The input corpus for this study is comprised of 30 children's stories. Each were encoded digitally and modified to remove dialogues. The raw version was retained and used with the modified stories. For this research, the 2 corpus are named \emph{RAW} and \emph{MODIFIED}. Overall, 60 stories were used to extract the relations. Shown in Table \ref{tab:stories} are the different story groups and their corresponding age groups. 
+The input corpus for this study is comprised of 30 children's stories. Each were encoded digitally and modified to remove dialogues. The raw version was retained and used with the modified stories. For this research, the 2 corpus are named \emph{RAW} and \emph{MODIFIED}. Overall, 60 stories were used to extract the relations. Shown in Table \ref{tab:storygroups} are the different story groups and their corresponding age groups. 
 
 \begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
 \centering
@@ -26,13 +26,19 @@ Little Life Lessons			& 16 & 4-7 y.o. \\ \hline
 Jumpstart					& 7 & 8-10 y.o. \\ \hline
 Winnie the Pooh				& 2 & 8-10 y.o. \\ \hline
 \end{tabular}
-\label{tab:stories}
+\label{tab:storygroups}
 \end{table}
 
 \subsubsection{Modifications}
 \label{sec:modifications}
 
-As mentioned, each children's story in the corpus underwent different types of modifications to clean the data of any inconsistencies. And in order to illustrate the different modifications, here is an unmodified excerpt from one of the stories already in the corpus entitled ``A Wild Weather Day".
+As mentioned, each children's story in the corpus were modified to clean the data of any inconsistencies. This section details the different modifications done on the corpora.
+
+\subsubsection*{Dialogues}
+
+Stories are mostly composed of dialogues which are conversational in nature. They are mostly informal, has incomplete thought and use colloquial words. The objective of these modifications is to convert these into complete and coherent sentences in order to yield proper extractions.
+
+In order to illustrate the dialogue modifications, here is an unmodified excerpt from one of the stories already in the corpus entitled ``A Wild Weather Day".
 
 \begin{verse}
 \itshape
@@ -45,7 +51,7 @@ Frankie was at the wheel. The sails flapped in the wind. The ship raced through 
 ``Look! They're almost the same color as your bow," Pierre said. \\
 A big drop of rain fell on Pierre's nose. ``Oh, no!" he said. ``It's starting to rain!" \\
 ``The rain is coming from the clouds," CJ said. \\
-``The water in tne clouds got too heavy, and now it's falling down on us!" \\
+``The water in the clouds got too heavy, and now it's falling down on us!" \\
 ``Just like when Hopsalot waters his garden," said Pierre. \\
 \end{verse}
 
@@ -83,11 +89,65 @@ The water in the clouds got too heavy, and now it is falling down on them. \\
 Pierre said that it is just like when Hopsalot waters his garden. \\
 \end{verse}
 	
-While modifying, there may be cases wherein a specific sentence or a line uttered by a character will be omitted or transformed into a declarative sentence not containing the original word/s. Such sentences can be interjections like ``Oh my!" and ``Alas!". These can be transformed as ``She was shocked" and ``He was concerned."
+Through these examples, it is noticeable how one passage or dialogue can be transformed two ways. In comparison, the first type of modification transforms dialogues into factual statement, sometimes even altering or removing the speaker attribution (verb and speaker). Here is a passage from the example:
+
+\begin{verse}
+\itshape
+``Like Frankie!" Pierre said. ``He's strong and fast, too." \\
+\end{verse}
+
+The verb \textit{said} will be removed as well as the character saying the dialogue. Since the focus is mostly on what is being said, and not who said it and the manner of saying, it was transformed into the following:
+
+\begin{verse}
+\itshape
+Frankie is like the wind. He's strong and fast, too. \\
+\end{verse}
+
+On the other hand, the second type of modification usually retains the speaker attribution in its transformations. However, there can be changes in the verb used.
+
+Only one of these modification are applied for each passage. The following rules were followed in transforming dialogues:
+
+\begin{enumerate}
+   \item For dialogues that are declarative in structure, the first type of modification is followed.
+\begin{verse}
+\itshape
+\centering
+``I know why it's dark!" Eleanor said. \\
+to \\
+Eleanor knows why it is dark. \\
+\end{verse}
+   \item For dialogues that are interrogative in structure and conveys a complete observation, action, or thought, the first type of modification is followed.
+\begin{verse}
+\itshape
+\centering
+``Why is the sky getting so dark?" Pierre asked. \\
+to \\
+The sky is getting so dark.\\
+\end{verse}
+   \item For dialogues that are interrogative in structure but has incomplete thought, action, or thought, the second type of modification is followed. These dialogues are usually follow up questions to previous statements made by other characters.
+\begin{verse}
+\itshape
+\centering
+``Why so?" Pierre asked. \\
+to \\
+Pierre asked why so.\\
+\end{verse}
+	\item For all dialogues transformed using the second type, the verb in the speaker attribute is changed to \textit{asked} or \textit{said}. Some examples include, \textit{whispered}, \textit{uttered} and \textit{mumbled}. This is done since these are just modifiers to how the dialogue was spoken. 
+\end{enumerate}
+
+After doing these modifications, it is important to note that the story has already changed. But in essence, the theme is still there. The intention was to make the actions and facts more apparent to the extraction tool. 
+
+\subsubsection*{Interjections}
+
+While modifying, there may be cases wherein a specific sentence or a line uttered by a character will be omitted or transformed into a declarative sentence not containing the original word/s. Such sentences can be interjections like ``Oh my!" and ``Alas!". These can be transformed as ``She was shocked" and ``He was concerned." The emotions conveyed by these interjections were used.
+
+\subsubsection*{Contractions and Periods}
 
 Aside from these, modifications such as removing contractions and periods (.) that do not actually mean the end of a sentence were done. With contractions, they were put back in their long form. For example, \textit{they'll} was transformed to \textit{they will}. This modification does not mean the tool used to extract the relations could not handle contractions. This just makes the results cleaner. It also disambiguates contractions from possessive nouns. For example, instances like \textit{Helen's} may mean ownership or just \textit{Helen is}. Removing nuances like these allows the tool to produce a more valid POS tagging and of course, extraction. 
 
 As with the periods (.) like those found in titles (\textit{Mr.} and \textit{Dr.}), they were removed and the titles were transformed back into their long forms. For example, \textit{Mrs.} is transformed into \textit{Missus}. 
+
+\subsubsection*{Non-English Words}
 
 Lastly, story-specific modifications were done for the two \textit{Winnie the Pooh} stories. After careful examination, it was evident that the author was using non-existing English words in the dialogues of its characters. Words like \textit{suspicionated} and \textit{splendiferous} appeared in the story \textit{Everyone is special}. \textit{Tigger} is usually the character that uses such words due to his character trait. Such words were transformed to their actual English word counterparts. For example, \textit{suspicionated} and \textit{splendiferous} were transformed into \textit{suspected} and \textit{splendid}, respectively. This will make sure that all words are correctly tagged and the extracted relations contain valid concepts.
 
@@ -120,6 +180,18 @@ Owns				& Specifies the owner-ship of an object. & Owns(teacher, book) \\ \hline
 \end{table}
 
 For the purpose of this research, sixteen (16) relations were identified to be extracted. They were deemed to be related and helpful to the development of common sense knowledge for the children's story domain. Table \ref{tab:targetrel} contains the final list of target relations to be extracted in this study.
+
+One of the identified limitations in the current knowledge base of Picture Books is the lack of relations to denote event occurrences. Consider the following text:
+	
+	\noindent
+	\hspace{1 in}\emph{The evening was warm. Ellen the elephant was at the school. She went with Mommy Edna to the school.}
+	
+If appropriate relations are available, e.g., \textit{Happens} to designate that an activity, such as going to school, can only happen at a certain time of day, such as morning, then the resulting text can be:
+	
+	\noindent
+	\hspace{1 in}\emph{The morning was sunny. Ellen the elephant was at the school. She went with Mommy Edna to the school.}
+	
+Certain granularities can be provided to the relations representing various aspects of time, namely season (planting can only occur during spring, snow can only fall during winter), month (Christmas in December, Valentine's in February), or even weeks, days, hours, and minutes.
 
 Based on their intended functions, these relations can be classified into different groups (See Table \ref{tab:classification}). 
 
@@ -171,9 +243,7 @@ $<$Indicator$>$				& Relation-specific Indicator \\ \hline
 \label{tab:templateelements}
 \end{table}
 
-Table \ref{tab:templateelements} shows the different elements present in an extraction template. Nine (9) are tagged chunk information while the rest are custom tags created for this study. Lastly, \textit{indicators} ($<$Indicator$>$) are used to denote the presence of a relation in the sentence. This is similar to the transition words discussed in Section 3.1.2. These will be discussed in detail in Section  \ref{sec:indicators}.
-
-Shown in Table \ref{tab:templates1} are the templates used for relations that can be extracted within a single sentence. While in Table \ref{tab:templates2}, shown are the templates used for relations that can be extracted within a sentence and across 2 sentences. Beside each template is a sample sentence. All templates are already the combination of ConceptNet sentence patterns and those manually derived from the corpus.
+Table \ref{tab:templateelements} shows the different elements present in an extraction template. Nine (9) are tagged chunk information while the rest are custom tags created for this study. Lastly, \textit{indicators} ($<$Indicator$>$) are used to denote the presence of a relation in the sentence. This is similar to the transition words discussed in Section 3.1.2. These will be discussed in detail in Section \ref{sec:indicators}.
 
 \begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
 \centering
@@ -208,6 +278,10 @@ RoleResponsibleFor	& $<$NP:JobTitle$>$ ... $<$VP$>$ : The doctor cleaned... \\
 \label{tab:templates1}
 \end{table}
 
+Shown in Table \ref{tab:templates1} are the templates used for relations that can be extracted within a single sentence. While in Table \ref{tab:templates2}, shown are the templates used for relations that can be extracted within a sentence and across 2 sentences. Beside each template is a sample sentence. All templates are already the combination of ConceptNet sentence patterns and those manually derived from the corpus.
+
+In all templates, compounds are handled accordingly and separate relations are created for each concept. And as a limitation of the PartOf template, when the first concept is a person or animal, the template just looks for a body part as the second concept. 
+
 \begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
 \centering
 \caption{Extraction Templates of each Relation (across sentences)} \vspace{0.25em}
@@ -225,6 +299,29 @@ EffectOfIsState		& $<$Cause$>$ ... $<$EffectState$>$ : Because of the accident, 
 \label{tab:templates2}
 \end{table}
 
+Table \ref{tab:templates2} shows the relations that can be manifested within a span of 2 sentences. Here is an example from the table:
+
+\begin{verse}
+\itshape
+Kisha wants to buy a car. She saved all her lunch money. \\
+\end{verse}
+
+The $<$GoalEvent$>$ is in the first sentence while the $<$Event$>$ is on the second sentence. Thus, the relation \textit{EventForGoalEvent(buy a car,saved all her lunch money)} can be extracted. Though this is mostly and almost always true for these 4 relations (\textit{EventForGoalEvent}, \textit{EventForGoalState}, \textit{EffectOf}, \textit{EffectOfIsState}), same is also the case for some of the relations in Table \ref{tab:templates1}. Here is an example for the MadeOf relation that spans 2 sentences:
+
+\begin{verse}
+\itshape
+Kisha will bake a cake. It is made of flour, butter and sugar. \\
+\end{verse}
+
+In this particular example, the indicator \textit{is made of} is present in the second sentence. And since there is only 1 object that the \textit{it} in the second sentence can refer to, it would be easy to say that the \textit{MadeOf} relation can be extracted. However, due to the limitations of the tool, which can only coreference personal pronouns and not including \textit{it}, it was not included in the scope of this research. Here is another instance of the same relation:
+
+\begin{verse}
+\itshape
+Kisha will bake a cake. She prepared the flour, butter and sugar. \\
+\end{verse}
+
+In this example, there is no \textit{MadeOf} indicator present and there is no clear indicator that what Kisha is preparing for in the second sentence refers to the cake. Through these sample sentences, it is worth noting that some concepts can have elaborations and background information provided in succeeding adjacent sentences.
+
 \subsection{Indicators}
 \label{sec:indicators}
 
@@ -236,8 +333,8 @@ Indicators are transition words that aid in identifying explicit relations. In t
 \begin{tabular}{|p{3.5cm}|p{10cm}|} \hline
 \textbf{Name} & \textbf{Indicators} \\ \hline
 IsA Indicators				& is a kind of, is a, is, is a type of, is an, 's a kind of, 's a, 's, 's a type of, 's an \\ \hline
-PartOf Indicators			& is a part of, is part of, has \\ \hline
-MadeOf Indicators			& is made of, is comprised of, form, become, becomes, forms \\ \hline
+PartOf Indicators			& is a part of, is part of, has, have \\ \hline
+MadeOf Indicators			& is made of, is comprised of, form, become, becomes, forms, formed, became \\ \hline
 OftenNear Indicators		& is near, is beside \\ \hline
 CapableOf Indicators		& can, could \\ \hline
 LocationOf Indicators		& is at, is located at, can be found at, in \\ \hline
@@ -251,6 +348,12 @@ Effect Indicators			& as a result, As a result, Because of this, because of this
 \label{tab:indicators}
 \end{table}
 
+These sets of indicators were collated from ConceptNet (see Section 3.4), Picture Books 2 \cite{Ang:2010} (see Section 3.1.2), and sentences from the corpora. Additional indicators were from the researcher's own knowledge.
+
+The Motivation, Goal, Cause and Effect indicators were all from Picture Books 2 \cite{Ang:2010}. These groups of indicators also contain redundant indicators like \textit{because} and \textit{Because}. This is due to the fact that they can be found at the start or in the middle of a sentence. This is also due to the nature of the information it tries to signal which can span into sentences.
+
+As for IsA, PartOf, PropertyOf, MadeOf, OftenNear, CapableOf, LocationOf, UsedFor and Owns indicators, the different tenses are included. It is also assume that these can only be found in the middle of sentence.
+
 \subsection{Architectural Design}
 \label{sec:archidesign}
 
@@ -263,7 +366,7 @@ The architecture of the system is mostly dependent on the open-source tool GATE 
     \label{fig:archidesign}
 \end{figure}
 
-Each children's story text from the \textit{unstructured corpora} is opened in GATE by creating a Gate Document. Once the GATE documents are created, the next step is to create a GATE Corpus and add the documents. First, the GATE application resets the input of any previous annotations. This applies only if the input has already been annotated before passing through GATE. After cleaning, the input is parsed into tokens. The input was then  split into sentences and each token was annotated with their respective part-of-speech tags. After that, named-entities from the defined gazetteers were annotated. Then, pronouns are matched with the named-entities they are referring to in the text. 
+Each children's story text from the \textit{unstructured corpora} is opened in GATE by creating a GATE Document. Once the GATE documents are created, the next step is to create a GATE Corpus and add the documents. First, the GATE application resets the input of any previous annotations. This applies only if the input has already been annotated before passing through GATE. After cleaning, the input is parsed into tokens. The input was then  split into sentences and each token was annotated with their respective part-of-speech tags. After that, named-entities from the defined gazetteers were annotated. Then, pronouns are matched with the named-entities they are referring to in the text. 
 
 Then, each token are processed to identify their lemmas, affixes and chunks. Lastly, the input text is ran through a transducer. This will finally identify all the target relations and create the appropriate annotations for each.
 
@@ -317,7 +420,7 @@ worldstate.lst 		& World States \\ \hline
 \subsubsection{Recognizing Target Relations}
 \label{sec:recogtarget}
 
-In order to extract the target relations, a number of JAPE phases must be created to recognise and annotate them in the input texts. A total of 23 customized JAPE phases were created for this purpose. Shown in Table \ref{tab:newjaperel} are the new JAPE phases to recognize the target relations. Table \ref{tab:newjapemisc} shows the other JAPE phases that are usually prerequisites of the target relation JAPE phases.
+In order to extract the target relations, a number of JAPE phases must be created to recognise and annotate them in the input texts. A total of 23 customized JAPE phases were created for this purpose. Shown in Table \ref{tab:newjaperel} are the new JAPE phases to recognize the target relations. 
 
 \begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
 \centering
@@ -343,6 +446,8 @@ roleResponsibleForRelation.jape		& RoleResponsibleFor Phase \\ \hline
 \label{tab:newjaperel}
 \end{table}
 
+Table \ref{tab:newjapemisc} shows the other JAPE phases that are prerequisites of the target relation JAPE phases. These tag the custom tags \textit{Event}, \textit{Goal}, \textit{GoalEvent}, \textit{GoalState}, \textit{Cause} and \textit{Effect}. \textit{Preprocessing1.jape} is responsible in identifying the named-entities added for the benefit of the existing corpora.
+
 \begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
 \centering
 \caption{New JAPE Phases (Miscellaneous)} \vspace{0.25em}
@@ -358,6 +463,39 @@ preprocessing1.jape		& Identify named entities based on new gazetteers \\ \hline
 \end{tabular}
 \label{tab:newjapemisc}
 \end{table}
+
+The JAPE tool follows a sequence in performing the aforementioned phases. Shown below is the sequence in tagging the custom tags and extracting the target relations:
+
+\begin{verse}
+\itshape
+preprocessing1 \\
+goal \\
+goalEvent\\
+goalState\\
+event\\
+cause\\
+effect\\
+isARelation\\
+propertyOfRelation\\
+madeOfRelation\\
+oftenNearRelation\\
+locationOfRelation\\
+capableOfRelation\\
+usedForRelation\\
+ownsRelation\\
+hasRoleRelation\\
+partOfRelation\\
+roleResponsibleForRelation\\
+eventForGoalEvent\\
+eventForGoalState\\
+effectOf\\
+effectOfIsState\\
+happens\\
+\end{verse}
+
+\textit{Preprocessing1.jape} is the first phase ran to identify and tag all the new named-entities found in the corpora. This is followed by the tagging of \textit{Event}, \textit{Goal}, \textit{GoalEvent}, \textit{GoalState}, \textit{Cause} and \textit{Effect}. These are prerequisites for the \textit{EventForGoalEvent}, \textit{EventForGoalState}, \textit{EffectOf},  \textit{EffectOfIsState} and \textit{Happens} phases. The rest of the phases were put in that sequence based on the order of their creation.
+
+During each phase, the whole document is processed. This allows multiple relation types to be extracted from a single sentence.
 
 \subsection{Post-Processing}
 \label{sec:postprocessing}

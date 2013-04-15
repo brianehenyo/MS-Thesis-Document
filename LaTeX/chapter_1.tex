@@ -48,15 +48,15 @@ To develop a methodology that automatically identifies and extracts the relation
    \item To derive a set of extraction patterns;
    \item To develop a representation for modelling relations of every object common in children's stories;
    \item To implement extraction rules using GATE for extracting conceptual relations automatically from the corpus, and;
-   \item To validate the resulting conceptual relations extraction tool through integration with Picture Books
+   \item To validate the resulting conceptual relations extraction tool through comparison with a gold standard and integration with Picture Books
 \end{enumerate}
 
 \subsection{Scope and Limitations of the Research}
 \label{sec:scopelimitations}
 
-At least 30 children's stories were collected to form the input corpus for the extraction tool to be developed. These were then be modified to remove the dialogues and to clean of inconsistencies. Analysis of the English sentence structures in these stories were performed to identify the types of relations that are present. This information were used to derive a set of patterns or templates for extracting conceptual relations. An extraction tool was used to use the extraction patterns to automatically locate instances of a known relation in the corpus.
+At least 30 children's stories were collected to form the input corpus for the extraction tool developed. These were then  modified to remove the dialogues and to clean of inconsistencies. English sentence structures in these stories were analyzed to identify the types of relations that are present. This information was then used to derive a set of patterns or templates for extracting conceptual relations. An existing extraction tool was used in utilizing the extraction patterns to automatically locate instances of a known relation in the corpus.
 
-One relation may be expressed in various ways in text. Consider the hypernymy (IsA) relation, wherein the following sentences are possible ways of expressing it:
+In terms of extraction patterns, one relation can be expressed in various ways in text. Consider the hypernymy (IsA) relation, wherein the following sentences are possible ways of expressing it:
 
 	\noindent
 	\hspace{1 in}\emph{The dog is a canine.} \\
@@ -64,47 +64,33 @@ One relation may be expressed in various ways in text. Consider the hypernymy (I
 	\hspace*{1 in}\emph{The dog, a canine, is …} \\
 	\hspace*{1 in}\emph{The dog is a type of canine.}
 
-Although lexico-syntactic extraction patterns mapped directly to relations, certain English sentence constructs require further analysis and decomposition in order to derive their corresponding relations. These include sentence structures containing conjunctions and embedded clauses, as shown in the examples below:
+But although lexico-syntactic extraction patterns can be mapped directly to relations, certain English sentence constructs require further analysis and decomposition in order to derive their corresponding relations. These include sentence structures containing conjunctions and embedded clauses, as shown in the examples below:
 
 	\noindent
 	\hspace{1 in}\emph{Cake is made of flour, sugar, \underline{and} butter.} \\
 	\hspace*{1 in}\emph{The boy is singing \underline{and} the girl is dancing.} \\
 	\hspace*{1 in}\emph{Anna, \underline{who is the queen}, went to the market, \underline{while} the king went to the mall.}
 
-Text structures in stories may contain rhetorical relations to reflect the semantic relations that may exist between concepts and events in a story. Using the Rhetorical Structure Theory (RST) of \citeA{Mann:1987}, these relations may be identified and extracted to provide additional conceptual knowledge.
+In line with the objectives of this research, all simple lexico-syntactic extraction patterns were handled given that they are from ConceptNet and the corpora at hand. The more complex sentences were manually modified into simpler sentences. Only then that the relations were extracted.
 
-Extracted knowledge must be stored in a representation model that can be used by NLP systems, in this case, the Picture Books story generator. Part of the research involved reviewing the design of the Picture Books ontology, which is patterned after the design of ConceptNet, to validate the presence of the appropriate relations against those identified from the collected corpus.
+The extracted knowledge was stored in a representation model that can be used by NLP systems, in this case, the Picture Books story generator. It was patterned after the design of the Picture Books ontology, which is also patterned after the design of ConceptNet, to validate the presence of the appropriate relations against those identified from the collected corpus.
 
-Since stories are sequences of events, their analysis may necessitate the creation of new relations to represent sequences of events, temporal relations between events, as well as the constraints under which certain events may take place. For example, during testing, evaluators noticed that one of the generated stories of Picture Books occurred at an inappropriate time; specifically, the first segment of the story that introduces the day, the place, and the main character, contained the following text:
+Since stories are sequences of events, their analysis necessitate the creation of new relations to represent sequences of events, temporal relations between events, as well as the constraints under which certain events may take place. For example, during testing, evaluators noticed that one of the generated stories of Picture Books occurred at an inappropriate time; specifically, the first segment of the story that introduces the day, the place, and the main character, contained the following text:
 
 	\noindent
 	\hspace{1 in}\emph{The evening was warm. Ellen the elephant was at the school. She went with Mommy Edna to the school.}
 
-Since Picture Books' knowledge base currently does not provide relations about when certain events can occur, the main character went to school in the evening. 
+Since the knowledge base of Picture Books currently does not provide relations about when certain events can occur, the main character went to school in the evening. 
 
 Sixteen (16) new semantic relations, resulting from analyzing the sample corpus, and from reviewing other works such as \cite{Mueller:2003} for modeling time and event occurrences, were created in this research. The main relations, mostly from ConcepNet and Picture Books, include IsA, PropertyOf, PartOf, MadeOf, EventForGoalEvent, EventForGoalState, EffectOf, EffectOfIsState, CapableOf, OftenNear, LocationOf and, UsedFor. Additional relations include Happens(e, t) which represents that a fluent \emph{f} holds at time \emph{t}, HasRole which represent character roles, RoleResponsibleFor which represent actions/events done by a specific role and lastly, Owns which represent ownership. 
 
-\citeA{Alani:2003} noted that it is inevitable for duplicate and contradictory information to be extracted from the input corpus. But he further noted that handling such information is challenging for automatic extraction and ontology population approaches. Thus, this was not be considered in the current proposal.
+\citeA{Alani:2003} noted that it is inevitable for duplicate and contradictory information to be extracted from the input corpus. But he further noted that handling such information is challenging for automatic extraction and ontology population approaches. In this research, only duplicate extractions were handled.
 
-Co-occurring events and objects are also imminent in extracting relations. Here is a sample sentence exhibiting co-occurring objects:  
-	
-	\noindent
-	\hspace{1 in}\emph{Cake is made of flour, sugar, and butter.}
-	
-If MadeOf relations are to be extracted from this sentence, there will be three instances of it namely,  MadeOf(cake, flour), MadeOf(cake, sugar) and MadeOf(cake, butter). In such cases, Picture Books cannot and will not be able to recreate the sentence above if the three relations will be used. Picture Books will make three separate sentences instead. In this research, Picture Books was not be modified anymore to recombine multiple relations to generate a single sentence.
+For evaluation purposes, the Picture Books' code base was not modified in any way to accommodate the additional relations and their corresponding entries in the ontology. The same goes for additional entries for existing Picture Books' relations. All modifications in Picture Books were done only in its database.
 
-Such is also the case for co-occurring events in Picture Books. Here is an example of a co-occurring event:
+\citeA{Mueller:1999} also noted that ``story understanding goes beyond generating parse trees, disambiguating words, or filling templates, and includes the ability to answer arbitrary questions, generate paraphrases and summaries, fill arbitrary templates, make inferences, reason about the story, follow reasoning in the story, relate the story to general knowledge, and hypothesize alternative versions of the story." Thus, aside from having a huge collection of common sense knowledge, a computer system must also be able to ``make inferences about states and events not explicitly described in the text" \cite{Mueller:2003}, by performing common sense reasoning using knowledge about the world. This requires a multi-representational model of this knowledge for the various realms of space, time, needs and feelings to be built, and is beyond the scope of the current proposal.
 
-	\noindent
-	\hspace*{1 in}\emph{Anna went to the market, while waiting for her ride.}
-	
-In the sentence above, the event \emph{went to the market} happened simultaneously with the event \emph{waiting for her ride}. This research can also recognize co-occurring events but Picture Books cannot replicate the same sentence if two relations containing the two events above will be used. Picture Books will still produce separate sentences for each event relation. Again, Picture Books was not be modified anymore to recombine multiple relations to generate a single sentence.
-
-To put it simply, the Picture Books' code base was not be modified in any way to accommodate the additional relations and their corresponding entries in the ontology. The same goes for additional entries for existing Picture Books' relations. All modifications in Picture Books were done in its database.
-
-\citeA{Mueller:1999} also noted that ``story understanding goes beyond generating parse trees, disambiguating words, or filling templates, and includes the ability to answer arbitrary questions, generate paraphrases and summaries, fill arbitrary templates, make inferences, reason about the story, follow reasoning in the story, relate the story to general knowledge, and hypothesize alternative versions of the story." Thus, aside from having a huge collection of common sense knowledge, a computer system must also be able to ``make inferences about states and events not explicitly described in the text" \cite{Mueller:2003}, by performing common sense reasoning using knowledge about the world. This requires a multi-representational model of this knowledge for the various realms of space, time, needs and feelings to be built, and will be beyond the scope of the current proposal.
-
-Manual validation with the help of a linguist was not utilized. Automated validation was performed by having Picture Books utilize the new knowledge in generating stories.
+Manual validation with the help of a linguist was not utilized. Instead, a gold standard was used to evaluate the extracted relations' accuracy and completeness. Aside from this, the extracted relations were automatically validated through the generated stories of Picture Books. 
 
 \subsection{Significance of the Research}
 \label{sec:significance}

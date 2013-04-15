@@ -122,7 +122,9 @@ ConceptNet relations \\ \hline
 \subsection{Picture Books}
 \label{sec:picturebooks}
 
-Picture Books generates a story for a given input picture that contain a background selected by the user from the background library, as well as the character and object stickers placed onto the background. The ontology is used to derive relations between concepts, which refer to objects in the picture as well as the theme associated by the system through the background. An excerpt of a generated story and the corresponding conceptual knowledge used is shown in Table \ref{tab:picturebookexcerpt}.
+Picture Books is a creative text generation system aimed for kids 4-7 years old. The following sections detail the different components of Picture Books that allow it to generate stories.
+
+\subsubsection{Knowledge}
 
 \begin{table}[h]   %t means place on top, replace with b if you want to place at the bottom
 \centering
@@ -150,6 +152,8 @@ Line & Story Text & Conceptual Knowledge \\ \hline
 \label{tab:picturebookexcerpt}
 \end{table}
 
+Picture Books generates a story for a given input picture that contain a background selected by the user from the background library, as well as the character and object stickers placed onto the background. The ontology is used to derive relations between concepts, which refer to objects in the picture as well as the theme associated by the system through the background. An excerpt of a generated story and the corresponding conceptual knowledge used is shown in Table \ref{tab:picturebookexcerpt}.
+
 In line 1, the main character (\emph{Rizzy the Rabbit}) and the setting (\emph{living room}) were determined from the character sticker placed onto the selected background by the user. In line 2, the object (\emph{lamp}) may or may not be in the picture, but included in the generated story based on the theme that is associated to the background. In this example, the theme is \emph{being honest} through admitting your mistake (that is, the main character must not lie about breaking the lamp).
 
 Access to the ontology is needed to derive events that can happen next in the story, as shown in line 3, and the effects of the resulting event, shown in line 4. Line 5 is the starting point of the rising action, where the main character misbehaves (\emph{told a lie}) and the subsequent events and effects of the misbehavior. All the knowledge needed by Picture Books to do its task were manually encoded by the proponents into the system, based on the identified background and themes, which are appropriate to the target age group. The knowledge in ConceptNet cannot be used directly as these are not suitable for the users of Picture Books. Thus, only some of the ConceptNet knowledge as well as relations were used to build the ontology of Picture Books. Table \ref{tab:semanticrelationships} lists some of these relations defined in Picture Books following the form $<$relationship$>$($<$concept1$>$, $<$concept2$>$). 
@@ -176,6 +180,50 @@ Functions	 & \textbf{\emph{UsedFor}}(thermometer, check temperature) \\ \hline
 \end{tabular}
 \label{tab:semanticrelationships}
 \end{table}
+
+\subsubsection{Story Elements}
+
+Aside from its ontology, Picture Books uses story elements to help it plan for a story to generate. 
+
+\subsubsection*{Theme}
+
+Themes dictate the flow of the different plots in the story. It plans the each story through four stages namely, problem, rising action, solution and climax. Each stage can have a number of plots assigned to it. But during story generation, it can only select one for each stage.
+
+\subsubsection*{Story Plot}
+
+The story plots is designed to contain instructions for each stage of the theme. It is composed of at least two author goals. Each author goal is run during story generation.
+
+\subsubsection*{Author Goal}
+
+Each author goal is equivalent to scene in the generated story. It has to have at least two character goals. At least one for the goal and another for its consequent actions. All character goals are processed during story generations.
+
+\subsubsection*{Character Goal}
+
+Character goals signify the actions done by the characters in the story. It is also the abstract representation of a sentence in the final story generated. Whenever a character goal is called, additional parameters are added to convey a complete thought. Each parameter takes the following format: $<$attribute\_name$>$:$<$value$>$. Attributes can be either of the following: \textit{target}, \textit{instrument}, \textit{patiens} and \textit{agens}. 
+
+There are four types of values that can be assigned to character goal attributes:
+\begin{enumerate}
+\item Word ID/s
+\item Derivable values
+\item Ontology accesses
+\item Inner character goals
+\end{enumerate}
+
+In an ontology access, the needed value is to be fetched from the ontology database. Each is started with \textit{\textbf{onto}} followed by the semantic category of the relation that you want to access first. The complete format is as follows: \%onto$<$Category$>$($<$concept1$>$[,$<$concept2$>$])\%. \textit{Concept1} and \textit{concept2} can either be Word IDs, derivable values or another ontology access. If an ontology path is desired, the second concept must be added to signify the end of the path. Here is an example of an ontology access:
+
+\begin{verse}
+\itshape
+Instrument:ontoAction(\%object\%)
+\end{verse}
+
+In trying to pass an \textit{instrument} attribute, the character goal accesses the ontology for an \textit{Action} relation with the dragged object sticker as the parent concept. The immediate relation will be returned and used as attribute. Now, here is another example of an ontology access:
+
+\begin{verse}
+\itshape
+Target:ontoAction(\%object\%,\%child%)
+\end{verse}
+
+In this instance, the character goal is now trying to search for a path in ontology starting with the input object and ending with the main character of the story.
 
 \subsection{ConceptNet}
 \label{sec:conceptnet}
@@ -336,7 +384,7 @@ Rule: Jobtitle1  \\
 
 In this example, the LHS tells us that the rule is trying to look for 2 consecutive Lookup annotations with the \textit{majortype} attribute equal to \textit{jobtitle}. The second Lookup annotation is optional because of the question mark symbol (?) following it. After recognizing the said annotation pattern, the rule then creates a new annotation \textit{JobTitle} and adds the \textit{rule} attribute to it. It will have the value JobTitle1.
 
-\subsection{Relation Extraction Techniques}
+\subsection{Template-Based Extraction}
 \label{sec:relextraction}
 
 In extracting semantic relations, one technique is through the generation and use of extraction patterns. For each target relation, a set of extraction patterns are needed to handle all possible instances of a relation in a sentence.
@@ -383,7 +431,7 @@ Input Sentence following a Template & Relations \\ \hline
 \label{tab:utilizeposforimplicit}
 \end{table}
 
-The input stories may contain complex sentence structures, such as conjunctions and embedded clauses. Text simplification algorithms, employed in SimText \cite{Damay:2007} may be utilized to convert these sentence structures into simpler ones. Consider the sentence ``\textit{Anna, who is the queen, went to the market; meanwhile, the king went to the mall.}" By identifying and transforming this to three simpler sentences: ``\textit{Anna is the queen. She went to the market. Meanwhile, the king went to the mall.}", the following relations can be extracted. 
+The input stories may contain complex sentence structures, such as conjunctions and embedded clauses. Consider the sentence ``\textit{Anna, who is the queen, went to the market; meanwhile, the king went to the mall.}" By identifying and transforming this to three simpler sentences: ``\textit{Anna is the queen. She went to the market. Meanwhile, the king went to the mall.}", the following relations can be extracted. 
 
 \noindent
 	\hspace{1 in}IsPerson(Anna) \\
@@ -392,52 +440,6 @@ The input stories may contain complex sentence structures, such as conjunctions 
 	\hspace*{1 in}CapableOf(person, go) \\
 	\hspace*{1 in}TargetOf(go, market) \\
 	\hspace*{1 in}TargetOf(go, mall)
-	
-\subsection{Additional Relations}
-\label{sec:addrelations}
-	
-Aside from the 14 ConceptNet relations adopted by Picture Books, other semantic relations were also considered. The previous example shows some of the possible new relations that may be included in the output of the proposed system, namely:
-
-\begin{itemize}
-	\item HasRole to designate that characters may play certain roles
-	\item RoleResponsibleFor to model a specified role is responsible for a given task, e.g., the king rules a country
-	\item TargetOf to model target objects of certain actions
-\end{itemize}
-
-One of the identified limitations in the current knowledge base of Picture Books is the lack of relations to denote event occurrences. Consider again the text:
-	
-	\noindent
-	\hspace{1 in}\emph{The evening was warm. Ellen the elephant was at the school. She went with Mommy Edna to the school.}
-	
-	If appropriate relations are available, e.g., Happens to designate that an activity, such as going to school, can only happen at a certain time of day, such as morning, then the resulting text can be:
-	
-	\noindent
-	\hspace{1 in}\emph{The morning was sunny. Ellen the elephant was at the school. She went with Mommy Edna to the school.}
-	
-Certain granularities may be provided to the relations representing various aspects of time, namely season (planting can only occur during spring, snow can only fall during winter), month (Christmas in December, Valentine's in February), or even weeks, days, hours, and minutes.
-
-Mueller (2003) made use of event calculus consisting of the following predicates to model event occurrences:
-
-\begin{itemize}
-	\item Happens(e, t) represents that an event \emph{e} happens at time \emph{t}.
-	\item HoldsAt(f, t) represents that a fluent \emph{f} holds at time \emph{t}.
-	\item Initiates(e, f, t) represents that if event \emph{e} occurs at \emph{t} then fluent \emph{f} starts holding after \emph{t}.
-	\item Terminates(e, f, t) represents that if event \emph{e} occurs at \emph{t} then fluent \emph{f} stops holding after \emph{t}.
-\end{itemize}
-
-\begin{table}[ht]   %t means place on top, replace with b if you want to place at the bottom
-\centering
-\caption{Mapping of RST relations to ConceptNet relations} \vspace{0.25em}
-\begin{tabular}{|p{7cm}|l|} \hline
-RST Relation & ConceptNet Relation \\ \hline
-Cause (one event is the cause of another event) & EffectOf(event1, event2) \\ \hline
-Background (one event serves as background information for the other) & EventForGoalEvent (clean up, be neat) \\ \hline
-Example & InstanceOf \\ \hline
-\end{tabular}
-\label{tab:mappingrstconceptnet}
-\end{table}
-
-\citeA{Nakasone:2006} developed a concept representation model to convey ideas of a story, by identifying organizations of text structure using the Rhetorical Structure Theory of \citeA{Mann:1987}. RST relations can then be mapped to existing ConceptNet relations, as shown in Table \ref{tab:mappingrstconceptnet}.
 
 
 
