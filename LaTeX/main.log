@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.3.30)  16 APR 2013 03:32
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.3.30)  17 APR 2013 13:25
 entering extended mode
 **main.tex
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.tex"
@@ -225,6 +225,9 @@ LaTeX Warning: Label `sec:gazetteer' multiply defined.
 
 LaTeX Warning: Label `sec:pos' multiply defined.
 
+
+LaTeX Warning: Label `sec:indicators' multiply defined.
+
 )
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_resourcepers
 on.aux")
@@ -240,7 +243,18 @@ LaTeX Warning: Label `tab:grpbauth' multiply defined.
 
 )
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_generated.au
-x"))
+x") ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_gold.aux
+"
+
+LaTeX Warning: Label `tab:gold3' multiply defined.
+
+
+LaTeX Warning: Label `tab:gold3' multiply defined.
+
+
+LaTeX Warning: Label `tab:gold3' multiply defined.
+
+))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
@@ -431,87 +445,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 428--429
 
 
 ] [35] [36] [37]
-Underfull \hbox (badness 10000) in paragraph at lines 167--167
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
 []\OT1/cmr/m/n/12 Specifies an en-tity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--168
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
 []\OT1/cmr/m/n/12 LocationOf(slide, play-
  []
 
 
-Overfull \hbox (1.50601pt too wide) in paragraph at lines 170--170
+Overfull \hbox (1.50601pt too wide) in paragraph at lines 174--174
 []\OT1/cmr/m/n/12 EventForGoalEvent| 
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 170--170
+Underfull \hbox (badness 2229) in paragraph at lines 174--174
 []\OT1/cmr/m/n/12 Represents an event
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--170
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
 []\OT1/cmr/m/n/12 EventForGoalEvent(go to
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 171--171
+Underfull \hbox (badness 2229) in paragraph at lines 175--175
 []\OT1/cmr/m/n/12 Represents an event
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--171
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
 []\OT1/cmr/m/n/12 EventForGoalState(take a
  []
 
 
-Underfull \hbox (badness 3872) in paragraph at lines 172--172
+Underfull \hbox (badness 3872) in paragraph at lines 176--176
 []\OT1/cmr/m/n/12 Represents a cause-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--172
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
 \OT1/cmr/m/n/12 effect be-tween two
  []
 
 
-Underfull \hbox (badness 3872) in paragraph at lines 173--173
+Underfull \hbox (badness 3872) in paragraph at lines 177--177
 []\OT1/cmr/m/n/12 Represents a cause-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
 \OT1/cmr/m/n/12 effect be-tween an
  []
 
 
-Underfull \hbox (badness 8038) in paragraph at lines 173--173
+Underfull \hbox (badness 8038) in paragraph at lines 177--177
 \OT1/cmr/m/n/12 event and an end
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
 []\OT1/cmr/m/n/12 EffectOfIsState(eat veg-eta-
  []
 
 
-Overfull \hbox (1.22961pt too wide) in paragraph at lines 176--176
+Overfull \hbox (1.22961pt too wide) in paragraph at lines 180--180
 []\OT1/cmr/m/n/12 RoleResponsibleFor| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
 []\OT1/cmr/m/n/12 Specifies an ac-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
 []\OT1/cmr/m/n/12 RoleResponsibleFor(doctor,
  []
 
 
-Underfull \hbox (badness 2809) in paragraph at lines 177--177
+Underfull \hbox (badness 2809) in paragraph at lines 181--181
 []\OT1/cmr/m/n/12 Specifies the owner-
  []
 
@@ -520,34 +534,34 @@ Overfull \vbox (20.05872pt too high) has occurred while \output is active []
 
 
 [39] [40]
-Overfull \hbox (3.29195pt too wide) in paragraph at lines 230--230
+Overfull \hbox (3.29195pt too wide) in paragraph at lines 234--234
 []$\OML/cmm/m/it/12 <$\OT1/cmr/m/n/12 Pronoun:Possessive$\OML/cmm/m/it/12 >$| 
  []
 
 
-Overfull \hbox (1.22961pt too wide) in paragraph at lines 275--275
+Overfull \hbox (1.22961pt too wide) in paragraph at lines 279--279
 []\OT1/cmr/m/n/12 RoleResponsibleFor| 
  []
 
 [41] [42]
-Overfull \hbox (1.50601pt too wide) in paragraph at lines 290--290
+Overfull \hbox (1.50601pt too wide) in paragraph at lines 294--294
 []\OT1/cmr/m/n/12 EventForGoalEvent| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--291
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
 []$\OML/cmm/m/it/12 <$\OT1/cmr/m/n/12 Event$\OML/cmm/m/it/12 >$ $<$\OT1/cmr/m/n
 /12 MotivationIndicator$\OML/cmm/m/it/12 >$ $<$\OT1/cmr/m/n/12 GoalEvent$\OML/c
 mm/m/it/12 >$ \OT1/cmr/m/n/12 :
  []
 
 [43]
-Underfull \hbox (badness 3769) in paragraph at lines 338--338
+Underfull \hbox (badness 3769) in paragraph at lines 342--342
 []\OT1/cmr/m/n/12 OftenNear In-di-ca-
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 339--339
+Underfull \hbox (badness 2318) in paragraph at lines 343--343
 []\OT1/cmr/m/n/12 CapableOf In-di-ca-
  []
 
@@ -555,115 +569,156 @@ Underfull \hbox (badness 2318) in paragraph at lines 339--339
 File: archidesign1.jpg Graphic file (type jpg)
 
 <use archidesign1.jpg>
-Package pdftex.def Info: archidesign1.jpg used on input line 364.
+Package pdftex.def Info: archidesign1.jpg used on input line 368.
 (pdftex.def)             Requested size: 240.8994pt x 298.11302pt.
  [46 <C:/Users/Briane/Dropbox/THESIS/MS Thesis Document/LaTeX/archidesign1.jpg>
 ] [47]
-Underfull \hbox (badness 10000) in paragraph at lines 462--462
+Underfull \hbox (badness 10000) in paragraph at lines 466--466
 []\OT1/cmr/m/n/12 Identify named en-ti-ties
  []
 
 [48] [49]) [50]
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_5.tex"
-Underfull \hbox (badness 3942) in paragraph at lines 38--38
+[51
+
+
+] [52]
+Underfull \hbox (badness 3942) in paragraph at lines 66--66
 []\OT1/cmr/bx/n/12 Mapped Tar-get Re-la-
  []
 
 
-Underfull \hbox (badness 5607) in paragraph at lines 40--40
+Underfull \hbox (badness 5607) in paragraph at lines 68--68
 []\OT1/cmr/m/n/12 isA, ca-pa-bleOf, ef-fectOf,
  []
 
 
-Underfull \hbox (badness 5607) in paragraph at lines 41--41
+Underfull \hbox (badness 5607) in paragraph at lines 69--69
 []\OT1/cmr/m/n/12 isA, ca-pa-bleOf, ef-fectOf,
  []
 
-[51
 
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
 []\OT1/cmr/m/n/12 isA, ca-pa-bleOf, prop-er-
  []
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 60--60
+Underfull \hbox (badness 1584) in paragraph at lines 88--88
 \OT1/cmr/m/n/12 tyOf, ef-fectOf, ef-fectOfIs-
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 60--60
+Underfull \hbox (badness 1845) in paragraph at lines 88--88
 \OT1/cmr/m/n/12 State, used-For, event-For-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
 []\OT1/cmr/m/n/12 locationOf, partOf,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
 \OT1/cmr/m/n/12 madeOf, event-For-Goal-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
 \OT1/cmr/m/n/12 has-Role, rol-eRe-spon-si-ble-
  []
 
-<altpath.jpg, id=203, 323.70938pt x 240.9pt>
+[53] <altpath.jpg, id=209, 323.70938pt x 240.9pt>
 File: altpath.jpg Graphic file (type jpg)
  <use altpath.jpg>
-Package pdftex.def Info: altpath.jpg used on input line 71.
+Package pdftex.def Info: altpath.jpg used on input line 99.
 (pdftex.def)             Requested size: 323.70859pt x 240.8994pt.
- [52]
-<altpatheffectofisstate.jpg, id=207, 331.99031pt x 200.24812pt>
+ [54 <C:/Users/Briane/Dropbox/THESIS/MS Thesis Document/LaTeX/altpath.jpg>]
+<altpatheffectofisstate.jpg, id=213, 331.99031pt x 200.24812pt>
 File: altpatheffectofisstate.jpg Graphic file (type jpg)
 
 <use altpatheffectofisstate.jpg>
-Package pdftex.def Info: altpatheffectofisstate.jpg used on input line 82.
+Package pdftex.def Info: altpatheffectofisstate.jpg used on input line 110.
 (pdftex.def)             Requested size: 331.98949pt x 200.24763pt.
+ [55 <C:/Users/Briane/Dropbox/THESIS/MS Thesis Document/LaTeX/altpatheffectofis
+state.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
+[]\OT1/cmr/bx/n/12 Gold
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (5.65701pt too wide) in paragraph at lines 141--141
+[]\OT1/cmr/bx/n/12 Extraction| 
+ []
 
-[53 <C:/Users/Briane/Dropbox/THESIS/MS Thesis Document/LaTeX/altpath.jpg>]
-[54 <C:/Users/Briane/Dropbox/THESIS/MS Thesis Document/LaTeX/altpatheffectofiss
-tate.jpg>] [55] [56] [57]
-LaTeX Font Info:    Try loading font information for OT1+txtt on input line 248
+
+Overfull \hbox (3.6167pt too wide) in paragraph at lines 141--141
+[]\OT1/cmr/bx/n/12 Delta| 
+ []
+
+
+Overfull \hbox (2.25839pt too wide) in paragraph at lines 141--141
+[]\OT1/cmr/bx/n/12 Correct| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
+[]\OT1/cmr/m/n/12 Start School
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--147
+[]\OT1/cmr/m/n/12 Start School
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 148--148
+[]\OT1/cmr/m/n/12 Hopsalot's Gar-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+[]\OT1/cmr/m/n/12 Hopsalot's
+ []
+
+
+Overfull \hbox (36.10687pt too wide) in paragraph at lines 140--152
+ [][] 
+ []
+
+[56] [57] [58] [59] [60] [61] [62] [63] [64] [65]
+LaTeX Font Info:    Try loading font information for OT1+txtt on input line 410
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\ot1txtt.fd"
 File: ot1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/txtt/b/n' tried instead on input line 249.
+(Font)              Font shape `OT1/txtt/b/n' tried instead on input line 411.
 LaTeX Font Info:    Font shape `OT1/txtt/m/it' in size <12> not available
-(Font)              Font shape `OT1/txtt/m/sl' tried instead on input line 256.
+(Font)              Font shape `OT1/txtt/m/sl' tried instead on input line 418.
 
 LaTeX Font Info:    Font shape `OT1/txtt/bx/it' in size <12> not available
-(Font)              Font shape `OT1/txtt/b/sl' tried instead on input line 256.
+(Font)              Font shape `OT1/txtt/b/sl' tried instead on input line 418.
 
- [58] [59]
-Overfull \hbox (12.84668pt too wide) in paragraph at lines 307--307
+ [66]
+Overfull \hbox (12.84668pt too wide) in paragraph at lines 469--469
 []\OT1/txtt/m/n/12 [7]  Edward told Mommy Edna that Porky the pig broke glass o
 f water.[] 
  []
 
-[60]) [61]
+[67] [68]) [69]
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_6.tex"
-[62
+[70
 
 
-] [63]) [64]
+] [71] [72]) [73]
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_resourcepers
 on.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-) [65
+) [74
 
 
 ]
@@ -673,7 +728,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-) [66
+) [75
 
 
 ]
@@ -683,7 +738,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--31
 []\OT1/cmr/bx/n/12 Story
  []
 
-) [67
+) [76
 
 
 ]
@@ -723,7 +778,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--58
 []\OT1/cmr/bx/n/12 Loca-
  []
 
-[68
+[77
 
 
 ]
@@ -751,12 +806,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--98
 []\OT1/cmr/bx/n/12 EffectOf-
  []
 
-[69]
+[78]
 Overfull \hbox (22.488pt too wide) in paragraph at lines 137--172
  [][] 
  []
 
-[70]
+[79]
 Underfull \hbox (badness 10000) in paragraph at lines 178--178
 []\OT1/cmr/bx/n/12 Story
  []
@@ -791,7 +846,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--178
 []\OT1/cmr/bx/n/12 Loca-
  []
 
-[71]
+[80]
 Overfull \hbox (1.36534pt too wide) in paragraph at lines 218--218
 []\OT1/cmr/bx/n/12 EventFor-
  []
@@ -816,53 +871,266 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--218
 []\OT1/cmr/bx/n/12 EffectOf-
  []
 
-[72]
+[81]
 Overfull \hbox (22.488pt too wide) in paragraph at lines 257--292
  [][] 
  []
 
-[73]) [74]
+[82]) [83]
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_ontology.tex
-" [75
+" [84
 
 
-] [76]
+] [85]
 Overfull \hbox (57.71466pt too wide) in paragraph at lines 118--125
  [][] 
  []
 
-[77] [78]
+[86] [87]
 Overfull \hbox (40.09666pt too wide) in paragraph at lines 219--247
  [][] 
  []
 
-[79]
+[88]
 Overfull \hbox (38.46057pt too wide) in paragraph at lines 252--276
  [][] 
  []
 
-[80]
+[89]
 Overfull \hbox (48.9785pt too wide) in paragraph at lines 281--289
  [][] 
  []
 
-) [81]
+) [90]
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_generated.te
-x" [82
+x" [91
 
 
-] [83]
+] [92]
 Overfull \hbox (1915.443pt too wide) in paragraph at lines 135--135
 []$[]$[] 
  []
 
-[84] [85] [86] [87]) [88]
-("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.bbl" [89
+[93] [94] [95] [96]) [97]
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_gold.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]\OT1/cmr/bx/n/12 Gold
+ []
+
+
+Overfull \hbox (1.13339pt too wide) in paragraph at lines 18--18
+[]\OT1/cmr/bx/n/12 Extrac-
+ []
+
+
+Overfull \hbox (3.6167pt too wide) in paragraph at lines 18--18
+[]\OT1/cmr/bx/n/12 Delta| 
+ []
+
+
+Overfull \hbox (2.25839pt too wide) in paragraph at lines 18--18
+[]\OT1/cmr/bx/n/12 Correct| 
+ []
+
+
+Overfull \hbox (1.50601pt too wide) in paragraph at lines 24--24
+[]\OT1/cmr/m/n/12 EventForGoalEvent| 
+ []
+
+
+Overfull \hbox (1.22961pt too wide) in paragraph at lines 34--34
+[]\OT1/cmr/m/n/12 RoleResponsibleFor| 
+ []
+
+
+Overfull \hbox (36.10687pt too wide) in paragraph at lines 17--38
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+[]\OT1/cmr/bx/n/12 Gold
+ []
+
+
+Overfull \hbox (1.13339pt too wide) in paragraph at lines 44--44
+[]\OT1/cmr/bx/n/12 Extrac-
+ []
+
+
+Overfull \hbox (3.6167pt too wide) in paragraph at lines 44--44
+[]\OT1/cmr/bx/n/12 Delta| 
+ []
+
+
+Overfull \hbox (2.25839pt too wide) in paragraph at lines 44--44
+[]\OT1/cmr/bx/n/12 Correct| 
+ []
+
+
+Overfull \hbox (1.50601pt too wide) in paragraph at lines 50--50
+[]\OT1/cmr/m/n/12 EventForGoalEvent| 
+ []
+
+
+Overfull \hbox (1.22961pt too wide) in paragraph at lines 60--60
+[]\OT1/cmr/m/n/12 RoleResponsibleFor| 
+ []
+
+
+Overfull \hbox (36.10687pt too wide) in paragraph at lines 43--64
+ [][] 
+ []
+
+[98
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+[]\OT1/cmr/bx/n/12 Gold
+ []
+
+
+Overfull \hbox (1.13339pt too wide) in paragraph at lines 70--70
+[]\OT1/cmr/bx/n/12 Extrac-
+ []
+
+
+Overfull \hbox (3.6167pt too wide) in paragraph at lines 70--70
+[]\OT1/cmr/bx/n/12 Delta| 
+ []
+
+
+Overfull \hbox (2.25839pt too wide) in paragraph at lines 70--70
+[]\OT1/cmr/bx/n/12 Correct| 
+ []
+
+
+Overfull \hbox (1.50601pt too wide) in paragraph at lines 76--76
+[]\OT1/cmr/m/n/12 EventForGoalEvent| 
+ []
+
+
+Overfull \hbox (1.22961pt too wide) in paragraph at lines 86--86
+[]\OT1/cmr/m/n/12 RoleResponsibleFor| 
+ []
+
+
+Overfull \hbox (36.10687pt too wide) in paragraph at lines 69--90
+ [][] 
+ []
+
+[99]
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+[]\OT1/cmr/bx/n/12 Gold
+ []
+
+
+Overfull \hbox (1.13339pt too wide) in paragraph at lines 96--96
+[]\OT1/cmr/bx/n/12 Extrac-
+ []
+
+
+Overfull \hbox (3.6167pt too wide) in paragraph at lines 96--96
+[]\OT1/cmr/bx/n/12 Delta| 
+ []
+
+
+Overfull \hbox (2.25839pt too wide) in paragraph at lines 96--96
+[]\OT1/cmr/bx/n/12 Correct| 
+ []
+
+
+Overfull \hbox (1.50601pt too wide) in paragraph at lines 102--102
+[]\OT1/cmr/m/n/12 EventForGoalEvent| 
+ []
+
+
+Overfull \hbox (1.22961pt too wide) in paragraph at lines 112--112
+[]\OT1/cmr/m/n/12 RoleResponsibleFor| 
+ []
+
+
+Overfull \hbox (36.10687pt too wide) in paragraph at lines 95--116
+ [][] 
+ []
+
+[100]
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]\OT1/cmr/bx/n/12 Gold
+ []
+
+
+Overfull \hbox (1.13339pt too wide) in paragraph at lines 122--122
+[]\OT1/cmr/bx/n/12 Extrac-
+ []
+
+
+Overfull \hbox (3.6167pt too wide) in paragraph at lines 122--122
+[]\OT1/cmr/bx/n/12 Delta| 
+ []
+
+
+Overfull \hbox (2.25839pt too wide) in paragraph at lines 122--122
+[]\OT1/cmr/bx/n/12 Correct| 
+ []
+
+
+Overfull \hbox (1.50601pt too wide) in paragraph at lines 128--128
+[]\OT1/cmr/m/n/12 EventForGoalEvent| 
+ []
+
+
+Overfull \hbox (1.22961pt too wide) in paragraph at lines 138--138
+[]\OT1/cmr/m/n/12 RoleResponsibleFor| 
+ []
+
+
+Overfull \hbox (36.10687pt too wide) in paragraph at lines 121--142
+ [][] 
+ []
+
+[101]
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\OT1/cmr/bx/n/12 Gold
+ []
+
+
+Overfull \hbox (1.13339pt too wide) in paragraph at lines 148--148
+[]\OT1/cmr/bx/n/12 Extrac-
+ []
+
+
+Overfull \hbox (3.6167pt too wide) in paragraph at lines 148--148
+[]\OT1/cmr/bx/n/12 Delta| 
+ []
+
+
+Overfull \hbox (2.25839pt too wide) in paragraph at lines 148--148
+[]\OT1/cmr/bx/n/12 Correct| 
+ []
+
+
+Overfull \hbox (1.50601pt too wide) in paragraph at lines 154--154
+[]\OT1/cmr/m/n/12 EventForGoalEvent| 
+ []
+
+
+Overfull \hbox (1.22961pt too wide) in paragraph at lines 164--164
+[]\OT1/cmr/m/n/12 RoleResponsibleFor| 
+ []
+
+
+Overfull \hbox (36.10687pt too wide) in paragraph at lines 147--168
+ [][] 
+ []
+
+[102]) [103] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.bbl
+" [104
 
 ]
 Missing character: There is no ç in font cmr12!
-
-[90]
+ [105]
 Underfull \hbox (badness 4673) in paragraph at lines 783--797
 []\OT1/cmr/m/n/12 Nodelman, P.  (2008).  \OT1/cmr/m/it/12 The hid-den adult: De
 fin-ing chil-dren's lit-
@@ -875,7 +1143,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 783--797
  []
 
 Missing character: There is no ’ in font cmti12!
-) [91] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.aux"
+) [106] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.aux"
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\title_page.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\abstract.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_1.aux")
@@ -894,16 +1162,17 @@ x")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_ontology.aux
 ")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_generated.au
-x"))
+x") ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_gold.aux
+"))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3413 strings out of 493921
- 49579 string characters out of 3147279
- 147742 words of memory out of 3000000
- 6539 multiletter control sequences out of 15000+200000
+ 3427 strings out of 493921
+ 50123 string characters out of 3147279
+ 148113 words of memory out of 3000000
+ 6546 multiletter control sequences out of 15000+200000
  12041 words of font info for 44 fonts, out of 3000000 for 9000
  843 hyphenation exceptions out of 8191
  31i,13n,27p,1764b,287s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -916,9 +1185,9 @@ ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfo
 nts/txbtt.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts/txbtt.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts/txtt.pfb>
-Output written on main.pdf (101 pages, 436956 bytes).
+Output written on main.pdf (116 pages, 480047 bytes).
 PDF statistics:
- 369 PDF objects out of 1000 (max. 8388607)
+ 418 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

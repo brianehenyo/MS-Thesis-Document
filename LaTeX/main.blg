@@ -14,7 +14,8 @@ A level-1 auxiliary file: appendix_stories.aux
 A level-1 auxiliary file: appendix_results.aux
 A level-1 auxiliary file: appendix_ontology.aux
 A level-1 auxiliary file: appendix_generated.aux
-Illegal, another \bibstyle command---line 99 of file main.aux
+A level-1 auxiliary file: appendix_gold.aux
+Illegal, another \bibstyle command---line 100 of file main.aux
  : \bibstyle
  :          {apacite}
 I'm skipping whatever remains of this command

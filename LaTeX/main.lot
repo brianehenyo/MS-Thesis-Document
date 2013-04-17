@@ -24,27 +24,34 @@
 \contentsline {table}{\numberline {4.9}{\ignorespaces New Gazetteers (Miscellaneous)}}{48}
 \contentsline {table}{\numberline {4.10}{\ignorespaces New JAPE Phases (Target Relations)}}{48}
 \contentsline {table}{\numberline {4.11}{\ignorespaces New JAPE Phases (Miscellaneous)}}{49}
-\contentsline {table}{\numberline {5.1}{\ignorespaces Mapping of Picture Books Themes with Target Relation Types}}{52}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Target Relation Type Groups}}{52}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Raw Corpus: Number of Unique and Redundant Relations Extracted}}{55}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Modified Corpus: Number of Unique and Redundant Relations Extracted}}{55}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Number of Relations Extracted per Corpus}}{56}
-\contentsline {table}{\numberline {C.1}{\ignorespaces Children's Stories}}{67}
-\contentsline {table}{\numberline {D.1}{\ignorespaces Detailed Overall Result}}{68}
-\contentsline {table}{\numberline {D.2}{\ignorespaces Raw Corpus: Detailed Overall Result per Relation (Part 1)}}{69}
-\contentsline {table}{\numberline {D.3}{\ignorespaces Raw Corpus: Detailed Overall Result per Relation (Part 2)}}{70}
-\contentsline {table}{\numberline {D.4}{\ignorespaces Raw Corpus: Detailed Overall Result per Relation (Part 3)}}{71}
-\contentsline {table}{\numberline {D.5}{\ignorespaces Modified Corpus: Detailed Overall Result per Relation (Part 1)}}{72}
-\contentsline {table}{\numberline {D.6}{\ignorespaces Modified Corpus: Detailed Overall Result per Relation (Part 2)}}{73}
-\contentsline {table}{\numberline {D.7}{\ignorespaces Modified Corpus: Detailed Overall Result per Relation (Part 3)}}{74}
-\contentsline {table}{\numberline {E.1}{\ignorespaces New Lexicon Entries (Group A)}}{75}
-\contentsline {table}{\numberline {E.2}{\ignorespaces New Ontology Entries (Group A) (Part 1)}}{76}
-\contentsline {table}{\numberline {E.3}{\ignorespaces New Ontology Entries (Group A) (Part 2)}}{77}
-\contentsline {table}{\numberline {E.4}{\ignorespaces New Author Goal Entries (Group A)}}{77}
-\contentsline {table}{\numberline {E.5}{\ignorespaces New Story Plot Tracker Entries (Group A)}}{77}
-\contentsline {table}{\numberline {E.6}{\ignorespaces Modified Theme Entry (Group A)}}{78}
-\contentsline {table}{\numberline {E.7}{\ignorespaces New Lexicon Entries (Group B)}}{78}
-\contentsline {table}{\numberline {E.8}{\ignorespaces New Ontology Entries (Group B)}}{79}
-\contentsline {table}{\numberline {E.9}{\ignorespaces New Author Goal Entries (Group B) (Part 1)}}{80}
-\contentsline {table}{\numberline {E.10}{\ignorespaces New Author Goal Entries (Group B) (Part 2)}}{81}
-\contentsline {table}{\numberline {E.11}{\ignorespaces Modified Story Plot Tracker Entry (Group B)}}{81}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Mapping of Picture Books Themes with Target Relation Types}}{53}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Target Relation Type Groups}}{54}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Gold Standard Evaluation Results}}{57}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Raw Corpus: Number of Unique and Redundant Relations Extracted}}{63}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Modified Corpus: Number of Unique and Redundant Relations Extracted}}{63}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Number of Relations Extracted per Corpus}}{64}
+\contentsline {table}{\numberline {C.1}{\ignorespaces Children's Stories}}{76}
+\contentsline {table}{\numberline {D.1}{\ignorespaces Detailed Overall Result}}{77}
+\contentsline {table}{\numberline {D.2}{\ignorespaces Raw Corpus: Detailed Overall Result per Relation (Part 1)}}{78}
+\contentsline {table}{\numberline {D.3}{\ignorespaces Raw Corpus: Detailed Overall Result per Relation (Part 2)}}{79}
+\contentsline {table}{\numberline {D.4}{\ignorespaces Raw Corpus: Detailed Overall Result per Relation (Part 3)}}{80}
+\contentsline {table}{\numberline {D.5}{\ignorespaces Modified Corpus: Detailed Overall Result per Relation (Part 1)}}{81}
+\contentsline {table}{\numberline {D.6}{\ignorespaces Modified Corpus: Detailed Overall Result per Relation (Part 2)}}{82}
+\contentsline {table}{\numberline {D.7}{\ignorespaces Modified Corpus: Detailed Overall Result per Relation (Part 3)}}{83}
+\contentsline {table}{\numberline {E.1}{\ignorespaces New Lexicon Entries (Group A)}}{84}
+\contentsline {table}{\numberline {E.2}{\ignorespaces New Ontology Entries (Group A) (Part 1)}}{85}
+\contentsline {table}{\numberline {E.3}{\ignorespaces New Ontology Entries (Group A) (Part 2)}}{86}
+\contentsline {table}{\numberline {E.4}{\ignorespaces New Author Goal Entries (Group A)}}{86}
+\contentsline {table}{\numberline {E.5}{\ignorespaces New Story Plot Tracker Entries (Group A)}}{86}
+\contentsline {table}{\numberline {E.6}{\ignorespaces Modified Theme Entry (Group A)}}{87}
+\contentsline {table}{\numberline {E.7}{\ignorespaces New Lexicon Entries (Group B)}}{87}
+\contentsline {table}{\numberline {E.8}{\ignorespaces New Ontology Entries (Group B)}}{88}
+\contentsline {table}{\numberline {E.9}{\ignorespaces New Author Goal Entries (Group B) (Part 1)}}{89}
+\contentsline {table}{\numberline {E.10}{\ignorespaces New Author Goal Entries (Group B) (Part 2)}}{90}
+\contentsline {table}{\numberline {E.11}{\ignorespaces Modified Story Plot Tracker Entry (Group B)}}{90}
+\contentsline {table}{\numberline {G.1}{\ignorespaces Gold Standard Evaluation Results - Everybody Cries (Raw)}}{98}
+\contentsline {table}{\numberline {G.2}{\ignorespaces Gold Standard Evaluation Results - Everybody Cries (Modified)}}{99}
+\contentsline {table}{\numberline {G.3}{\ignorespaces Gold Standard Evaluation Results - Start School (Raw)}}{100}
+\contentsline {table}{\numberline {G.4}{\ignorespaces Gold Standard Evaluation Results - Start School (Modified)}}{101}
+\contentsline {table}{\numberline {G.5}{\ignorespaces Gold Standard Evaluation Results - Hopsalot's Garden (Raw)}}{102}
+\contentsline {table}{\numberline {G.6}{\ignorespaces Gold Standard Evaluation Results - Hopsalot's Garden (Modified)}}{103}
