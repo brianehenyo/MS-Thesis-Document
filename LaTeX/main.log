@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.3.30)  17 APR 2013 13:25
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.3.30)  18 APR 2013 20:36
 entering extended mode
 **main.tex
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.tex"
@@ -202,6 +202,54 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rotFPbot=\skip51
 \rot@float@box=\box30
 \rot@mess@toks=\toks25
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count104
+\mult@box=\box31
+\multicol@leftmargin=\dimen116
+\c@unbalance=\count105
+\c@collectmore=\count106
+\doublecol@number=\count107
+\multicoltolerance=\count108
+\multicolpretolerance=\count109
+\full@width=\dimen117
+\page@free=\dimen118
+\premulticols=\dimen119
+\postmulticols=\dimen120
+\multicolsep=\skip52
+\multicolbaselineskip=\skip53
+\partial@page=\box32
+\last@line=\box33
+\mult@rightbox=\box34
+\mult@grightbox=\box35
+\mult@gfirstbox=\box36
+\mult@firstbox=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\c@columnbadness=\count110
+\c@finalcolumnbadness=\count111
+\last@try=\dimen121
+\multicolovershoot=\dimen122
+\multicolundershoot=\dimen123
+\mult@nat@firstbox=\box55
+\colbreak@box=\box56
+\multicol@sort@counter=\count112
 ))
 
 LaTeX Warning: Unused global option(s):
@@ -254,6 +302,9 @@ LaTeX Warning: Label `tab:gold3' multiply defined.
 
 LaTeX Warning: Label `tab:gold3' multiply defined.
 
+) ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_goldrel.au
+x")
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_truerel.aux"
 ))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
@@ -323,16 +374,16 @@ If that doesn't work, type  X <return>  to quit.
 
 ) ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
-\scratchdimen=\dimen116
-\scratchbox=\box31
-\nofMPsegments=\count105
-\nofMParguments=\count106
+\scratchcounter=\count113
+\scratchdimen=\dimen124
+\scratchbox=\box57
+\nofMPsegments=\count114
+\nofMParguments=\count115
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count107
-\MPscratchDim=\dimen117
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
+\MPscratchCnt=\count116
+\MPscratchDim=\dimen125
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
 \everyMPtoPDFconversion=\toks27
 ) ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\title_page.tex"
 [1
@@ -358,14 +409,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.toc" [2
 
 ]
-[3] [4])
+[3] [4] [5])
 \tf@toc=\write3
- [5] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.lof")
+ [6]
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.lof")
 \tf@lof=\write4
- [6] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.lot"
-[7] [8])
+ [7]
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.lot" [8]
+[9])
 \tf@lot=\write5
- [9]
+ [10]
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_1.tex"
 [1
 
@@ -565,7 +618,7 @@ Underfull \hbox (badness 2318) in paragraph at lines 343--343
 []\OT1/cmr/m/n/12 CapableOf In-di-ca-
  []
 
-[44] [45] <archidesign1.jpg, id=183, 240.9pt x 298.11375pt>
+[44] [45] <archidesign1.jpg, id=186, 240.9pt x 298.11375pt>
 File: archidesign1.jpg Graphic file (type jpg)
 
 <use archidesign1.jpg>
@@ -597,7 +650,7 @@ Underfull \hbox (badness 5607) in paragraph at lines 69--69
 []\OT1/cmr/m/n/12 isA, ca-pa-bleOf, ef-fectOf,
  []
 
-
+[53]
 Underfull \hbox (badness 10000) in paragraph at lines 88--88
 []\OT1/cmr/m/n/12 isA, ca-pa-bleOf, prop-er-
  []
@@ -627,13 +680,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--88
 \OT1/cmr/m/n/12 has-Role, rol-eRe-spon-si-ble-
  []
 
-[53] <altpath.jpg, id=209, 323.70938pt x 240.9pt>
+<altpath.jpg, id=212, 323.70938pt x 240.9pt>
 File: altpath.jpg Graphic file (type jpg)
  <use altpath.jpg>
 Package pdftex.def Info: altpath.jpg used on input line 99.
 (pdftex.def)             Requested size: 323.70859pt x 240.8994pt.
  [54 <C:/Users/Briane/Dropbox/THESIS/MS Thesis Document/LaTeX/altpath.jpg>]
-<altpatheffectofisstate.jpg, id=213, 331.99031pt x 200.24812pt>
+<altpatheffectofisstate.jpg, id=216, 331.99031pt x 200.24812pt>
 File: altpatheffectofisstate.jpg Graphic file (type jpg)
 
 <use altpatheffectofisstate.jpg>
@@ -641,72 +694,242 @@ Package pdftex.def Info: altpatheffectofisstate.jpg used on input line 110.
 (pdftex.def)             Requested size: 331.98949pt x 200.24763pt.
  [55 <C:/Users/Briane/Dropbox/THESIS/MS Thesis Document/LaTeX/altpatheffectofis
 state.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
-[]\OT1/cmr/bx/n/12 Gold
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+[]\OT1/cmr/bx/n/10 Gold
  []
 
 
-Overfull \hbox (5.65701pt too wide) in paragraph at lines 141--141
-[]\OT1/cmr/bx/n/12 Extraction| 
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+\OT1/cmr/bx/n/10 Stan-
  []
 
 
-Overfull \hbox (3.6167pt too wide) in paragraph at lines 141--141
-[]\OT1/cmr/bx/n/12 Delta| 
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+[]\OT1/cmr/bx/n/10 False
  []
 
 
-Overfull \hbox (2.25839pt too wide) in paragraph at lines 141--141
-[]\OT1/cmr/bx/n/12 Correct| 
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+\OT1/cmr/bx/n/10 Pos-i-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+[]\OT1/cmr/bx/n/10 False
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+\OT1/cmr/bx/n/10 Neg-
+ []
+
+
+Overfull \hbox (4.96649pt too wide) in paragraph at lines 142--142
+[]\OT1/cmr/bx/n/10 Correctly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+\OT1/cmr/bx/n/10 Ex-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+[]\OT1/cmr/m/n/10 Overall
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 143--143
+[]\OT1/cmr/m/n/10 0.36| 
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 143--143
+[]\OT1/cmr/m/n/10 0.36| 
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 143--143
+[]\OT1/cmr/m/n/10 0.36| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+[]\OT1/cmr/m/n/10 Overall
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+\OT1/cmr/m/n/10 (MOD-I-
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 144--144
+[]\OT1/cmr/m/n/10 0.34| 
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 144--144
+[]\OT1/cmr/m/n/10 0.32| 
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 144--144
+[]\OT1/cmr/m/n/10 0.33| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
+[]\OT1/cmr/m/n/10 Everybody
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 145--145
+[]\OT1/cmr/m/n/10 0.35| 
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 145--145
+[]\OT1/cmr/m/n/10 0.30| 
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 145--145
+[]\OT1/cmr/m/n/10 0.32| 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 146--146
-[]\OT1/cmr/m/n/12 Start School
+[]\OT1/cmr/m/n/10 Everybody
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--147
-[]\OT1/cmr/m/n/12 Start School
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 146--146
+[]\OT1/cmr/m/n/10 0.38| 
  []
 
 
-Underfull \hbox (badness 1237) in paragraph at lines 148--148
-[]\OT1/cmr/m/n/12 Hopsalot's Gar-
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 146--146
+[]\OT1/cmr/m/n/10 0.34| 
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 146--146
+[]\OT1/cmr/m/n/10 0.36| 
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 147--147
+[]\OT1/cmr/m/n/10 0.31| 
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 147--147
+[]\OT1/cmr/m/n/10 0.34| 
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 147--147
+[]\OT1/cmr/m/n/10 0.33| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\OT1/cmr/m/n/10 (MOD-I-
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 148--148
+[]\OT1/cmr/m/n/10 0.31| 
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 148--148
+[]\OT1/cmr/m/n/10 0.39| 
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 148--148
+[]\OT1/cmr/m/n/10 0.35| 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 149--149
-[]\OT1/cmr/m/n/12 Hopsalot's
+[]\OT1/cmr/m/n/10 Hopsalot's
  []
 
 
-Overfull \hbox (36.10687pt too wide) in paragraph at lines 140--152
- [][] 
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+\OT1/cmr/m/n/10 Gar-den
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 149--149
+[]\OT1/cmr/m/n/10 0.38| 
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 149--149
+[]\OT1/cmr/m/n/10 0.41| 
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 149--149
+[]\OT1/cmr/m/n/10 0.40| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+[]\OT1/cmr/m/n/10 Hopsalot's
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+\OT1/cmr/m/n/10 Gar-den
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+\OT1/cmr/m/n/10 (MOD-I-
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 150--150
+[]\OT1/cmr/m/n/10 0.39| 
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 150--150
+[]\OT1/cmr/m/n/10 0.46| 
+ []
+
+
+Overfull \hbox (3.55147pt too wide) in paragraph at lines 150--150
+[]\OT1/cmr/m/n/10 0.42| 
  []
 
 [56] [57] [58] [59] [60] [61] [62] [63] [64] [65]
-LaTeX Font Info:    Try loading font information for OT1+txtt on input line 410
+LaTeX Font Info:    Try loading font information for OT1+txtt on input line 411
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\ot1txtt.fd"
 File: ot1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/txtt/b/n' tried instead on input line 411.
+(Font)              Font shape `OT1/txtt/b/n' tried instead on input line 412.
 LaTeX Font Info:    Font shape `OT1/txtt/m/it' in size <12> not available
-(Font)              Font shape `OT1/txtt/m/sl' tried instead on input line 418.
+(Font)              Font shape `OT1/txtt/m/sl' tried instead on input line 419.
 
 LaTeX Font Info:    Font shape `OT1/txtt/bx/it' in size <12> not available
-(Font)              Font shape `OT1/txtt/b/sl' tried instead on input line 418.
+(Font)              Font shape `OT1/txtt/b/sl' tried instead on input line 419.
 
- [66]
-Overfull \hbox (12.84668pt too wide) in paragraph at lines 469--469
+ [66] [67]
+Overfull \hbox (12.84668pt too wide) in paragraph at lines 470--470
 []\OT1/txtt/m/n/12 [7]  Edward told Mommy Edna that Porky the pig broke glass o
 f water.[] 
  []
 
-[67] [68]) [69]
+[68]) [69]
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_6.tex"
 [70
 
@@ -734,14 +957,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 ]
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_stories.tex"
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 28--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 []\OT1/cmr/bx/n/12 Story
  []
 
-) [76
+[76
 
 
-]
+]) [77]
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_results.tex"
 
 Underfull \hbox (badness 10000) in paragraph at lines 58--58
@@ -778,7 +1021,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--58
 []\OT1/cmr/bx/n/12 Loca-
  []
 
-[77
+[78
 
 
 ]
@@ -806,12 +1049,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--98
 []\OT1/cmr/bx/n/12 EffectOf-
  []
 
-[78]
+[79]
 Overfull \hbox (22.488pt too wide) in paragraph at lines 137--172
  [][] 
  []
 
-[79]
+[80]
 Underfull \hbox (badness 10000) in paragraph at lines 178--178
 []\OT1/cmr/bx/n/12 Story
  []
@@ -846,7 +1089,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--178
 []\OT1/cmr/bx/n/12 Loca-
  []
 
-[80]
+[81]
 Overfull \hbox (1.36534pt too wide) in paragraph at lines 218--218
 []\OT1/cmr/bx/n/12 EventFor-
  []
@@ -871,47 +1114,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--218
 []\OT1/cmr/bx/n/12 EffectOf-
  []
 
-[81]
+[82]
 Overfull \hbox (22.488pt too wide) in paragraph at lines 257--292
  [][] 
  []
 
-[82]) [83]
+[83]) [84]
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_ontology.tex
-" [84
+" [85
 
 
-] [85]
+] [86]
 Overfull \hbox (57.71466pt too wide) in paragraph at lines 118--125
  [][] 
  []
 
-[86] [87]
+[87] [88]
 Overfull \hbox (40.09666pt too wide) in paragraph at lines 219--247
  [][] 
  []
 
-[88]
+[89]
 Overfull \hbox (38.46057pt too wide) in paragraph at lines 252--276
  [][] 
  []
 
-[89]
+[90]
 Overfull \hbox (48.9785pt too wide) in paragraph at lines 281--289
  [][] 
  []
 
-) [90]
+) [91]
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_generated.te
-x" [91
+x" [92
 
 
-] [92]
-Overfull \hbox (1915.443pt too wide) in paragraph at lines 135--135
-[]$[]$[] 
- []
-
-[93] [94] [95] [96]) [97]
+] [93] [94] [95] [96] [97]) [98]
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_gold.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 18--18
 []\OT1/cmr/bx/n/12 Gold
@@ -982,7 +1220,7 @@ Overfull \hbox (36.10687pt too wide) in paragraph at lines 43--64
  [][] 
  []
 
-[98
+[99
 
 
 ]
@@ -1020,7 +1258,7 @@ Overfull \hbox (36.10687pt too wide) in paragraph at lines 69--90
  [][] 
  []
 
-[99]
+[100]
 Underfull \hbox (badness 10000) in paragraph at lines 96--96
 []\OT1/cmr/bx/n/12 Gold
  []
@@ -1055,7 +1293,7 @@ Overfull \hbox (36.10687pt too wide) in paragraph at lines 95--116
  [][] 
  []
 
-[100]
+[101]
 Underfull \hbox (badness 10000) in paragraph at lines 122--122
 []\OT1/cmr/bx/n/12 Gold
  []
@@ -1090,7 +1328,7 @@ Overfull \hbox (36.10687pt too wide) in paragraph at lines 121--142
  [][] 
  []
 
-[101]
+[102]
 Underfull \hbox (badness 10000) in paragraph at lines 148--148
 []\OT1/cmr/bx/n/12 Gold
  []
@@ -1125,12 +1363,737 @@ Overfull \hbox (36.10687pt too wide) in paragraph at lines 147--168
  [][] 
  []
 
-[102]) [103] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.bbl
-" [104
+[103]) [104]
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_goldrel.tex"
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+\OT1/cmr/m/n/10 EventForGoalEvent(come to win-dow,sing
+ []
+
+
+Underfull \hbox (badness 5359) in paragraph at lines 18--490
+\OT1/cmr/m/n/10 EventForGoalEvent(go in a place to be
+ []
+
+
+Underfull \hbox (badness 5607) in paragraph at lines 18--490
+\OT1/cmr/m/n/10 EventForGoalEvent(hurry,get to the play-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+\OT1/cmr/m/n/10 EventForGoalEvent(share pud-ding,share
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+\OT1/cmr/m/n/10 EventForGoalEvent(share sand-wich,share
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+\OT1/cmr/m/n/10 EffectOf(miss morn-ing wake-up call,sleep
+ []
+
+
+Underfull \hbox (badness 7722) in paragraph at lines 18--490
+\OT1/cmr/m/n/10 EffectOf(sleep through sun-rise,cannot get
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+\OT1/cmr/m/n/10 EffectOfIsState(have most pow-er-ful
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+\OT1/cmr/m/n/10 EffectOfIsState(miss morn-ing wake-up
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+\OT1/cmr/m/n/10 EffectOfIsState(see school bus wait-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+
+ []
+
+
+Underfull \hbox (badness 6741) in paragraph at lines 18--490
+\OT1/cmr/m/n/10 CapableOf(Puppy's friends,pass bits from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+\OT1/cmr/m/n/10 RoleResponsibleFor(teacher,collect as-sign-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+\OT1/cmr/m/n/10 RoleResponsibleFor(teacher,write on the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--490
+
+ []
+
+[105
+
+
+] [106] [107] [108] [109] [110]
+Underfull \hbox (badness 10000) in paragraph at lines 496--649
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--649
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--649
+\OT1/cmr/m/n/10 EventForGoalEvent(remember spe-cial pic-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--649
+\OT1/cmr/m/n/10 EventForGoalEvent(walk past old play-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--649
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--649
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--649
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--649
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--649
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--649
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--649
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--649
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--649
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--649
+\OT1/cmr/m/n/10 RoleResponsibleFor(teacher,show where to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--649
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--649
+
+ []
+
+[111] [112]
+Underfull \hbox (badness 10000) in paragraph at lines 655--732
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 655--732
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 655--732
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 655--732
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 655--732
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 655--732
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 655--732
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 655--732
+
+ []
+
+[113]) [114]
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_truerel.tex"
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+
+ []
+
+
+Underfull \hbox (badness 7869) in paragraph at lines 18--417
+\OT1/cmr/m/n/10 EffectOf(embarrassed,shrinks down in his
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+\OT1/cmr/m/n/10 EffectOf(laughs for the first time all
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+\OT1/cmr/m/n/10 EffectOf(Still run-ning,sees Hippo climb
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+
+ []
+
+
+Overfull \hbox (7.73805pt too wide) in paragraph at lines 18--417
+\OT1/cmr/m/n/10 EventForGoalEvent(already started class,school) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+\OT1/cmr/m/n/10 EventForGoalEvent(does not even have
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+\OT1/cmr/m/n/10 EventForGoalEvent(hurries over to the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+\OT1/cmr/m/n/10 EventForGoalEvent(walks slowly to the
+ []
+
+
+Underfull \hbox (badness 7522) in paragraph at lines 18--417
+\OT1/cmr/m/n/10 EventForGoalEvent(writing on the black-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+\OT1/cmr/m/n/10 EventForGoalState(finishes his lunch,be
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+
+ []
+
+
+Underfull \hbox (badness 5519) in paragraph at lines 18--417
+\OT1/cmr/m/n/10 Happens(do not want to miss the bus
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--417
+
+ []
+
+[115
+
+
+] [116] [117] [118] [119]
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+
+ []
+
+
+Underfull \hbox (badness 7869) in paragraph at lines 423--838
+\OT1/cmr/m/n/10 EffectOf(embarrassed,shrinks down in his
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+\OT1/cmr/m/n/10 EffectOf(laughs for the first time all
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+\OT1/cmr/m/n/10 EffectOf(Still run-ning,sees Hippo climb
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+\OT1/cmr/m/n/10 EffectOf(turned in the wrong as-sign-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+\OT1/cmr/m/n/10 EventForGoalEvent(does not even have
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+\OT1/cmr/m/n/10 EventForGoalEvent(hurries over to the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+\OT1/cmr/m/n/10 EventForGoalEvent(turned away,share his
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+\OT1/cmr/m/n/10 EventForGoalEvent(walks slowly to the
+ []
+
+
+Underfull \hbox (badness 7522) in paragraph at lines 423--838
+\OT1/cmr/m/n/10 EventForGoalEvent(writing on the black-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+\OT1/cmr/m/n/10 EventForGoalState(finishes his lunch,be
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--838
+
+ []
+
+[120] [121] [122] [123] [124] [125]
+Underfull \hbox (badness 10000) in paragraph at lines 844--996
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--996
+\OT1/cmr/m/n/10 EffectOf(felt happy and ex-cited,walked
+ []
+
+
+Underfull \hbox (badness 6445) in paragraph at lines 844--996
+\OT1/cmr/m/n/10 EffectOf(playing hap-pily with some new
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--996
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--996
+\OT1/cmr/m/n/10 EventForGoalEvent(felt happy and ex-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--996
+\OT1/cmr/m/n/10 EventForGoalEvent(knew the Pri-mary
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--996
+\OT1/cmr/m/n/10 EventForGoalEvent(went to see what
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--996
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--996
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--996
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--996
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--996
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--996
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--996
+
+ []
+
+[126] [127]
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1172
+\OT1/cmr/m/n/10 EffectOf(enjoyed their first day at big
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1172
+\OT1/cmr/m/n/10 EffectOf(felt happy and ex-cited,walked
+ []
+
+
+Underfull \hbox (badness 6445) in paragraph at lines 1002--1172
+\OT1/cmr/m/n/10 EffectOf(playing hap-pily with some new
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1172
+\OT1/cmr/m/n/10 EventForGoalEvent(felt happy and ex-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1172
+\OT1/cmr/m/n/10 EventForGoalEvent(knew the Pri-mary
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1172
+\OT1/cmr/m/n/10 EventForGoalEvent(went to see what
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1172
+
+ []
+
+[128] [129]
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1257
+
+ []
+
+[130]
+Underfull \hbox (badness 10000) in paragraph at lines 1263--1346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1263--1346
+\OT1/cmr/m/n/10 EffectOf(planted her seeds the same
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1263--1346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1263--1346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1263--1346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1263--1346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1263--1346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1263--1346
+
+ []
+
+[131]) [132] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.bbl
+" [133
 
 ]
 Missing character: There is no ç in font cmr12!
- [105]
+ [134]
 Underfull \hbox (badness 4673) in paragraph at lines 783--797
 []\OT1/cmr/m/n/12 Nodelman, P.  (2008).  \OT1/cmr/m/it/12 The hid-den adult: De
 fin-ing chil-dren's lit-
@@ -1143,7 +2106,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 783--797
  []
 
 Missing character: There is no ’ in font cmti12!
-) [106] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.aux"
+) [135] ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\main.aux"
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\title_page.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\abstract.aux")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\chapter_1.aux")
@@ -1163,31 +2126,36 @@ x")
 ")
 ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_generated.au
 x") ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_gold.aux
-"))
+")
+("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_goldrel.aux"
+) ("C:\Users\Briane\Dropbox\THESIS\MS Thesis Document\LaTeX\appendix_truerel.au
+x"))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3427 strings out of 493921
- 50123 string characters out of 3147279
- 148113 words of memory out of 3000000
- 6546 multiletter control sequences out of 15000+200000
- 12041 words of font info for 44 fonts, out of 3000000 for 9000
+ 3550 strings out of 493921
+ 52665 string characters out of 3147279
+ 152638 words of memory out of 3000000
+ 6649 multiletter control sequences out of 15000+200000
+ 14048 words of font info for 53 fonts, out of 3000000 for 9000
  843 hyphenation exceptions out of 8191
- 31i,13n,27p,1764b,287s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfo
-nts/txbtt.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts/txbtt.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts/txtt.pfb>
-Output written on main.pdf (116 pages, 480047 bytes).
+ 31i,13n,27p,1764b,289s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts/txbtt.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts/txbtt.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/txfonts/txtt.pfb>
+Output written on main.pdf (146 pages, 564025 bytes).
 PDF statistics:
- 418 PDF objects out of 1000 (max. 8388607)
+ 522 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

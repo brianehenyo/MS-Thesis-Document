@@ -56,7 +56,7 @@
 \contentsline {subsubsection}{\numberline {5.1.2}Story Evaluation}{52}
 \contentsline {subsection}{\numberline {5.2}Extraction Analysis}{57}
 \contentsline {subsubsection}{\numberline {5.2.1}Accuracy and Completeness}{57}
-\contentsline {subsubsection}{\numberline {5.2.2}Uniqueness and Redundancies}{62}
+\contentsline {subsubsection}{\numberline {5.2.2}Uniqueness and Redundancies}{63}
 \contentsline {subsubsection}{\numberline {5.2.3}Zero Extraction}{65}
 \contentsline {subsubsection}{\numberline {5.2.4}Quality}{65}
 \contentsline {subsection}{\numberline {5.3}Story Analysis}{66}
@@ -70,10 +70,21 @@
 \contentsline {section}{\numberline {A}Resource Persons}{74}
 \contentsline {section}{\numberline {B}Personal Vitae}{75}
 \contentsline {section}{\numberline {C}Children's Stories}{76}
-\contentsline {section}{\numberline {D}Detailed Extraction Results}{77}
-\contentsline {section}{\numberline {E}New Ontology Entries}{84}
-\contentsline {subsection}{\numberline {E.1}Group A Relations}{84}
-\contentsline {subsection}{\numberline {E.2}Group B Relations}{87}
-\contentsline {section}{\numberline {F}Generated Stories}{91}
-\contentsline {section}{\numberline {G}Gold Standard Comparative Results}{98}
-\contentsline {section}{References}{104}
+\contentsline {section}{\numberline {D}Detailed Extraction Results}{78}
+\contentsline {section}{\numberline {E}New Ontology Entries}{85}
+\contentsline {subsection}{\numberline {E.1}Group A Relations}{85}
+\contentsline {subsection}{\numberline {E.2}Group B Relations}{88}
+\contentsline {section}{\numberline {F}Generated Stories}{92}
+\contentsline {section}{\numberline {G}Gold Standard Comparative Results}{99}
+\contentsline {section}{\numberline {H}Gold Standard Relations}{105}
+\contentsline {subsection}{\numberline {H.1}Everybody Cries}{105}
+\contentsline {subsection}{\numberline {H.2}Start School}{111}
+\contentsline {subsection}{\numberline {H.3}Hopsalot's Garden}{113}
+\contentsline {section}{\numberline {I}Extracted Relations}{115}
+\contentsline {subsection}{\numberline {I.1}Everybody Cries (RAW)}{115}
+\contentsline {subsection}{\numberline {I.2}Everybody Cries (MODIFIED)}{120}
+\contentsline {subsection}{\numberline {I.3}Start School (RAW)}{126}
+\contentsline {subsection}{\numberline {I.4}Start School (MODIFIED)}{128}
+\contentsline {subsection}{\numberline {I.5}Hopsalot's Garden (RAW)}{130}
+\contentsline {subsection}{\numberline {I.6}Hopsalot's Garden (MODIFIED)}{131}
+\contentsline {section}{References}{133}

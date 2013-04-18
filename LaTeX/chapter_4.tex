@@ -44,7 +44,7 @@ Stories are mostly composed of dialogues which are conversational in nature. The
 \item \textbf{Speaker Attributions} - the combination of a verb and a speaker. This signals the character speaking and the manner a speech is spoken.
 \end{itemize}
 
-Each element will be handled differently depending on the type of modification. The objective of these modifications is to convert these dialogues into complete and coherent sentences in order to yield proper extractions. In order to illustrate the dialogue modifications, here is an unmodified excerpt from one of the stories already in the corpus entitled ``A Wild Weather Day".
+Each element were handled differently depending on the type of modification. The objective of these modifications is to convert these dialogues into complete and coherent sentences in order to yield proper extractions. In order to illustrate the dialogue modifications, here is an unmodified excerpt from one of the stories already in the corpus entitled ``A Wild Weather Day".
 
 \begin{verse}
 \itshape
@@ -102,7 +102,7 @@ Through these examples, it is noticeable how one dialogue can be transformed two
 ``Like Frankie!" Pierre said. ``He's strong and fast, too." \\
 \end{verse}
 
-The verb \textit{said} will be removed as well as the character (\textit{Pierre}) saying the dialogue. Since the focus is mostly on what is being said, and not who said it and the manner of saying, it was transformed into the following:
+The verb \textit{said} was removed as well as the character (\textit{Pierre}) saying the dialogue. Since the focus is mostly on what is being said, and not who said it and the manner of saying, it was transformed into the following:
 
 \begin{verse}
 \itshape
@@ -143,7 +143,7 @@ After doing these modifications, it is important to note that the story has alre
 
 \subsubsection*{Interjections}
 
-While modifying, there may be cases wherein a specific sentence or a line uttered by a character will be omitted or transformed into a declarative sentence not containing the original word/s. Such sentences can be interjections like ``Oh my!" and ``Alas!". These can be transformed as ``She was shocked" and ``He was concerned." The emotions conveyed by these interjections were used.
+While modifying, there may be cases wherein a specific sentence or a line uttered by a character were omitted or transformed into a declarative sentence not containing the original word/s. Such sentences can be interjections like ``Oh my!" and ``Alas!". These can be transformed as ``She was shocked" and ``He was concerned." The emotions conveyed by these interjections were used.
 
 \subsubsection*{Contractions and Periods}
 
@@ -153,7 +153,7 @@ As with the periods (.) like those found in titles (\textit{Mr.} and \textit{Dr.
 
 \subsubsection*{Non-English Words}
 
-Lastly, story-specific modifications were done for the two \textit{Winnie the Pooh} stories. After careful examination, it was evident that the author was using non-existing English words in the dialogues of its characters. Words like \textit{suspicionated} and \textit{splendiferous} appeared in the story \textit{Everyone is special}. \textit{Tigger} is usually the character that uses such words due to his character trait. Such words were transformed to their actual English word counterparts. For example, \textit{suspicionated} and \textit{splendiferous} were transformed into \textit{suspected} and \textit{splendid}, respectively. This will make sure that all words are correctly tagged and the extracted relations contain valid concepts.
+Lastly, story-specific modifications were done for the two \textit{Winnie the Pooh} stories. After careful examination, it was evident that the author was using non-existing English words in the dialogues of its characters. Words like \textit{suspicionated} and \textit{splendiferous} appeared in the story \textit{Everyone is special}. \textit{Tigger} is usually the character that uses such words due to his character trait. Such words were transformed to their actual English word counterparts. For example, \textit{suspicionated} and \textit{splendiferous} were transformed into \textit{suspected} and \textit{splendid}, respectively. This made sure that all words are correctly tagged and the extracted relations contain valid concepts.
 
 \subsection{Target Relations}
 \label{sec:relations}
@@ -361,7 +361,7 @@ As for IsA, PartOf, PropertyOf, MadeOf, OftenNear, CapableOf, LocationOf, UsedFo
 \subsection{Architectural Design}
 \label{sec:archidesign}
 
-The architecture of the system is mostly dependent on the open-source tool GATE (See Section 3.5). The \textit{unstructured corpora} refers to the input children's stories. Each story must undergo the modifications mentioned in Section \ref{sec:modifications}. The components shown in Figure \ref{fig:archidesign} comprise the architectural design. Each must be included in a GATE Application Pipeline that will be run.
+The architecture of the system is mostly dependent on the open-source tool GATE (See Section 3.5). The \textit{unstructured corpora} refers to the input children's stories. Each story must undergo the modifications mentioned in Section \ref{sec:modifications}. The components shown in Figure \ref{fig:archidesign} comprise the architectural design. Each was included in a GATE Application Pipeline that was run.
 
 \begin{figure}[h]                %-- use [t] to place figure at top, [b] to place at the bottom
    \centering                    %-- use this to center the figure
@@ -372,14 +372,14 @@ The architecture of the system is mostly dependent on the open-source tool GATE 
 
 Each children's story text from the \textit{unstructured corpora} is opened in GATE by creating a GATE Document. Once the GATE documents are created, the next step is to create a GATE Corpus and add the documents. First, the GATE application resets the input of any previous annotations. This applies only if the input has already been annotated before passing through GATE. After cleaning, the input is parsed into tokens. The input was then  split into sentences and each token was annotated with their respective part-of-speech tags. After that, named-entities from the defined gazetteers were annotated. Then, pronouns are matched with the named-entities they are referring to in the text. 
 
-Then, each token are processed to identify their lemmas, affixes and chunks. Lastly, the input text is ran through a transducer. This will finally identify all the target relations and create the appropriate annotations for each.
+Then, each token are processed to identify their lemmas, affixes and chunks. Lastly, the input text is ran through a transducer. This finally identify all the target relations and create the appropriate annotations for each.
 
 The output of the GATE tool is an annotated version of the story that also contain the extracted target relations.
 
 \subsubsection{Resolving Story-specific Named Entities}
 \label{sec:gazetteer}
 
-In this implementation, a gazetteer resource was used to identify named entities in the input texts. However, the predefined lists does not cover some of the named entities in the children's story corpora. Such include characters, locations and roles. For example, in the \textit{Winnie the Pooh} set of stories, \textit{Pooh}, \textit{Piglet} and \textit{Tigger}, among others, are not included. Thus, additional lists are needed. Aside from the named entities found in stories, gazetteers are also created for indicators, world states and emotions, among others. These will be used by the transducer in its annotation patterns. A total of 20 new gazetteers were created for this study. Shown in Table \ref{tab:newgazetteersind} are the gazetteers created for indicators.
+In this implementation, a gazetteer resource was used to identify named entities in the input texts. However, the predefined lists does not cover some of the named entities in the children's story corpora. Such include characters, locations and roles. For example, in the \textit{Winnie the Pooh} set of stories, \textit{Pooh}, \textit{Piglet} and \textit{Tigger}, among others, are not included. Thus, additional lists are needed. Aside from the named entities found in stories, gazetteers are also created for indicators, world states and emotions, among others. These were used by the transducer in its annotation patterns. A total of 20 new gazetteers were created for this study. Shown in Table \ref{tab:newgazetteersind} are the gazetteers created for indicators.
 
 \begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
 \centering

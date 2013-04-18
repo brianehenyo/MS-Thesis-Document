@@ -18,18 +18,18 @@ This section details the strategies employed in evaluating the quality and compl
 
 \subsubsection{Quantitative Evaluation}
 
-In order to evaluate the accuracy of the relations extracted, a gold standard was created. The gold standard consists of 3 stories selected from the \textit{MODIFIED} corpora. Each were manually tagged with the appropriate relations. The rules in tagging the relations for the gold standard was independent from the rules followed in this research. For example, the gold standard has tagged relations that span more than 2 sentences. This was not the same for the automatically extracted relations. Lastly, only unique relations are tagged.
+In order to evaluate the accuracy of the relations extracted, a gold standard was created. The gold standard were taken from 3 stories selected from the \textit{MODIFIED} corpora. Each story was manually tagged with the appropriate relations. The rules in tagging the relations for the gold standard was independent from the rules followed in this research. For example, the gold standard has tagged relations that span more than 2 sentences. This was not the same for the automatically extracted relations. Lastly, only unique relations are tagged.
 
-After completing the gold standard, the unique automatically extracted relations from the same stories were used for comparison. The extractions' precision, recall and F-measure were computed to come up with the accuracy.
+After completing the gold standard, the unique automatically extracted relations from the same stories from both \textit{RAW} and  \textit{MODIFIED} corpora were used for comparison. The extractions' precision, recall and F-measure were computed to come up with the accuracy.
 
 \subsubsection*{Selected Stories}
 
 Each story used in developing the gold standard was selected for different reasons. Shown below are the titles of the stories and a brief description.
 
 \begin{enumerate}
-\item \textbf{Everybody Cries} - This was from the \textit{Little Life Lessons} story group. It has 86 lines with a mix of simple and complex sentences. It's target audience are 4-7 year old children. It was selected for its length and complexity. Aside from this, it was determined almost all target relation types, except for \textit{MadeOf}, can be tagged in the story. 
-\item \textbf{Start School} - This was from the \textit{Topsy Tim} story group. It has 39 lines with a mix of simple and complex sentences. It's target audience are 4-7 year old children. It was selected for its complexity and target age group. 
-\item \textbf{Hopsalot's Garden} - This was from the \textit{Jumpstart} story group. It has 22 lines of mostly simple sentences. It's target audience are 8-10 year old children. It was selected for its simplicity and target age group. 
+\item \textbf{Everybody Cries} - This was from the \textit{Little Life Lessons} story group. It has 86 lines with a mix of simple and complex sentences. Its target audience are 4-7 year old children. It was selected for its length and complexity. Aside from this, it was determined almost all target relation types, except for \textit{MadeOf}, can be tagged in the story. 
+\item \textbf{Start School} - This was from the \textit{Topsy Tim} story group. It has 39 lines with a mix of simple and complex sentences. Its target audience are 4-7 year old children. It was selected for its complexity and target age group. 
+\item \textbf{Hopsalot's Garden} - This was from the \textit{Jumpstart} story group. It has 22 lines of mostly simple sentences. Its target audience are 8-10 year old children. It was selected for its simplicity and target age group. 
 \end{enumerate}
 
 \subsubsection*{Metrics}
@@ -38,11 +38,11 @@ In determining the accuracy and completeness of extractions, 3 metrics were used
 
 \[Precision = \frac{extracted relations \cap expected relations}{extracted relations}\]
 
-Recall shows the probability that an expected extraction from the gold standard is actually extracted from the stories. It will show how complete the automatic extractions are.
+Recall shows the probability that an expected extraction from the gold standard is actually extracted from the stories. It shows how complete the automatic extractions are.
 
 \[Recall = \frac{extracted relations \cap expected relations}{expected relations}\]
 
-F-measure is the weighted average of precision and recall. In this evaluation, the balanced F-measure is computed. The best value is 1 and the worst is 0. This will determine the test's accuracy.
+F-measure is the weighted average of precision and recall. In this evaluation, the balanced F-measure is computed. The best value is 1 and the worst is 0. This determines the test's accuracy.
 
 \[F = 2 \cdot \frac{precision \cdot recall}{precision + recall}\]
 
@@ -136,32 +136,33 @@ Group B, on the other hand, did not require the extracted relation to be coheren
 
 \begin{table}[H]   %t means place on top, replace with b if you want to place at the bottom
 \centering
+\footnotesize
 \caption{Gold Standard Evaluation Results} \vspace{0.25em}
-\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{1cm}|p{1.5cm}|p{1cm}|p{1cm}|p{1cm}|} \hline
-\textbf{Stories} & \textbf{Gold Standard} & \textbf{Extraction} & \textbf{Delta} & \textbf{Correct} & \textbf{P} & \textbf{R} & \textbf{F} \\ \hline
-Overall (RAW) & 663 & 615 & -48 & 212 & 0.34 & 0.32 & 0.33 \\ \hline
-Overall (MODIFIED) & 663 & 662 & -1 & 241 & 0.36 & 0.36 & 0.36 \\ \hline
-Everybody Cries (RAW) & 456 & 392 & -64 & 137 & 0.35 & 0.30 & 0.32 \\ \hline
-Everybody Cries (MODIFIED) & 456 & 410 & -46 & 156 & 0.38 & 0.34 & 0.36 \\ \hline
-Start School (RAW) & 139 & 150 & 11 & 47 & 0.31 & 0.34 & 0.33 \\ \hline
-Start School (MODIFIED) & 139 & 173 & 34 & 54 & 0.31 & 0.39 & 0.35 \\ \hline
-Hopsalot's Garden (RAW) & 68 & 73 & 5 & 28 & 0.38 & 0.41 & 0.40 \\ \hline
-Hopsalot's Garden (MODIFIED) & 68 & 79 & 11 & 31 & 0.39 & 0.46 & 0.42 \\ \hline
+\begin{tabular}{|p{2cm}|p{1cm}|p{2cm}|p{1cm}|p{1cm}|p{1.5cm}|p{.5cm}|p{.5cm}|p{.5cm}|} \hline
+\textbf{Stories} & \textbf{Gold Standard} & \textbf{Extraction} & \textbf{False Positive} & \textbf{False Negative} & \textbf{Correctly Extracted} & \textbf{P} & \textbf{R} & \textbf{F} \\ \hline
+Overall (RAW) & 663 & 662 & 421 & 422 & 241 & 0.36 & 0.36 & 0.36 \\ \hline
+Overall (MODIFIED) & 663 & 615 & 403 & 451 & 212 & 0.34 & 0.32 & 0.33 \\ \hline
+Everybody Cries (RAW) & 456 & 392 & 255 & 319 & 137 & 0.35 & 0.30 & 0.32 \\ \hline
+Everybody Cries (MODIFIED) & 456 & 410 & 254 & 300 & 156 & 0.38 & 0.34 & 0.36 \\ \hline
+Start School (RAW) & 139 & 150 & 103 & 92 & 47 & 0.31 & 0.34 & 0.33 \\ \hline
+Start School (MODIFIED) & 139 & 173 & 119 & 85 & 54 & 0.31 & 0.39 & 0.35 \\ \hline
+Hopsalot's Garden (RAW) & 68 & 73 & 45 & 40 & 28 & 0.38 & 0.41 & 0.40 \\ \hline
+Hopsalot's Garden (MODIFIED) & 68 & 79 & 48 & 37 & 31 & 0.39 & 0.46 & 0.42 \\ \hline
 \end{tabular}
 \label{tab:goldsum}
 \end{table}
 
 In this evaluation, the precision, recall and F-measure values were analyzed to determine whether the approach used in automatically extracting the  relations yielded accurate and complete extractions.
 
-Shown in Table \ref{tab:goldsum} are the results after comparing the automatically extracted relations from both the raw and modified versions of the stories to the gold standard. The \textit{Gold Standard} column shows the number of tagged relations in the gold standard for a specific story. The value is the same for the \textit{RAW} and \textit{MODIFIED} rows of the same story. The \textit{Extraction} column shows the number of automatically extracted relations using this research's approach. It is followed by the \textit{delta} which show whether there was over-extraction or under-extraction. The \textit{Correct} column shows the number of correct automatically extracted relations after comparing with the gold standard. Columns \textit{P}, \textit{R} and \textit{F} show the precision, recall and F-measure values, respectively.
+Shown in Table \ref{tab:goldsum} are the results after comparing the automatically extracted relations from both the raw and modified versions of the stories to the gold standard. The \textit{Gold Standard} column shows the number of tagged relations in the gold standard for each story. The value is the same for the \textit{RAW} and \textit{MODIFIED} rows of the same story. The \textit{Extraction} column shows the number of automatically extracted relations using this research's approach. It is followed by the \textit{False Positive} column which shows the number of incorrect extraction results, and the \textit{False Negative} column which shows the number of expected relations from the gold standard not included in the extraction results. The \textit{Correctly Extracted} column shows the number of correct extracted relations after comparing with the gold standard. Lastly, columns \textit{P}, \textit{R} and \textit{F} show the precision, recall and F-measure values, respectively.
 
 Overall, the \textit{RAW} and \textit{MODIFIED} stories garnered 0.33 and 0.36, respectively, for their accuracy. The increase for the \textit{MODIFIED} stories give a positive indication that the modifications done on the corpus has helped in improving the accuracy of the extractor. However, these values are still low and does not even pass the half way point. Despite cleaning the data and making sure that proper information and relations are extracted, the templates are still lacking. Appendix G shows the detailed results per relation per story.
 
 \subsubsection*{Excess and Deficient Extractions}
 
-Focusing on the \textit{delta} values alone, it is noticeable that there is no overall trend in the number of automatic extractions done. Only the \textit{Everybody Cries} story had less extractions while the rest of the stories had increases.  
+Focusing on the \textit{delta} values alone, it is noticeable that there is no overall trend in the number of automatic extractions done. \textit{Everybody Cries} was the only story that had fewer automatic extractions (negative \textit{delta} value) when compared to the number of gold standard relations. The extractor was able to extract more relations, as compared to the gold standard, for the \textit{Start School} and \textit{Hopsalot's Garden} stories.  
 
-Going into specific relation types, there are three consistent ones. \textit{CapableOf} and \textit{EffectOfIsState} show consistent decreases while \textit{PropertyOf} shows consistent increases. In the case of \textit{CapableOf}, one main reason is that the action done is not always detected. Its extraction template immediately looks for an adjacent verb as its capable action. If there are modal or other words between the doer and the action in a sentence, no relation will be extracted. Such is also the case for sentences that have complex verb phrase structures. Here is a sample sentence from \textit{Everybody Cries}:
+Going into specific relation types, there are three consistent ones. \textit{CapableOf} and \textit{EffectOfIsState} show consistent decreases while \textit{PropertyOf} shows consistent increases. In the case of \textit{CapableOf}, one main reason is that the action done is not always detected. Its extraction template immediately looks for an adjacent verb as its capable action. If there are modal or other words between the doer and the action in a sentence, no relation was extracted. Such is also the case for sentences that have complex verb phrase structures. Here is a sample sentence from \textit{Everybody Cries}:
 
 \begin{verse}
 \itshape
@@ -182,21 +183,21 @@ The \textit{pretends to catch, throw, and bat} were divided into 3 separate rela
 
 For \textit{EffectOfIsState}, there is a consistent 100\% decrease in the number of extractions as compared to the gold standard. This was due to the fact that the template requires an adjective as an effect state but the ANNIE part-of-speech tagger is not able to tag them accurately.
 
-Lastly, \textit{PropertyOf} relations showed the greatest increase among the relation types. But in this case, the fault lies on the way the transducer was designed to extract this kind of relation. In its template, the transducer is supposed to relate an adjective to an adjacent noun. But unlike the rest of the relations, the transducer does not stop until all possible nouns are related to it.
+Lastly, the \textit{PropertyOf} relations showed the greatest increase among the relation types. But in this case, the fault lies on the way the transducer was designed to extract this kind of relation. In its template, the transducer was supposed to relate an adjective to an adjacent noun. But unlike the rest of the relations, the transducer does not stop until all possible nouns were related to the adjective.
 
 \subsubsection*{Complex and Long Stories}
 
-In Table \ref{tab:goldsum}, the stories are ordered based on the length and complexity of its sentences. \textit{Everybody Cries} has the most number of lines and the most complex sentences. \textit{Hopsalot's Garden} has the least number of lines and the simplest sentences. If this is observed alongside their \textit{precision}, \textit{recall} and \textit{F-measure} values, there is a seemingly upward trend. The length of the story and complexity of the sentences are indirectly proportional to the accuracy of extraction. As the complexity of the sentences (with the introduction of more clauses) and the number of lines increases (longer stories), the extractor suffers from lower accuracy.
+In Table \ref{tab:goldsum}, the stories are ordered based on the length and complexity of its sentences. The \textit{Everybody Cries} story has the most number of lines and the most complex sentences. The \textit{Hopsalot's Garden} story has the least number of lines and the simplest sentences. Each story's length and sentence complexity were observed alongside their \textit{precision}, \textit{recall} and \textit{F-measure} values. Starting from the lengthy and complex \textit{Everybody Cries} story in Table \ref{tab:goldsum}, the metrics' values increased as the short and simple \textit{Hopsalot's Garden} story was reached. They showed an upward trend. The length of the story and complexity of the sentences are indirectly proportional to the accuracy of the extraction. And as the complexity of the sentences (with the introduction of more clauses) and the number of lines increases (longer stories), the extractor suffered from lower accuracy.
 
 \subsubsection*{Correct and Complete Extractions}
 
-Overall, the extractor yielded fairly low \textit{precision}, \textit{recall} and \textit{F-measure} values. This shows that the templates used, despite their generalized nature to accommodate a number of patterns, were not able to extract an acceptable number of valid relations. And because of this, the templates were not successful in extracting all the expected valid relations from the stories. 
+Overall, the extractor yielded fairly low \textit{precision}, \textit{recall} and \textit{F-measure} values. The extractor got 0.34, 0.32 and 0.33 as its precision, recall and F-measure, respectively, for the \textit{RAW} stories. And for the \textit{MODIFIED}  stories, it got the same values for three metrics, which is 0.36. All scores were very far from the desired value of 1, which means the extractions were complete and very accurate, and fairly close to 0. This shows that the templates used, despite their generalized nature to accommodate a number of patterns, were not able to extract a high number of valid relations. And because of this, the templates were not successful in extracting all the expected valid relations from the stories. 
 
-For those relation types which were able to extract more than the expected, the way the transducer was designed to extract them did not help in improving the quality of relations. It introduced more nuisance relations than expected. Another contributing factor would be their loose and highly generalized templates. As for those that had lower extractions than the gold standard, their templates may have been a bit stricter but it also caused the extractor to miss a lot of valid extractions. 
+For those relation types which were able to extract more than the expected, the way the transducer was designed to extract them did not help in improving the quality of relations. It introduced more nuisance relations than expected. Another contributing factor would be the relation types' loose and highly generalized templates. As for the relation types that had fewer extractions than the gold standard, their templates might have been a bit stricter but they also caused the extractor to miss a lot of valid extractions. 
 
-And for most relation types, another reason would be their limitation to be extracted from a single sentence only. The gold standard had a lot of inferred and implied tagged relations that span even more than 2 sentences. These would be impossible to extract using the current approach. Also, almost all gold standard relations were tagged not using much of the defined indicators in this study.
+For the majority of relation types, another reason would be their limitation to be extracted from a single sentence only. The gold standard had a lot of inferred and implied tagged relations that span even more than 2 sentences. These would be impossible to extract using the current approach with the said limitation. Also, the indicators were used minimally in tagging the gold standard relations.
 
-However, there was a bright spot amongst the relation types. The \textit{Owns} relation type was consistent in getting \textit{precision} and \textit{recall} values ranging from 0.48 to even 0.77. It only got a \textit{precision} of 0.48 in \textit{Everybody Cries} while in the other 2 stories, values were always above 0.62. Though in a broader sense, the scores are still low and not acceptable, it is worth noting how this relation type consistently bested the other relations in terms of extractions. 
+However, there was one relation type that was consistent in having relatively high precision, recall and F-measure scores. The \textit{Owns} relation type was consistent in getting \textit{precision} and \textit{recall} values ranging from 0.48 to even 0.77. It only got a \textit{precision} of 0.48 in \textit{Everybody Cries} while in the other 2 stories, values were always above 0.62. Though in a broader sense, the scores are still low, it is worth noting how this relation type consistently outperformed the other relations in terms of extractions. 
 
 First, \textit{Owns} relations are easy to distinguish in a sentence. When a possessive noun or pronoun is present, it is highly likely that the noun adjacent to it would constitute your second concept. Also, this relation type, unlike most, is almost always found within a sentence. And if it is within a span of text, there are only a few indicators possible and the ways it can be expressed are limited. Lastly, its templates are simpler and straightforward. There was not a lot of generalization done because there are not a lot of ways that an \textit{Owns} relation is manifested in a sentence. However, it cannot handle possessions (second concept) that have more than 1 word specially when adjectives are used. For example, the relation \textit{Owns(Bear,first game)} was not extracted because the template was immediately looking for a noun. The presence of the adjective \textit{first} hindered this extraction.  
 
@@ -212,7 +213,7 @@ Puppy likes to have a good breakfast before school. \\
 This morning he has no time for cereal, toast, or juice.\\
 \end{verse}
 
-In the gold standard, it was able to identify the following \textit{IsA} relations:
+The gold standard contains 3 \textit{IsA} relations as follows:
 
 \begin{verse}
 \itshape
@@ -223,7 +224,7 @@ IsA(toast,breakfast)\\
 
 The current \textit{IsA} templates cannot handle this since it is limited to a sentence and it highly relies on indicators.
 
-Next, \textit{PartOf} relations had a very low turnout of correct relations because of its similarity to \textit{Owns}. One of its template uses possessive nouns or pronouns to signal its presence. However, the extractor is only able to differentiate it from an \textit{Owns} extraction when the second concept or the possession is a body part. In cases like \textit{car's wheel} and \textit{building's glass windows}, it wasn't able to identify the \textit{PartOf} relation. Instead, these are incorrectly tagged as \textit{Owns}.
+Next, \textit{PartOf} relations had a very low turnout of correct relations because of its similarity to \textit{Owns}. One of its template uses possessive nouns or pronouns to signal its presence. However, the extractor is only able to differentiate it from an \textit{Owns} extraction when the second concept or the possession is a body part. In cases like \textit{car's wheel} and \textit{building's glass windows}, it was not able to identify the \textit{PartOf} relation. Instead, these are incorrectly tagged as \textit{Owns}.
 
 \textit{EventForGoalEvent} is another case of confusion. In most cases, these types of relations are identified by the extractor as \textit{EffectOf} because of the similarity in structure when apparent in a text. Because desires are not always explicitly shown, the extractor had a difficult time differentiating this relation from \textit{EffectOf} which can accept just events as cause and effect if there are no indicators used. Another reason why this relation had a low turnout was that despite being able to extract from 2 sentences, most of the gold standard relations were extracted beyond 2 sentences. Here is an excerpt from the story:
 
@@ -237,7 +238,7 @@ Mouse shares her pudding. \\
 Cat gives him part of her apple.\\
 \end{verse}
 
-The gold standard was able to identify the following relations:
+The gold standard contains 5 \textit{EventForGoalEvent} relations as follows:
 
 \begin{verse}
 \itshape
@@ -250,20 +251,20 @@ EventForGoalEvent(share sandwich,share lunch)\\
 
 In this specific example, the relations were present even if they were 4 sentences apart. Clearly, the extractor was not able to handle that. Aside from that, there was no clear indication in the first sentence that \textit{share lunch} was the desire of Puppy's friends. 
 
-The \textit{UsedFor}, \textit{Happens} and \textit{HasRole} relations also had zero correct extractions. \textit{UsedFor} was not able to correctly extract the expected relations because its templates were always expecting an indicator. But in the story, all \textit{UsedFor} instances did not use indicators. Here is an example:
+The \textit{UsedFor}, \textit{Happens} and \textit{HasRole} relations also had zero correct extractions. No expected \textit{UsedFor} relations were extracted because its templates were always expecting an indicator. But in the story, all \textit{UsedFor} instances did not use indicators. Here is an example:
 
 \begin{verse}
 \itshape
 She is writing on the blackboard and does not turn around to look at Puppy.
 \end{verse}
 
-The gold standard was able to identify the relation \textit{UsedFor(blackboard,write)} but this was not present in the actual extractions. The existing  templates should have been able to identify this if no indicators were expected.
+The gold standard contains the relation \textit{UsedFor(blackboard,write)} but this was not present in the actual extractions. The existing  templates should have been able to identify this if no indicators were expected.
 
-As for the \textit{Happens} relation, the extractor always extracted a relation when the \textit{today} time indicator was used in a sentence. But in the gold standard, \textit{today} was not considered a valid time indicator as it is vague and does not really give a valid time within a day.
+As for the \textit{Happens} relation, the extraction results include a relation when the \textit{today} time indicator was used in a sentence. But in the gold standard, \textit{today} was not considered a valid time indicator as it is vague and does not really give a valid time within a day.
 
-\textit{HasRole} is one of those relations that is quite rare and hard to find in a story. In the gold standard, there was only 1 \textit{HasRole} found and it is \textit{HasRole(Miss Hen,teacher)}. This was not extracted using the extractor. First, the templates are looking for indicators and certain structures for it to identify the relation. But in this case, the correct relation was identified by inferring from the actions done by \textit{Miss Hen} in the story. The role was also not mentioned in the story. The gold standard used the following actions in determining the \textit{teacher} role for \textit{Miss Hen}: \textit{ask the class}, \textit{collect assignment}, \textit{start class} and \textit{write on the blackboard}. These are specific actions that are done by a teacher which is why the said role was related to the character.
+\textit{HasRole} is one of those relations that is quite rare and hard to find in a story. In the gold standard, there was only 1 \textit{HasRole} found and it is \textit{HasRole(Miss Hen,teacher)}. But this was not included in the extraction results. First, the templates are looking for indicators and certain structures for it to identify the relation. But in this case, the correct relation was identified by inferring from the actions done by \textit{Miss Hen} in the story. The \textit{teacher} role was also not mentioned anywhere in the story. In adding this relation to the gold standard, the following character actions were used in determining the \textit{teacher} role for \textit{Miss Hen}: \textit{ask the class}, \textit{collect assignment}, \textit{start class} and \textit{write on the blackboard}. These are specific actions that are done by a teacher which is why the said role was related to the character.
 
-Lastly, the \textit{OftenNear} relation did not have any correct extractions because of insufficient indicators. The only \textit{OftenNear} relation identified in the gold standard was \textit{OftenNear(house,sidewalk)}. This was identified using the word \textit{along} which was not included as one of the \textit{OftenNear} indicators. Had it been added in the first place, the said relation would have existed as part of the extractions.  
+Lastly, no \textit{OftenNear} relations were extracted because of insufficient indicators. The only \textit{OftenNear} relation included in the gold standard was \textit{OftenNear(house,sidewalk)}. This was identified using the word \textit{along} which was not included as one of the \textit{OftenNear} indicators. Had it been added in the first place, the said relation would have existed as part of the extraction results.  
 
 \subsubsection{Uniqueness and Redundancies}
 
